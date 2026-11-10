@@ -2,7 +2,7 @@
   "id": "actions",
   "name": "GitHub Actions",
   "purpose": "Validate the collection on pull requests.",
-  "status": "configured",
+  "status": "demonstrated",
   "configuration": [
     ".github/workflows/ci.yml",
     ".github/workflows/reusable-validation.yml"
@@ -10,9 +10,11 @@
   "prerequisites": [
     "Repository access and relevant GitHub feature permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Successful CI run recorded for branch commit 48e58eb51852eb85097b7832bdd50e5dd4a5cc41. This does not imply human review, merge, Pages deployment, or release."
   ],
   "reviewed": "2026-11-09"
 }

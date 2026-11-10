@@ -53,6 +53,6 @@ Every language in the pinned Linguist revision has a record. Seven language exam
 
 ## Platform status
 
-Workflows are configuration until their actual runs succeed. Pages requires repository settings. Human review, release evidence, extended toolchains, the pinned Linguist detection audit, and optional integrations remain pending. See [repository settings](docs/repository-settings.md) and [the feature matrix](docs/platform-feature-matrix.md).
+[The first CI demonstration](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417) passed. Other workflows remain configuration until their actual runs succeed. Pages requires repository settings. Human review, release evidence, extended toolchains, the pinned Linguist detection audit, and optional integrations remain pending. See [repository settings](docs/repository-settings.md) and [the feature matrix](docs/platform-feature-matrix.md).
 
 Original material is [MIT licensed](LICENSE); upstream exceptions are in [NOTICE.md](NOTICE.md). This is not an official GitHub product.
