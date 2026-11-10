@@ -20,10 +20,8 @@ jobs:
         env:
           PUBLIC_SOURCE_REF: ${{ github.sha }}
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
+        if: always() && hashFiles('verification/latest.json') != ''
         with:
           name: core-evidence
-          path: |
-            verification/latest.json
-            catalog/generated/
+          path: verification/latest.json
           if-no-files-found: error
