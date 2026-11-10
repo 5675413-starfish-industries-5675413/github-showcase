@@ -1,0 +1,21 @@
+id: avisynth-781893374
+name: AviSynth
+upstream_language_id: 781893374
+type: programming
+aliases:
+  - avisynth+
+  - avisynthplus
+  - avs
+  - avsplus
+extensions:
+  - .avs
+  - .avsi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,20 @@
+id: hlsl-145
+name: HLSL
+upstream_language_id: 145
+type: programming
+aliases: []
+extensions:
+  - .hlsl
+  - .cginc
+  - .fx
+  - .fxh
+  - .hlsli
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

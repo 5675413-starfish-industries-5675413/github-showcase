@@ -1,0 +1,16 @@
+id: ooc-418
+name: ooc
+upstream_language_id: 418
+type: programming
+aliases: []
+extensions:
+  - .ooc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

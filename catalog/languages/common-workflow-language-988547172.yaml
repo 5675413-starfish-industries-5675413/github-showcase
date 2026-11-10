@@ -1,0 +1,17 @@
+id: common-workflow-language-988547172
+name: Common Workflow Language
+upstream_language_id: 988547172
+type: programming
+aliases:
+  - cwl
+extensions:
+  - .cwl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

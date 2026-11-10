@@ -1,0 +1,22 @@
+id: quickbasic-593107205
+name: QuickBASIC
+upstream_language_id: 593107205
+type: programming
+aliases:
+  - qb
+  - qbasic
+  - qb64
+  - classic qbasic
+  - classic quickbasic
+extensions:
+  - .bas
+  - .bi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

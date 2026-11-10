@@ -1,0 +1,17 @@
+id: peg-js-81442128
+name: PEG.js
+upstream_language_id: 81442128
+type: programming
+aliases: []
+extensions:
+  - .pegjs
+  - .peggy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

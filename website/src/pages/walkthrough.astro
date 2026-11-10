@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+---
+
+<Layout title="Contribution walkthrough">
+  <article class="detail">
+    <p class="eyebrow">FROM CONTRIBUTION TO EVIDENCE</p>
+    <h1>Follow the work.</h1>
+    <p class="lead">
+      A genuine contribution should leave an inspectable trail.
+    </p>
+    <ol class="steps">
+      <li>
+        <h2>Propose an example</h2>
+        <p>
+          Open an issue with the language or format, expected behavior,
+          requirements, and licensing.
+        </p>
+      </li>
+      <li>
+        <h2>Make a focused change</h2>
+        <p>
+          Add the sample and README, update its catalog record, and use a
+          reviewed validation profile.
+        </p>
+      </li>
+      <li>
+        <h2>Run the checks</h2>
+        <p>
+          <code>npm run verify</code> checks the inventory, denial paths,
+          samples, build, and local website links.
+        </p>
+      </li>
+      <li>
+        <h2>Review and merge</h2>
+        <p>
+          A reviewer checks correctness, licensing, and the limits of
+          verification. A passing workflow is not a human review.
+        </p>
+      </li>
+      <li>
+        <h2>Publish and release</h2>
+        <p>
+          Pages publishes the merged commit. A tagged release can attach the
+          catalog and evidence reports.
+        </p>
+      </li>
+    </ol>
+    <section class="pending-panel">
+      <h2>Traceable contribution: pending</h2>
+      <p>
+        The full issue → PR → human review → merge → deployment → release trail
+        has not yet been recorded. This walkthrough describes the process, not
+        completed activity.
+      </p>
+      <a href="https://github.com/5675413-starfish-industries-5675413/github-showcase/pulls">
+        Inspect actual pull requests ↗
+      </a>
+    </section>
+  </article>
+</Layout>

@@ -1,0 +1,17 @@
+id: nsis-242
+name: NSIS
+upstream_language_id: 242
+type: programming
+aliases: []
+extensions:
+  - .nsi
+  - .nsh
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,20 @@
+id: adobe-font-metrics-147198098
+name: Adobe Font Metrics
+upstream_language_id: 147198098
+type: data
+aliases:
+  - acfm
+  - adobe composite font metrics
+  - adobe multiple font metrics
+  - amfm
+extensions:
+  - .afm
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

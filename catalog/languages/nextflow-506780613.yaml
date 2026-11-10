@@ -1,0 +1,16 @@
+id: nextflow-506780613
+name: Nextflow
+upstream_language_id: 506780613
+type: programming
+aliases: []
+extensions:
+  - .nf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

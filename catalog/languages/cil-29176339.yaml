@@ -1,0 +1,16 @@
+id: cil-29176339
+name: CIL
+upstream_language_id: 29176339
+type: data
+aliases: []
+extensions:
+  - .cil
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

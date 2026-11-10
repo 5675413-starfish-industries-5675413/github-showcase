@@ -1,0 +1,19 @@
+id: m3u-89638692
+name: M3U
+upstream_language_id: 89638692
+type: data
+aliases:
+  - hls playlist
+  - m3u playlist
+extensions:
+  - .m3u
+  - .m3u8
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

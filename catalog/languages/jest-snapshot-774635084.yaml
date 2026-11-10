@@ -1,0 +1,16 @@
+id: jest-snapshot-774635084
+name: Jest Snapshot
+upstream_language_id: 774635084
+type: data
+aliases: []
+extensions:
+  - .snap
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

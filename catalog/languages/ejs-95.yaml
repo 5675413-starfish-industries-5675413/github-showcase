@@ -1,0 +1,19 @@
+id: ejs-95
+name: EJS
+upstream_language_id: 95
+type: markup
+aliases: []
+extensions:
+  - .ejs
+  - .ect
+  - .ejs.t
+  - .jst
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

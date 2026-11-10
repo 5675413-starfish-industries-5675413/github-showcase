@@ -1,0 +1,17 @@
+id: figlet-font-686129783
+name: FIGlet Font
+upstream_language_id: 686129783
+type: data
+aliases:
+  - FIGfont
+extensions:
+  - .flf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

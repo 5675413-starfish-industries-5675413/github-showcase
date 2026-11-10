@@ -1,0 +1,16 @@
+id: directx-3d-file-201049282
+name: DirectX 3D File
+upstream_language_id: 201049282
+type: data
+aliases: []
+extensions:
+  - .x
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

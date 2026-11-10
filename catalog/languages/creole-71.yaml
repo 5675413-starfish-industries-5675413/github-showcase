@@ -1,0 +1,16 @@
+id: creole-71
+name: Creole
+upstream_language_id: 71
+type: prose
+aliases: []
+extensions:
+  - .creole
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

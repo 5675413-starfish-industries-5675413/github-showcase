@@ -1,0 +1,16 @@
+id: microsoft-developer-studio-project-800983837
+name: Microsoft Developer Studio Project
+upstream_language_id: 800983837
+type: data
+aliases: []
+extensions:
+  - .dsp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

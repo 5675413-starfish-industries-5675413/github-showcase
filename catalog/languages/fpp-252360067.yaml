@@ -1,0 +1,17 @@
+id: fpp-252360067
+name: FPP
+upstream_language_id: 252360067
+type: programming
+aliases: []
+extensions:
+  - .fpp
+  - .fppi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

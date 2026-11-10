@@ -1,0 +1,24 @@
+id: assembly-24
+name: Assembly
+upstream_language_id: 24
+type: programming
+aliases:
+  - asm
+  - nasm
+extensions:
+  - .asm
+  - .a51
+  - .i
+  - .inc
+  - .nas
+  - .nasm
+  - .s
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

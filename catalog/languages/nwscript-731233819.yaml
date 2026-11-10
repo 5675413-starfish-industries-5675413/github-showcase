@@ -1,0 +1,16 @@
+id: nwscript-731233819
+name: NWScript
+upstream_language_id: 731233819
+type: programming
+aliases: []
+extensions:
+  - .nss
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

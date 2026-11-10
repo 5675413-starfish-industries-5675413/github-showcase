@@ -1,0 +1,16 @@
+id: jq-905371884
+name: jq
+upstream_language_id: 905371884
+type: programming
+aliases: []
+extensions:
+  - .jq
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

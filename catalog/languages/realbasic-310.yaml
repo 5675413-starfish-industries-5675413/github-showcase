@@ -1,0 +1,21 @@
+id: realbasic-310
+name: REALbasic
+upstream_language_id: 310
+type: programming
+aliases: []
+extensions:
+  - .rbbas
+  - .rbfrm
+  - .rbmnu
+  - .rbres
+  - .rbtbar
+  - .rbuistate
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,27 @@
+{
+  "id": "format-zip",
+  "name": "ZIP archive",
+  "family": "archives",
+  "extensions": [
+    ".zip"
+  ],
+  "media_type": "application/zip",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/archives",
+  "source": "hello.zip",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-zip"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

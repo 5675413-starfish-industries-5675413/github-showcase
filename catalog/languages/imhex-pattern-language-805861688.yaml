@@ -1,0 +1,19 @@
+id: imhex-pattern-language-805861688
+name: ImHex Pattern Language
+upstream_language_id: 805861688
+type: programming
+aliases:
+  - ImHex
+  - ImHexPatternLanguage
+  - imhexpl
+extensions:
+  - .hexpat
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

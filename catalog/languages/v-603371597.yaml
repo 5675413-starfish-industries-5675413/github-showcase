@@ -1,0 +1,17 @@
+id: v-603371597
+name: V
+upstream_language_id: 603371597
+type: programming
+aliases:
+  - vlang
+extensions:
+  - .v
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

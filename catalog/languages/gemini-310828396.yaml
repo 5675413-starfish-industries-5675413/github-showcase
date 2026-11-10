@@ -1,0 +1,17 @@
+id: gemini-310828396
+name: Gemini
+upstream_language_id: 310828396
+type: prose
+aliases:
+  - gemtext
+extensions:
+  - .gmi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

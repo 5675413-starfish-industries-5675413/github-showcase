@@ -1,0 +1,44 @@
+id: json-174
+name: JSON
+upstream_language_id: 174
+type: data
+aliases:
+  - geojson
+  - jsonl
+  - sarif
+  - topojson
+extensions:
+  - .json
+  - .4DForm
+  - .4DProject
+  - .avsc
+  - .geojson
+  - .gltf
+  - .har
+  - .ice
+  - .JSON-tmLanguage
+  - .json.example
+  - .jsonl
+  - .mcmeta
+  - .sarif
+  - .slnlaunch
+  - .tact
+  - .tfstate
+  - .tfstate.backup
+  - .topojson
+  - .webapp
+  - .webmanifest
+  - .yy
+  - .yyp
+example_path: examples/languages/data/json
+source: hello.json
+demonstration: store
+requirements:
+  - Node.js 22.12+
+run: null
+expected: |
+  Valid sample
+limitations:
+  - Core check covers this sample structure/content only; full syntax
+    conformance and rendered appearance are not verified.
+license: MIT

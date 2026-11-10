@@ -1,0 +1,35 @@
+id: roff-manpage-612669833
+name: Roff Manpage
+upstream_language_id: 612669833
+type: markup
+aliases: []
+extensions:
+  - ".1"
+  - .1in
+  - .1m
+  - .1x
+  - ".2"
+  - ".3"
+  - .3in
+  - .3m
+  - .3p
+  - .3pm
+  - .3qt
+  - .3x
+  - ".4"
+  - ".5"
+  - ".6"
+  - ".7"
+  - ".8"
+  - ".9"
+  - .man
+  - .mdoc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: html-ecr-148
+name: HTML+ECR
+upstream_language_id: 148
+type: markup
+aliases:
+  - ecr
+extensions:
+  - .ecr
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

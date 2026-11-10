@@ -1,0 +1,16 @@
+id: wget-config-668457123
+name: Wget Config
+upstream_language_id: 668457123
+type: data
+aliases:
+  - wgetrc
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

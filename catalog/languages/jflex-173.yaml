@@ -1,0 +1,17 @@
+id: jflex-173
+name: JFlex
+upstream_language_id: 173
+type: programming
+aliases: []
+extensions:
+  - .flex
+  - .jflex
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

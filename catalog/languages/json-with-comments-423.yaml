@@ -1,0 +1,35 @@
+id: json-with-comments-423
+name: JSON with Comments
+upstream_language_id: 423
+type: data
+aliases:
+  - jsonc
+extensions:
+  - .jsonc
+  - .code-snippets
+  - .code-workspace
+  - .hujson
+  - .sublime-build
+  - .sublime-color-scheme
+  - .sublime-commands
+  - .sublime-completions
+  - .sublime-keymap
+  - .sublime-macro
+  - .sublime-menu
+  - .sublime-mousemap
+  - .sublime-project
+  - .sublime-settings
+  - .sublime-theme
+  - .sublime-workspace
+  - .sublime_metrics
+  - .sublime_session
+  - .tsconfig.json
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

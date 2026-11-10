@@ -1,0 +1,30 @@
+id: raku-283
+name: Raku
+upstream_language_id: 283
+type: programming
+aliases:
+  - perl6
+  - perl-6
+extensions:
+  - .6pl
+  - .6pm
+  - .nqp
+  - .p6
+  - .p6l
+  - .p6m
+  - .pl
+  - .pl6
+  - .pm
+  - .pm6
+  - .raku
+  - .rakumod
+  - .t
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

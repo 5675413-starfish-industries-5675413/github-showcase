@@ -1,0 +1,18 @@
+{
+  "id": "issues",
+  "name": "Issue forms",
+  "purpose": "Collect reproducible bugs and example proposals.",
+  "status": "configured",
+  "configuration": [
+    ".github/ISSUE_TEMPLATE/example.yml",
+    ".github/ISSUE_TEMPLATE/bug.yml"
+  ],
+  "prerequisites": [
+    "Repository access and relevant GitHub feature permissions."
+  ],
+  "evidence": [],
+  "limitations": [
+    "A real hosted demonstration has not yet been recorded."
+  ],
+  "reviewed": "2026-11-09"
+}

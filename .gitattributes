@@ -1,0 +1,11 @@
+* text=auto
+*.mjs text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.svg text
+*.zip binary
+*.gz binary
+*.sqlite binary
+*.wav binary
+catalog/upstream/* linguist-vendored
+catalog/generated/* linguist-generated

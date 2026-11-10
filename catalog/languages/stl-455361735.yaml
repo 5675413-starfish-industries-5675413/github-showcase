@@ -1,0 +1,18 @@
+id: stl-455361735
+name: STL
+upstream_language_id: 455361735
+type: data
+aliases:
+  - ascii stl
+  - stla
+extensions:
+  - .stl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

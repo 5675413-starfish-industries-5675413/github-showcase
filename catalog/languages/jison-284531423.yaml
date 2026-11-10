@@ -1,0 +1,16 @@
+id: jison-284531423
+name: Jison
+upstream_language_id: 284531423
+type: programming
+aliases: []
+extensions:
+  - .jison
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

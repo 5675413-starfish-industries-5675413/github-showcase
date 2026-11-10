@@ -1,0 +1,27 @@
+{
+  "id": "format-webvtt",
+  "name": "WebVTT subtitles",
+  "family": "subtitles",
+  "extensions": [
+    ".vtt"
+  ],
+  "media_type": "text/vtt",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/subtitles",
+  "source": "hello.vtt",
+  "demonstration": "render",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-webvtt"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

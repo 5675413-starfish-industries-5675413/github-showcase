@@ -1,0 +1,17 @@
+id: readline-config-538732839
+name: Readline Config
+upstream_language_id: 538732839
+type: data
+aliases:
+  - inputrc
+  - readline
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

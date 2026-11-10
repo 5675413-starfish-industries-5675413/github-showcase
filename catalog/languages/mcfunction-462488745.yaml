@@ -1,0 +1,16 @@
+id: mcfunction-462488745
+name: mcfunction
+upstream_language_id: 462488745
+type: programming
+aliases: []
+extensions:
+  - .mcfunction
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

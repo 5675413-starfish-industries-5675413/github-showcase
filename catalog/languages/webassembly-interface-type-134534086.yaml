@@ -1,0 +1,17 @@
+id: webassembly-interface-type-134534086
+name: WebAssembly Interface Type
+upstream_language_id: 134534086
+type: data
+aliases:
+  - wit
+extensions:
+  - .wit
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

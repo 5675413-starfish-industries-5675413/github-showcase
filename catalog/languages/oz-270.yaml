@@ -1,0 +1,16 @@
+id: oz-270
+name: Oz
+upstream_language_id: 270
+type: programming
+aliases: []
+extensions:
+  - .oz
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

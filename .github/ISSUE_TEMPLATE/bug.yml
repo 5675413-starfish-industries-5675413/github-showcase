@@ -1,0 +1,9 @@
+name: Bug report
+description: Report a reproducible catalog, example, or website problem
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, environment, expected and actual result
+    validations:
+      required: true

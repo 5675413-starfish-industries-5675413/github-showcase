@@ -1,0 +1,17 @@
+id: ren-py-322
+name: Ren'Py
+upstream_language_id: 322
+type: programming
+aliases:
+  - renpy
+extensions:
+  - .rpy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: m4-215
+name: M4
+upstream_language_id: 215
+type: programming
+aliases: []
+extensions:
+  - .m4
+  - .mc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

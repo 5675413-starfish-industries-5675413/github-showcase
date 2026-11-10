@@ -1,0 +1,16 @@
+id: survex-data-24470517
+name: Survex data
+upstream_language_id: 24470517
+type: data
+aliases: []
+extensions:
+  - .svx
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

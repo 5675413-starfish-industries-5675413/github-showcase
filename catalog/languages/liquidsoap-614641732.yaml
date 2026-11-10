@@ -1,0 +1,16 @@
+id: liquidsoap-614641732
+name: Liquidsoap
+upstream_language_id: 614641732
+type: programming
+aliases: []
+extensions:
+  - .liq
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: parrot-internal-representation-280
+name: Parrot Internal Representation
+upstream_language_id: 280
+type: programming
+aliases:
+  - pir
+extensions:
+  - .pir
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

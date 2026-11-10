@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "example_path",
+    "source",
+    "demonstration",
+    "requirements",
+    "run",
+    "expected",
+    "limitations",
+    "license",
+    "family",
+    "extensions",
+    "media_type",
+    "recipe",
+    "related"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "example_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "demonstration": {
+      "enum": [
+        "print",
+        "render",
+        "store",
+        "query",
+        "native",
+        "pending"
+      ]
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "run": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "expected": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "license": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "media_type": {
+      "type": "string"
+    },
+    "recipe": {
+      "type": "string"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "example_path": {
+            "type": "null"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "type": "null"
+          },
+          "run": {
+            "type": "null"
+          },
+          "demonstration": {
+            "const": "pending"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "demonstration": {
+            "enum": [
+              "print",
+              "render",
+              "store",
+              "query",
+              "native"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

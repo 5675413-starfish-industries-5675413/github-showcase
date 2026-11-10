@@ -1,0 +1,17 @@
+id: graphviz-dot-140
+name: Graphviz (DOT)
+upstream_language_id: 140
+type: data
+aliases: []
+extensions:
+  - .dot
+  - .gv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

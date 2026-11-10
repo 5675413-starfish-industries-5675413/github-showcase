@@ -1,0 +1,17 @@
+id: ti-program-422
+name: TI Program
+upstream_language_id: 422
+type: programming
+aliases: []
+extensions:
+  - .8xp
+  - .8xp.txt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

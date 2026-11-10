@@ -1,0 +1,17 @@
+id: csound-score-75
+name: Csound Score
+upstream_language_id: 75
+type: programming
+aliases:
+  - csound-sco
+extensions:
+  - .sco
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

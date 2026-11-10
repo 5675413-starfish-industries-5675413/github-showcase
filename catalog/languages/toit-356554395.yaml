@@ -1,0 +1,16 @@
+id: toit-356554395
+name: Toit
+upstream_language_id: 356554395
+type: programming
+aliases: []
+extensions:
+  - .toit
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

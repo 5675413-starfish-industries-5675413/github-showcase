@@ -1,0 +1,19 @@
+id: actionscript-10
+name: ActionScript
+upstream_language_id: 10
+type: programming
+aliases:
+  - actionscript 3
+  - actionscript3
+  - as3
+extensions:
+  - .as
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

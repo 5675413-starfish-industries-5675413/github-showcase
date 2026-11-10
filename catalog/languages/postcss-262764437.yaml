@@ -1,0 +1,17 @@
+id: postcss-262764437
+name: PostCSS
+upstream_language_id: 262764437
+type: markup
+aliases: []
+extensions:
+  - .pcss
+  - .postcss
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

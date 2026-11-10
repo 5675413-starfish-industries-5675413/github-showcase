@@ -1,0 +1,32 @@
+id: checksums-372063053
+name: Checksums
+upstream_language_id: 372063053
+type: data
+aliases:
+  - checksum
+  - hash
+  - hashes
+  - sum
+  - sums
+extensions:
+  - .crc32
+  - .md2
+  - .md4
+  - .md5
+  - .sha1
+  - .sha2
+  - .sha224
+  - .sha256
+  - .sha256sum
+  - .sha3
+  - .sha384
+  - .sha512
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

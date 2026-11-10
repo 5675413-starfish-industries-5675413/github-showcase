@@ -1,0 +1,18 @@
+id: literate-haskell-207
+name: Literate Haskell
+upstream_language_id: 207
+type: programming
+aliases:
+  - lhaskell
+  - lhs
+extensions:
+  - .lhs
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

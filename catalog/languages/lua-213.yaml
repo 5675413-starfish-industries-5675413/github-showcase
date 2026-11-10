@@ -1,0 +1,23 @@
+id: lua-213
+name: Lua
+upstream_language_id: 213
+type: programming
+aliases: []
+extensions:
+  - .lua
+  - .fcgi
+  - .nse
+  - .p8
+  - .pd_lua
+  - .rbxs
+  - .rockspec
+  - .wlua
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

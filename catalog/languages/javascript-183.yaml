@@ -1,0 +1,46 @@
+id: javascript-183
+name: JavaScript
+upstream_language_id: 183
+type: programming
+aliases:
+  - js
+  - node
+extensions:
+  - .js
+  - ._js
+  - .bones
+  - .cjs
+  - .es
+  - .es6
+  - .frag
+  - .gs
+  - .jake
+  - .javascript
+  - .jsb
+  - .jscad
+  - .jsfl
+  - .jslib
+  - .jsm
+  - .jspre
+  - .jss
+  - .jsx
+  - .mjs
+  - .njs
+  - .pac
+  - .sjs
+  - .ssjs
+  - .xsjs
+  - .xsjslib
+example_path: examples/languages/programming/javascript
+source: hello.js
+demonstration: print
+requirements:
+  - Node.js 22.12+
+run:
+  - node
+  - hello.js
+expected: |
+  Hello, world!
+limitations:
+  - Detection not yet audited.
+license: MIT

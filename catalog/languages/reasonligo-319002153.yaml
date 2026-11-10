@@ -1,0 +1,16 @@
+id: reasonligo-319002153
+name: ReasonLIGO
+upstream_language_id: 319002153
+type: programming
+aliases: []
+extensions:
+  - .religo
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

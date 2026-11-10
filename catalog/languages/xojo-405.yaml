@@ -1,0 +1,21 @@
+id: xojo-405
+name: Xojo
+upstream_language_id: 405
+type: programming
+aliases: []
+extensions:
+  - .xojo_code
+  - .xojo_menu
+  - .xojo_report
+  - .xojo_script
+  - .xojo_toolbar
+  - .xojo_window
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

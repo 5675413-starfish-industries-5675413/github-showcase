@@ -1,0 +1,23 @@
+id: asp-net-564186416
+name: ASP.NET
+upstream_language_id: 564186416
+type: programming
+aliases:
+  - aspx
+  - aspx-vb
+extensions:
+  - .asax
+  - .ascx
+  - .ashx
+  - .asmx
+  - .aspx
+  - .axd
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

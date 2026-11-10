@@ -1,0 +1,19 @@
+id: step-32760317
+name: STEP
+upstream_language_id: 32760317
+type: data
+aliases:
+  - iso-10303-21
+  - p21
+extensions:
+  - .step
+  - .stp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

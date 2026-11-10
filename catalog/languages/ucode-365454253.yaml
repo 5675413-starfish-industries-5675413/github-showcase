@@ -1,0 +1,16 @@
+id: ucode-365454253
+name: ucode
+upstream_language_id: 365454253
+type: programming
+aliases: []
+extensions:
+  - .uc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

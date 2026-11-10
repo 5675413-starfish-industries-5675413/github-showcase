@@ -1,0 +1,17 @@
+id: cypher-850806976
+name: Cypher
+upstream_language_id: 850806976
+type: programming
+aliases: []
+extensions:
+  - .cyp
+  - .cypher
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

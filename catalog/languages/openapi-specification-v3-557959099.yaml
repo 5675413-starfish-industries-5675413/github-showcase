@@ -1,0 +1,16 @@
+id: openapi-specification-v3-557959099
+name: OpenAPI Specification v3
+upstream_language_id: 557959099
+type: data
+aliases:
+  - oasv3
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

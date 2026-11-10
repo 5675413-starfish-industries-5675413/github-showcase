@@ -1,0 +1,17 @@
+id: nunjucks-461856962
+name: Nunjucks
+upstream_language_id: 461856962
+type: markup
+aliases:
+  - njk
+extensions:
+  - .njk
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

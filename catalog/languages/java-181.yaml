@@ -1,0 +1,18 @@
+id: java-181
+name: Java
+upstream_language_id: 181
+type: programming
+aliases: []
+extensions:
+  - .java
+  - .jav
+  - .jsh
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

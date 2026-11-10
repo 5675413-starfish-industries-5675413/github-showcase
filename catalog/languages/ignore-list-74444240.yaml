@@ -1,0 +1,19 @@
+id: ignore-list-74444240
+name: Ignore List
+upstream_language_id: 74444240
+type: data
+aliases:
+  - ignore
+  - gitignore
+  - git-ignore
+extensions:
+  - .gitignore
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

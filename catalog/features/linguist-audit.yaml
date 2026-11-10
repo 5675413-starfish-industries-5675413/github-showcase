@@ -1,0 +1,15 @@
+{
+  "id": "linguist-audit",
+  "name": "Linguist detection audit",
+  "purpose": "Compare per-file detection with the pinned baseline.",
+  "status": "pending",
+  "configuration": [],
+  "prerequisites": [
+    "Repository access and relevant GitHub feature permissions."
+  ],
+  "evidence": [],
+  "limitations": [
+    "A real hosted demonstration has not yet been recorded."
+  ],
+  "reviewed": "2026-11-09"
+}

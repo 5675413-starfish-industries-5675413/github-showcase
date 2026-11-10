@@ -1,0 +1,32 @@
+id: gerber-image-404627610
+name: Gerber Image
+upstream_language_id: 404627610
+type: data
+aliases:
+  - rs-274x
+extensions:
+  - .gbr
+  - .cmp
+  - .gbl
+  - .gbo
+  - .gbp
+  - .gbs
+  - .gko
+  - .gml
+  - .gpb
+  - .gpt
+  - .gtl
+  - .gto
+  - .gtp
+  - .gts
+  - .ncl
+  - .sol
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

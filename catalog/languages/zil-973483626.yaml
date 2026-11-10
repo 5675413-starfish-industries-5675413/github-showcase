@@ -1,0 +1,17 @@
+id: zil-973483626
+name: ZIL
+upstream_language_id: 973483626
+type: programming
+aliases: []
+extensions:
+  - .zil
+  - .mud
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

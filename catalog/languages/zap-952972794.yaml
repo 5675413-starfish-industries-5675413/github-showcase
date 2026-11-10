@@ -1,0 +1,17 @@
+id: zap-952972794
+name: ZAP
+upstream_language_id: 952972794
+type: programming
+aliases: []
+extensions:
+  - .zap
+  - .xzap
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

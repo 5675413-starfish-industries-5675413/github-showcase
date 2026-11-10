@@ -1,0 +1,16 @@
+id: ecere-projects-98
+name: Ecere Projects
+upstream_language_id: 98
+type: data
+aliases: []
+extensions:
+  - .epj
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

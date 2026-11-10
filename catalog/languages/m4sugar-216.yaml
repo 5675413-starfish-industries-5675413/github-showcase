@@ -1,0 +1,17 @@
+id: m4sugar-216
+name: M4Sugar
+upstream_language_id: 216
+type: programming
+aliases:
+  - autoconf
+extensions:
+  - .m4
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

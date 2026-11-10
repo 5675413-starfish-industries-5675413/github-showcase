@@ -1,0 +1,19 @@
+id: webassembly-956556503
+name: WebAssembly
+upstream_language_id: 956556503
+type: programming
+aliases:
+  - wast
+  - wasm
+extensions:
+  - .wast
+  - .wat
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,25 @@
+id: visual-basic-6-0-679594952
+name: Visual Basic 6.0
+upstream_language_id: 679594952
+type: programming
+aliases:
+  - vb6
+  - vb 6
+  - visual basic 6
+  - visual basic classic
+  - classic visual basic
+extensions:
+  - .bas
+  - .cls
+  - .ctl
+  - .Dsr
+  - .frm
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

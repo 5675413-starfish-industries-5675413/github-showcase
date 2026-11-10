@@ -1,0 +1,16 @@
+id: win32-message-file-950967261
+name: Win32 Message File
+upstream_language_id: 950967261
+type: data
+aliases: []
+extensions:
+  - .mc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

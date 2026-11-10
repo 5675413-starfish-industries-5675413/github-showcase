@@ -1,0 +1,19 @@
+id: kicad-schematic-622447435
+name: KiCad Schematic
+upstream_language_id: 622447435
+type: data
+aliases:
+  - eeschema schematic
+extensions:
+  - .kicad_sch
+  - .kicad_sym
+  - .sch
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

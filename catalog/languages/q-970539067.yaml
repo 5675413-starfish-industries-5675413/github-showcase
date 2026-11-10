@@ -1,0 +1,16 @@
+id: q-970539067
+name: q
+upstream_language_id: 970539067
+type: programming
+aliases: []
+extensions:
+  - .q
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: mint-968740319
+name: Mint
+upstream_language_id: 968740319
+type: programming
+aliases: []
+extensions:
+  - .mint
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: eagle-97
+name: Eagle
+upstream_language_id: 97
+type: data
+aliases: []
+extensions:
+  - .sch
+  - .brd
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

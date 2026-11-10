@@ -1,0 +1,27 @@
+{
+  "id": "format-svg",
+  "name": "SVG document",
+  "family": "images",
+  "extensions": [
+    ".svg"
+  ],
+  "media_type": "image/svg+xml",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/images",
+  "source": "hello.svg",
+  "demonstration": "render",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-svg"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

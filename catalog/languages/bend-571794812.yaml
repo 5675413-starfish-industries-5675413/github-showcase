@@ -1,0 +1,17 @@
+id: bend-571794812
+name: Bend
+upstream_language_id: 571794812
+type: programming
+aliases:
+  - bend2
+extensions:
+  - .bend
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,31 @@
+id: plsql-273
+name: PLSQL
+upstream_language_id: 273
+type: programming
+aliases: []
+extensions:
+  - .pls
+  - .bdy
+  - .ddl
+  - .fnc
+  - .pck
+  - .pkb
+  - .pks
+  - .plb
+  - .plsql
+  - .prc
+  - .spc
+  - .sql
+  - .tpb
+  - .tps
+  - .trg
+  - .vw
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

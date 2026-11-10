@@ -1,0 +1,17 @@
+id: cap-cds-390788699
+name: CAP CDS
+upstream_language_id: 390788699
+type: programming
+aliases:
+  - cds
+extensions:
+  - .cds
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: hip-674379998
+name: HIP
+upstream_language_id: 674379998
+type: programming
+aliases: []
+extensions:
+  - .hip
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

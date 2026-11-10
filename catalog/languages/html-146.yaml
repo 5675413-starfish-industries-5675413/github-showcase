@@ -1,0 +1,26 @@
+id: html-146
+name: HTML
+upstream_language_id: 146
+type: markup
+aliases:
+  - xhtml
+extensions:
+  - .html
+  - .hta
+  - .htm
+  - .html.hl
+  - .inc
+  - .xht
+  - .xhtml
+example_path: examples/languages/markup/html
+source: hello.html
+demonstration: render
+requirements:
+  - Web browser; Python 3
+run: null
+expected: |
+  Valid sample
+limitations:
+  - Core check covers this sample structure/content only; full syntax
+    conformance and rendered appearance are not verified.
+license: MIT

@@ -1,0 +1,23 @@
+id: vim-script-388
+name: Vim script
+upstream_language_id: 388
+type: programming
+aliases:
+  - vim
+  - viml
+  - nvim
+  - vimscript
+extensions:
+  - .vim
+  - .vba
+  - .vimrc
+  - .vmb
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

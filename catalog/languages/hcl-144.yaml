@@ -1,0 +1,24 @@
+id: hcl-144
+name: HCL
+upstream_language_id: 144
+type: programming
+aliases:
+  - HashiCorp Configuration Language
+  - opentofu
+  - terraform
+extensions:
+  - .hcl
+  - .nomad
+  - .tf
+  - .tfvars
+  - .tofu
+  - .workflow
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

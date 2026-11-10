@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/BaseLayout.astro';
+import languages from '../../../../catalog/generated/languages.json';
+import formats from '../../../../catalog/generated/formats.json';
+import features from '../../../../catalog/generated/features.json';
+export function getStaticPaths() {
+  return Object.entries({ languages, formats, features }).flatMap(
+    ([collection, items]) =>
+      items.map((entry) => ({
+        params: { collection, id: entry.id },
+        props: { entry },
+      })),
+  );
+}
+const { entry: r } = Astro.props as { entry: any };
+const { collection } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const repo =
+  'https://github.com/5675413-starfish-industries-5675413/github-showcase';
+const ref = import.meta.env.PUBLIC_SOURCE_REF || 'codex/showcase-foundation';
+const sourceUrl = r.example_path
+  ? `${repo}/tree/${ref}/${r.example_path}`
+  : null;
+const isText =
+  r.source && /\.(js|py|sh|json|html|css|md|csv|svg|vtt)$/.test(r.source);
+const source = isText ? r.source_text : null;
+---
+
+<Layout title={r.name}>
+  <article class="detail">
+    <a class="back" href={`${base}/${collection}/`}>
+      ← Back to {collection}
+    </a>
+    <div class="detail-title">
+      <div>
+        <p class="eyebrow">{r.type || r.family || 'GITHUB PLATFORM'}</p>
+        <h1>{r.name}</h1>
+        <p>
+          {r.purpose ||
+            ((r.aliases || []).length
+              ? `Also known as ${r.aliases.join(', ')}`
+              : 'A small, inspectable piece of the collection.')}
+        </p>
+      </div>
+      <span class="status">
+        {r.example_path ? 'Example present' : r.status || 'Example pending'}
+      </span>
+    </div>
+    {collection === 'features' ? (
+      <>
+        <section>
+          <h2>Implementation</h2>
+          <p>
+            {r.status}. A configuration file alone is not evidence of a
+            successful hosted demonstration.
+          </p>
+          <h3>Configuration</h3>
+          <ul>
+            {r.configuration.map((p: string) => (
+              <li>
+                <a href={`${repo}/blob/${ref}/${p}`}>{p} ↗</a>
+              </li>
+            ))}
+          </ul>
+          <h3>Prerequisites</h3>
+          <ul>
+            {r.prerequisites.map((x: string) => (
+              <li>{x}</li>
+            ))}
+          </ul>
+          <h3>Evidence</h3>
+          {r.evidence.length ? (
+            <ul>
+              {r.evidence.map((url: string) => (
+                <li>
+                  <a href={url}>Inspect demonstration ↗</a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No hosted demonstration recorded yet.</p>
+          )}
+        </section>
+      </>
+    ) : (
+      <>
+        <div class="evidence-grid">
+          {Object.entries(r.verification).map(([axis, status]) => (
+            <div>
+              <span>{axis}</span>
+              <strong class:list={{ 'passed-text': status === 'passed' }}>
+                {String(status).replace('-', ' ')}
+              </strong>
+            </div>
+          ))}
+        </div>
+        {r.example_path ? (
+          <>
+            <section>
+              <div class="section-title">
+                <h2>The example</h2>
+                <a href={sourceUrl!}>Open source ↗</a>
+              </div>
+              {r.media_type === 'image/svg+xml' && (
+                <img
+                  class="format-preview"
+                  src={`${base}/samples/${r.id}/${r.source}`}
+                  alt="Hello, world! rendered as SVG"
+                  width="320"
+                  height="80"
+                />
+              )}
+              {r.media_type === 'audio/wav' && (
+                <audio
+                  controls
+                  preload="metadata"
+                  src={`${base}/samples/${r.id}/${r.source}`}
+                >
+                  Your browser does not support audio playback.
+                </audio>
+              )}
+              <p>
+                <a href={`${base}/samples/${r.id}/${r.source}`} download>
+                  Download {r.source}
+                </a>
+              </p>
+              {source ? (
+                <pre><code>{source}</code></pre>
+              ) : (
+                <p>
+                  This is a binary sample.{' '}
+                  <a href={`${base}/samples/${r.id}/${r.source}`}>
+                    Download {r.source}
+                  </a>{' '}
+                  and open it in a compatible viewer.
+                </p>
+              )}
+            </section>
+            <section>
+              <h2>Try it locally</h2>
+              <p>
+                {r.run
+                  ? 'Run from the example directory for language samples; run from the repository root for format checks.'
+                  : 'Use the appropriate viewer, or run the core structural checks from the repository root.'}
+              </p>
+              <pre><code>{r.run?r.run.join(' '):'npm run examples:core'}</code></pre>
+              <h3>Expected result</h3>
+              <pre><code>{r.expected}</code></pre>
+              <h3>Requirements</h3>
+              <ul>
+                {r.requirements.map((x: string) => (
+                  <li>{x}</li>
+                ))}
+              </ul>
+            </section>
+          </>
+        ) : (
+          <section class="pending-panel">
+            <h2>There’s a place for this example.</h2>
+            <p>
+              {r.name} is accounted for in the pinned inventory. An appropriate
+              example and its toolchain requirements still need to be
+              contributed.
+            </p>
+            <a href={`${repo}/blob/${ref}/CONTRIBUTING.md`}>
+              Read the contribution guide ↗
+            </a>
+          </section>
+        )}
+        <section>
+          <h2>Evidence & provenance</h2>
+          <p>
+            Results are generated from the latest local core run only when the
+            example and catalog fingerprints match. They do not imply Linguist
+            detection, full standards conformance, or a hosted CI run.
+          </p>
+          <a href={`${base}/reports/evidence.json`}>
+            Download this build’s raw evidence ↗
+          </a>
+          <p>
+            <a href={`${repo}/actions`}>Inspect workflow runs ↗</a>
+          </p>
+          <p>
+            <strong>License:</strong> {r.license}
+          </p>
+          {r.recipe && (
+            <a href={`${repo}/blob/${ref}/${r.recipe}`}>Generation recipe ↗</a>
+          )}
+        </section>
+      </>
+    )}
+    <section>
+      <h2>Limitations</h2>
+      <ul>
+        {r.limitations.map((x: string) => (
+          <li>{x}</li>
+        ))}
+      </ul>
+    </section>
+  </article>
+</Layout>

@@ -1,0 +1,17 @@
+id: csound-document-74
+name: Csound Document
+upstream_language_id: 74
+type: programming
+aliases:
+  - csound-csd
+extensions:
+  - .csd
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: nearley-521429430
+name: Nearley
+upstream_language_id: 521429430
+type: programming
+aliases: []
+extensions:
+  - .ne
+  - .nearley
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

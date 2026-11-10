@@ -1,0 +1,18 @@
+id: darcs-patch-86
+name: Darcs Patch
+upstream_language_id: 86
+type: data
+aliases:
+  - dpatch
+extensions:
+  - .darcspatch
+  - .dpatch
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

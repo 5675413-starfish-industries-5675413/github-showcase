@@ -1,0 +1,17 @@
+id: glimmer-ts-95110458
+name: Glimmer TS
+upstream_language_id: 95110458
+type: programming
+aliases:
+  - gts
+extensions:
+  - .gts
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

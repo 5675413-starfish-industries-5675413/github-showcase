@@ -1,0 +1,16 @@
+id: http-152
+name: HTTP
+upstream_language_id: 152
+type: data
+aliases: []
+extensions:
+  - .http
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

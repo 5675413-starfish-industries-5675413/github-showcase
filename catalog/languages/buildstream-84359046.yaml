@@ -1,0 +1,16 @@
+id: buildstream-84359046
+name: BuildStream
+upstream_language_id: 84359046
+type: data
+aliases: []
+extensions:
+  - .bst
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

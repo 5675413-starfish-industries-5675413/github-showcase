@@ -1,0 +1,16 @@
+id: quint-562056483
+name: Quint
+upstream_language_id: 562056483
+type: programming
+aliases: []
+extensions:
+  - .qnt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

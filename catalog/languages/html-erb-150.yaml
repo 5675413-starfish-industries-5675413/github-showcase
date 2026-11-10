@@ -1,0 +1,21 @@
+id: html-erb-150
+name: HTML+ERB
+upstream_language_id: 150
+type: markup
+aliases:
+  - erb
+  - rhtml
+  - html+ruby
+extensions:
+  - .erb
+  - .erb.deface
+  - .rhtml
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

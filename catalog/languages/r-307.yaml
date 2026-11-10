@@ -1,0 +1,21 @@
+id: r-307
+name: R
+upstream_language_id: 307
+type: programming
+aliases:
+  - Rscript
+  - splus
+extensions:
+  - .r
+  - .rd
+  - .rhistory
+  - .rsx
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

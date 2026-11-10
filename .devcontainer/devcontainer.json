@@ -1,0 +1,8 @@
+{
+  "name": "GitHub Showcase",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+  "postCreateCommand": "npm ci",
+  "forwardPorts": [
+    4321
+  ]
+}

@@ -1,0 +1,18 @@
+id: scilab-344
+name: Scilab
+upstream_language_id: 344
+type: programming
+aliases: []
+extensions:
+  - .sci
+  - .sce
+  - .tst
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

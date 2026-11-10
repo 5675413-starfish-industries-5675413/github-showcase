@@ -1,0 +1,21 @@
+id: e-mail-529653389
+name: E-mail
+upstream_language_id: 529653389
+type: data
+aliases:
+  - email
+  - eml
+  - mail
+  - mbox
+extensions:
+  - .eml
+  - .mbox
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: classic-asp-8
+name: Classic ASP
+upstream_language_id: 8
+type: programming
+aliases:
+  - asp
+extensions:
+  - .asp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

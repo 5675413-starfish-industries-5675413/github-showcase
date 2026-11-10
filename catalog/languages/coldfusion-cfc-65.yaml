@@ -1,0 +1,17 @@
+id: coldfusion-cfc-65
+name: ColdFusion CFC
+upstream_language_id: 65
+type: programming
+aliases:
+  - cfc
+extensions:
+  - .cfc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

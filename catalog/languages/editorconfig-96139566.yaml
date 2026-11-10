@@ -1,0 +1,17 @@
+id: editorconfig-96139566
+name: EditorConfig
+upstream_language_id: 96139566
+type: data
+aliases:
+  - editor-config
+extensions:
+  - .editorconfig
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

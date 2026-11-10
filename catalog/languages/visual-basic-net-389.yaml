@@ -1,0 +1,21 @@
+id: visual-basic-net-389
+name: Visual Basic .NET
+upstream_language_id: 389
+type: programming
+aliases:
+  - visual basic
+  - vbnet
+  - vb .net
+  - vb.net
+extensions:
+  - .vb
+  - .vbhtml
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

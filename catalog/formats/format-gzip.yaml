@@ -1,0 +1,27 @@
+{
+  "id": "format-gzip",
+  "name": "Gzip stream",
+  "family": "compression",
+  "extensions": [
+    ".txt.gz"
+  ],
+  "media_type": "application/gzip",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/compression",
+  "source": "hello.txt.gz",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-gzip"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

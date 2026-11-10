@@ -1,0 +1,18 @@
+{
+  "id": "actions",
+  "name": "GitHub Actions",
+  "purpose": "Validate the collection on pull requests.",
+  "status": "configured",
+  "configuration": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/reusable-validation.yml"
+  ],
+  "prerequisites": [
+    "Repository access and relevant GitHub feature permissions."
+  ],
+  "evidence": [],
+  "limitations": [
+    "A real hosted demonstration has not yet been recorded."
+  ],
+  "reviewed": "2026-11-09"
+}

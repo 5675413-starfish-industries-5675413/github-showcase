@@ -1,0 +1,17 @@
+id: digital-command-language-82
+name: DIGITAL Command Language
+upstream_language_id: 82
+type: programming
+aliases:
+  - dcl
+extensions:
+  - .com
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

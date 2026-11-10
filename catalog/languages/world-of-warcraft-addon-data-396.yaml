@@ -1,0 +1,16 @@
+id: world-of-warcraft-addon-data-396
+name: World of Warcraft Addon Data
+upstream_language_id: 396
+type: data
+aliases: []
+extensions:
+  - .toc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

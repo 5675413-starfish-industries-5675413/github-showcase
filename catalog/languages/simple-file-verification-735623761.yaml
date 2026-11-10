@@ -1,0 +1,17 @@
+id: simple-file-verification-735623761
+name: Simple File Verification
+upstream_language_id: 735623761
+type: data
+aliases:
+  - sfv
+extensions:
+  - .sfv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

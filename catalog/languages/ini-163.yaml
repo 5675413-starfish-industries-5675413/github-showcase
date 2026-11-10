@@ -1,0 +1,34 @@
+id: ini-163
+name: INI
+upstream_language_id: 163
+type: data
+aliases:
+  - conf
+  - dosini
+extensions:
+  - .ini
+  - .cfg
+  - .cnf
+  - .container
+  - .dof
+  - .frm
+  - .lektorproject
+  - .mount
+  - .network
+  - .prefs
+  - .pro
+  - .properties
+  - .service
+  - .socket
+  - .target
+  - .timer
+  - .url
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

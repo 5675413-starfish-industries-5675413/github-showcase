@@ -1,0 +1,40 @@
+id: shell-346
+name: Shell
+upstream_language_id: 346
+type: programming
+aliases:
+  - sh
+  - shell-script
+  - bash
+  - zsh
+  - envrc
+extensions:
+  - .sh
+  - .bash
+  - .bats
+  - .cgi
+  - .command
+  - .fcgi
+  - .ksh
+  - .pacscript
+  - .sbatch
+  - .sh.in
+  - .slurm
+  - .tmux
+  - .tool
+  - .trigger
+  - .zsh
+  - .zsh-theme
+example_path: examples/languages/programming/shell
+source: hello.sh
+demonstration: print
+requirements:
+  - Bash
+run:
+  - bash
+  - hello.sh
+expected: |
+  Hello, world!
+limitations:
+  - Detection not yet audited.
+license: MIT

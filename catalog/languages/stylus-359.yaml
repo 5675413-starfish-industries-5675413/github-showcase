@@ -1,0 +1,16 @@
+id: stylus-359
+name: Stylus
+upstream_language_id: 359
+type: markup
+aliases: []
+extensions:
+  - .styl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

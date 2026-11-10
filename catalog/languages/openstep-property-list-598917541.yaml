@@ -1,0 +1,17 @@
+id: openstep-property-list-598917541
+name: OpenStep Property List
+upstream_language_id: 598917541
+type: data
+aliases: []
+extensions:
+  - .plist
+  - .glyphs
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

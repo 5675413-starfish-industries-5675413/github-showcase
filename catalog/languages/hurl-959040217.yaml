@@ -1,0 +1,16 @@
+id: hurl-959040217
+name: Hurl
+upstream_language_id: 959040217
+type: programming
+aliases: []
+extensions:
+  - .hurl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

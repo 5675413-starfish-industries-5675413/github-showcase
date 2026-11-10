@@ -1,0 +1,16 @@
+id: gams-118
+name: GAMS
+upstream_language_id: 118
+type: programming
+aliases: []
+extensions:
+  - .gms
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

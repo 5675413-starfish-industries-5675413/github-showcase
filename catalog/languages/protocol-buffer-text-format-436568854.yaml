@@ -1,0 +1,21 @@
+id: protocol-buffer-text-format-436568854
+name: Protocol Buffer Text Format
+upstream_language_id: 436568854
+type: data
+aliases:
+  - text proto
+  - protobuf text format
+extensions:
+  - .textproto
+  - .pbt
+  - .pbtxt
+  - .txtpb
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

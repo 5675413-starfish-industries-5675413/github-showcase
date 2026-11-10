@@ -1,0 +1,27 @@
+{
+  "id": "format-sqlite",
+  "name": "SQLite database",
+  "family": "databases",
+  "extensions": [
+    ".sqlite"
+  ],
+  "media_type": "application/vnd.sqlite3",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/databases",
+  "source": "hello.sqlite",
+  "demonstration": "query",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-sqlite"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

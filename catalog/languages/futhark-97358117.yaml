@@ -1,0 +1,16 @@
+id: futhark-97358117
+name: Futhark
+upstream_language_id: 97358117
+type: programming
+aliases: []
+extensions:
+  - .fut
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

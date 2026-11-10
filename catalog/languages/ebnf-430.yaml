@@ -1,0 +1,16 @@
+id: ebnf-430
+name: EBNF
+upstream_language_id: 430
+type: data
+aliases: []
+extensions:
+  - .ebnf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

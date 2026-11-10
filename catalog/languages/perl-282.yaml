@@ -1,0 +1,26 @@
+id: perl-282
+name: Perl
+upstream_language_id: 282
+type: programming
+aliases:
+  - cperl
+extensions:
+  - .pl
+  - .al
+  - .cgi
+  - .fcgi
+  - .perl
+  - .ph
+  - .plx
+  - .pm
+  - .psgi
+  - .t
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

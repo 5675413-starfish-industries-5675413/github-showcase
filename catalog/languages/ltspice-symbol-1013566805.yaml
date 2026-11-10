@@ -1,0 +1,16 @@
+id: ltspice-symbol-1013566805
+name: LTspice Symbol
+upstream_language_id: 1013566805
+type: data
+aliases: []
+extensions:
+  - .asy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

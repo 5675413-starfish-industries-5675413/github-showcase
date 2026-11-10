@@ -1,0 +1,17 @@
+id: grammatical-framework-137
+name: Grammatical Framework
+upstream_language_id: 137
+type: programming
+aliases:
+  - gf
+extensions:
+  - .gf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

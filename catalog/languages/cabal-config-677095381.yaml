@@ -1,0 +1,17 @@
+id: cabal-config-677095381
+name: Cabal Config
+upstream_language_id: 677095381
+type: data
+aliases:
+  - Cabal
+extensions:
+  - .cabal
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

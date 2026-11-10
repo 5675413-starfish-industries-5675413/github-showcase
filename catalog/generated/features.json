@@ -1,0 +1,219 @@
+[
+  {
+    "id": "actions",
+    "name": "GitHub Actions",
+    "purpose": "Validate the collection on pull requests.",
+    "status": "configured",
+    "configuration": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/reusable-validation.yml"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "dependabot",
+    "name": "Dependency maintenance",
+    "purpose": "Propose npm and Actions updates.",
+    "status": "configured",
+    "configuration": [
+      ".github/dependabot.yml"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "devcontainer",
+    "name": "Development container",
+    "purpose": "Describe a reproducible development entry point.",
+    "status": "configured",
+    "configuration": [
+      ".devcontainer/devcontainer.json"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "discussions",
+    "name": "Community discussions",
+    "purpose": "Discuss project ideas and examples.",
+    "status": "pending",
+    "configuration": [],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "issues",
+    "name": "Issue forms",
+    "purpose": "Collect reproducible bugs and example proposals.",
+    "status": "configured",
+    "configuration": [
+      ".github/ISSUE_TEMPLATE/example.yml",
+      ".github/ISSUE_TEMPLATE/bug.yml"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "linguist-audit",
+    "name": "Linguist detection audit",
+    "purpose": "Compare per-file detection with the pinned baseline.",
+    "status": "pending",
+    "configuration": [],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "pages",
+    "name": "GitHub Pages",
+    "purpose": "Publish the static explorer from main.",
+    "status": "configured",
+    "configuration": [
+      ".github/workflows/pages.yml"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "projects",
+    "name": "GitHub Projects",
+    "purpose": "Track collection work and milestones.",
+    "status": "pending",
+    "configuration": [],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "releases",
+    "name": "Release artifacts",
+    "purpose": "Prepare versioned reports and checksums.",
+    "status": "configured",
+    "configuration": [
+      ".github/workflows/release.yml"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "review",
+    "name": "Contribution review",
+    "purpose": "Document ownership and review expectations.",
+    "status": "configured",
+    "configuration": [
+      ".github/PULL_REQUEST_TEMPLATE.md",
+      ".github/CODEOWNERS"
+    ],
+    "prerequisites": [
+      "Repository access and relevant GitHub feature permissions."
+    ],
+    "evidence": [],
+    "limitations": [
+      "A real hosted demonstration has not yet been recorded."
+    ],
+    "reviewed": "2026-11-09",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  }
+]

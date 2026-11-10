@@ -1,0 +1,19 @@
+id: valve-data-format-544060961
+name: Valve Data Format
+upstream_language_id: 544060961
+type: data
+aliases:
+  - keyvalues
+  - vdf
+extensions:
+  - .vdf
+  - .vmf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

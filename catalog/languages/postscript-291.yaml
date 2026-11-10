@@ -1,0 +1,20 @@
+id: postscript-291
+name: PostScript
+upstream_language_id: 291
+type: markup
+aliases:
+  - postscr
+extensions:
+  - .ps
+  - .eps
+  - .epsi
+  - .pfa
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: propeller-spin-296
+name: Propeller Spin
+upstream_language_id: 296
+type: programming
+aliases: []
+extensions:
+  - .spin
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

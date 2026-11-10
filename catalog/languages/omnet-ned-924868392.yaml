@@ -1,0 +1,17 @@
+id: omnet-ned-924868392
+name: OMNeT++ NED
+upstream_language_id: 924868392
+type: programming
+aliases:
+  - omnetpp-ned
+extensions:
+  - .ned
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

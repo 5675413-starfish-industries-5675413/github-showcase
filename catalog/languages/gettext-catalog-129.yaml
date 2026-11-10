@@ -1,0 +1,18 @@
+id: gettext-catalog-129
+name: Gettext Catalog
+upstream_language_id: 129
+type: prose
+aliases:
+  - pot
+extensions:
+  - .po
+  - .pot
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

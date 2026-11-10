@@ -1,0 +1,19 @@
+id: modula-3-564743864
+name: Modula-3
+upstream_language_id: 564743864
+type: programming
+aliases: []
+extensions:
+  - .i3
+  - .ig
+  - .m3
+  - .mg
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

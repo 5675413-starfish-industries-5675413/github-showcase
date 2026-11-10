@@ -1,0 +1,27 @@
+{
+  "id": "format-csv",
+  "name": "CSV table",
+  "family": "structured-data",
+  "extensions": [
+    ".csv"
+  ],
+  "media_type": "text/csv",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/structured-data",
+  "source": "hello.csv",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-csv"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

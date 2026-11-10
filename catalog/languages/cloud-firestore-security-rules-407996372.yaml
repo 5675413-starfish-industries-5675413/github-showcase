@@ -1,0 +1,15 @@
+id: cloud-firestore-security-rules-407996372
+name: Cloud Firestore Security Rules
+upstream_language_id: 407996372
+type: data
+aliases: []
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

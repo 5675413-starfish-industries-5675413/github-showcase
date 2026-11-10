@@ -1,0 +1,17 @@
+id: asn-1-7
+name: ASN.1
+upstream_language_id: 7
+type: data
+aliases: []
+extensions:
+  - .asn
+  - .asn1
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

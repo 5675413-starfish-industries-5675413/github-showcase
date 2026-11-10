@@ -1,0 +1,17 @@
+id: b4x-96642275
+name: B4X
+upstream_language_id: 96642275
+type: programming
+aliases:
+  - basic for android
+extensions:
+  - .bas
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

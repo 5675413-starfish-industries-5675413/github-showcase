@@ -1,0 +1,17 @@
+id: c2hs-haskell-45
+name: C2hs Haskell
+upstream_language_id: 45
+type: programming
+aliases:
+  - c2hs
+extensions:
+  - .chs
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

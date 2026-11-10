@@ -1,0 +1,16 @@
+id: elvish-570996448
+name: Elvish
+upstream_language_id: 570996448
+type: programming
+aliases: []
+extensions:
+  - .elv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

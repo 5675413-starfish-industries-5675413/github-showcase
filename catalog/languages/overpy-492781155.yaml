@@ -1,0 +1,17 @@
+id: overpy-492781155
+name: OverPy
+upstream_language_id: 492781155
+type: programming
+aliases:
+  - opy
+extensions:
+  - .opy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)
