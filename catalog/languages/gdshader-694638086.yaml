@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .gdshader
   - .gdshaderinc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/gdshader-694638086
+source: include.gdshaderinc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gdshader-694638086
+expected: "Linguist classification: GDShader"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/GDShader/include.gdshaderinc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/GDShader/include.gdshaderinc
+  sha256: 7bda23d2b5a806f53f44c02cf826e76652e89d09108b9d566df971705a8e2837
+verification_profile: inspection

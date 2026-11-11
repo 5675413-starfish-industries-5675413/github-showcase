@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .ecl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/eclipse-94
+source: or-constraint.ecl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - eclipse-94
+expected: "Linguist classification: ECLiPSe"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ECLiPSe/or-constraint.ecl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ECLiPSe/or-constraint.ecl
+  sha256: 30fc737c96018db9347a3eb1c17c6a8b75d1d397037abca1a1a50ba779cbda4b
+verification_profile: inspection

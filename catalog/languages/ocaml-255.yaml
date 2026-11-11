@@ -11,12 +11,29 @@ extensions:
   - .mli
   - .mll
   - .mly
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ocaml-255
+source: common.ml
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ocaml-255
+expected: "Linguist classification: OCaml"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/OCaml/common.ml
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/OCaml/common.ml
+  sha256: 71e54ce0e78b1a3e3545e77ae4ddad98a064d04bf3f276e41c453a2e94d705c7
+verification_profile: inspection

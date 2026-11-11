@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .ispc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ispc-327071
+source: VideoFunctions.ispc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ispc-327071
+expected: "Linguist classification: ISPC"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ISPC/VideoFunctions.ispc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ISPC/VideoFunctions.ispc
+  sha256: 7ebe6951fc7365b1304a8a15aff50ab11fdf066f2291b4c10d3e6c89ca3bacf4
+verification_profile: inspection

@@ -10,12 +10,29 @@ extensions:
   - .rd
   - .rhistory
   - .rsx
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/r-307
+source: R-qgis-extension.rsx
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - r-307
+expected: "Linguist classification: R"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/R/R-qgis-extension.rsx
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/R/R-qgis-extension.rsx
+  sha256: ff9c68ba98ab4c82e8d697eb04464f602626dc25f101702d2073c0536a931e8e
+verification_profile: inspection

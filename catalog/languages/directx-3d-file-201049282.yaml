@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .x
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/directx-3d-file-201049282
+source: cube.x
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - directx-3d-file-201049282
+expected: "Linguist classification: DirectX 3D File"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/DirectX%203D%20File/cube.x
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/DirectX 3D File/cube.x
+  sha256: 6fb6f28db9b1b50f81fcae35ca7449ce6fcfa6276b5d2977642dfb970649a073
+verification_profile: inspection

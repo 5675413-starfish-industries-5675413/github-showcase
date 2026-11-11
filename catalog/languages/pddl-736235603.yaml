@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .pddl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/pddl-736235603
+source: problem_4d_5p.pddl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - pddl-736235603
+expected: "Linguist classification: PDDL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/PDDL/problem_4d_5p.pddl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/PDDL/problem_4d_5p.pddl
+  sha256: 880a9cbcffbbbb01fe60ffae8d1aac897f9b254253335d6d280f1998cbf6962b
+verification_profile: inspection

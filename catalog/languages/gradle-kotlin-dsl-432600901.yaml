@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .gradle.kts
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/gradle-kotlin-dsl-432600901
+source: build.gradle.kts
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gradle-kotlin-dsl-432600901
+expected: "Linguist classification: Gradle Kotlin DSL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Gradle%20Kotlin%20DSL/build.gradle.kts
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Gradle Kotlin DSL/build.gradle.kts
+  sha256: a5a736d8f7c1b82ab9ce23dfc7bd621a91139257de5337915da03f1f418b3da9
+verification_profile: inspection

@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .sc
   - .scd
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/supercollider-361
+source: WarpPreset.sc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - supercollider-361
+expected: "Linguist classification: SuperCollider"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/SuperCollider/WarpPreset.sc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/SuperCollider/WarpPreset.sc
+  sha256: 2769b37e56edd5639586cfc1750bc6f3732dcbcdad4fe0df4237df8b76e4ae32
+verification_profile: inspection

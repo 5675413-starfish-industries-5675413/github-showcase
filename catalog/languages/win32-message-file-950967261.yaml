@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .mc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/win32-message-file-950967261
+source: logmess.mc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - win32-message-file-950967261
+expected: "Linguist classification: Win32 Message File"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Win32%20Message%20File/logmess.mc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Win32 Message File/logmess.mc
+  sha256: 485ff7157e2fb3f1ee867c763a57151547c5bb7560bf53ac3c9782fc6b36ae9a
+verification_profile: inspection

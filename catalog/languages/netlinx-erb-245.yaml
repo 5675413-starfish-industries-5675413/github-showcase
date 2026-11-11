@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .axs.erb
   - .axi.erb
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/netlinx-erb-245
+source: sample.axi.erb
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - netlinx-erb-245
+expected: "Linguist classification: NetLinx+ERB"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/NetLinx%2BERB/sample.axi.erb
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/NetLinx+ERB/sample.axi.erb
+  sha256: e26f13ed99fca6561aa81c9e0b65fa692c1c9a3b1ba69046ee348fd00e2e798f
+verification_profile: inspection

@@ -19,9 +19,10 @@ fs.writeFileSync(
 for (const kind of ['languages', 'formats'])
   for (const r of catalog[kind])
     if (r.example_path) {
-      if (/\.(js|py|sh|json|html|css|md|csv|svg|vtt)$/.test(r.source))
-        r.source_text = read(`${r.example_path}/${r.source}`);
-      const target = path.join(root, 'website/public/samples', r.id, r.source);
+      const bytes = fs.readFileSync(safePath(`${r.example_path}/${r.source}`));
+      if (!bytes.includes(0)) r.source_text = bytes.toString('utf8');
+      r.download_name = kind === 'languages' ? 'source.txt' : r.source;
+      const target = path.join(root, 'website/public/samples', r.id, r.download_name);
       fs.mkdirSync(path.dirname(target), { recursive: true });
       fs.copyFileSync(safePath(`${r.example_path}/${r.source}`), target);
     }

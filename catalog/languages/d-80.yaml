@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .d
   - .di
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/d-80
+source: unittest1.d
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - d-80
+expected: "Linguist classification: D"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/D/unittest1.d
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/D/unittest1.d
+  sha256: a55850c9a6f3e5b697767bb66379c25522d479f3f5e47514aa4ff6e33e5dd7fc
+verification_profile: inspection

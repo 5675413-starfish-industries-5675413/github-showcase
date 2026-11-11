@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .k
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/kframework-9479532
+source: sample1.k
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kframework-9479532
+expected: "Linguist classification: KFramework"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/KFramework/sample1.k
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/KFramework/sample1.k
+  sha256: e43b881ebeb63cd846a0eb4cffda599475dd168698699ab8737c23724147130a
+verification_profile: inspection

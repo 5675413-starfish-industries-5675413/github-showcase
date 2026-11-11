@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .v
   - .veo
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/verilog-387
+source: module_stub.v
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - verilog-387
+expected: "Linguist classification: Verilog"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Verilog/module_stub.v
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Verilog/module_stub.v
+  sha256: ffd1d6344fca0890e16218f03c5552d2963e4d661ccd6fa7d406144fc847d5b3
+verification_profile: inspection

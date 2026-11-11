@@ -103,6 +103,45 @@
       "items": {
         "type": "string"
       }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "url",
+        "revision",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "authored",
+            "linguist-fixture"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "verification_profile": {
+      "enum": [
+        "core",
+        "extended",
+        "inspection"
+      ]
     }
   },
   "allOf": [

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .mch
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/b-formal-method-993355937
+source: Leftpad.mch
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - b-formal-method-993355937
+expected: "Linguist classification: B (Formal Method)"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/B%20(Formal%20Method)/Leftpad.mch
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/B (Formal Method)/Leftpad.mch
+  sha256: a6a2fa48e09b9d7d7298caffd21e502cc3b642e9bb4c3bd663e7236ecd4ad9d4
+verification_profile: inspection

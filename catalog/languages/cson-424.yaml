@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .cson
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/cson-424
+source: wercker-status.cson
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cson-424
+expected: "Linguist classification: CSON"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CSON/wercker-status.cson
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CSON/wercker-status.cson
+  sha256: 70480a6a64ae064e8b40367625b2be0a3023b4d399677a37c3a759e28720a50b
+verification_profile: inspection

@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .pod
   - .pod6
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/prose/pod-6-155357471
+source: S15-unicode.pod
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - pod-6-155357471
+expected: "Linguist classification: Pod 6"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Pod%206/S15-unicode.pod
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Pod 6/S15-unicode.pod
+  sha256: e1906dcd0cd66d1ca10144f4b1c5c00ef8758ce15172bf24df77c35f0b77ed1d
+verification_profile: inspection

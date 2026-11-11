@@ -6,12 +6,29 @@ aliases:
   - njk
 extensions:
   - .njk
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/nunjucks-461856962
+source: norris.njk
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - nunjucks-461856962
+expected: "Linguist classification: Nunjucks"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Nunjucks/norris.njk
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Nunjucks/norris.njk
+  sha256: 54096ee1104980b4d20d4744ba2d7cbda32da05e37b06f6dec1480df3e1ccfc2
+verification_profile: inspection

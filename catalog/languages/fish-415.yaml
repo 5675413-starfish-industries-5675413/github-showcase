@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .fish
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/fish-415
+source: eval.fish
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - fish-415
+expected: "Linguist classification: fish"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/fish/eval.fish
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/fish/eval.fish
+  sha256: bfa1a9d5401b840d8b4250121a04224b62f643a0ec024f6d2a8202c648b907a4
+verification_profile: inspection

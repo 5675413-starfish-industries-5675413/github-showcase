@@ -7,12 +7,29 @@ aliases:
   - bluespec classic
 extensions:
   - .bs
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/bluespec-bh-641580358
+source: TbTL.bs
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - bluespec-bh-641580358
+expected: "Linguist classification: Bluespec BH"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Bluespec%20BH/TbTL.bs
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Bluespec BH/TbTL.bs
+  sha256: 6bd53bec589182382ad70e33f20e26b5632780fb83931b6ce302b22f4c0e3bf7
+verification_profile: inspection

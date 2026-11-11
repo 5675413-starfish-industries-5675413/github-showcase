@@ -6,12 +6,29 @@ aliases:
   - gnolang
 extensions:
   - .gno
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/gno-279301301
+source: home.gno
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gno-279301301
+expected: "Linguist classification: Gno"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Gno/home.gno
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Gno/home.gno
+  sha256: e29b46d5b71b1e39391007f671d4a9caf108d814e409032931bae7ecfef29514
+verification_profile: inspection

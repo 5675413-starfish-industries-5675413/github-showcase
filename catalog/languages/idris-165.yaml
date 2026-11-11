@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .idr
   - .lidr
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/idris-165
+source: Chars.idr
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - idris-165
+expected: "Linguist classification: Idris"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Idris/Chars.idr
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Idris/Chars.idr
+  sha256: d73142ea0940c713be5ef91e0c1a2d9d676d5eb11bcab071857b5f9c3a6a8926
+verification_profile: inspection

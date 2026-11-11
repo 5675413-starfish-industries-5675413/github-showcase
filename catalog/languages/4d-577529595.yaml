@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .4dm
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/4d-577529595
+source: generate_project.4dm
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - 4d-577529595
+expected: "Linguist classification: 4D"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/4D/generate_project.4dm
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/4D/generate_project.4dm
+  sha256: 3ab00a14b2a15951b59fd95541ac3a2b3b8613e704a309df97ac188abf95658c
+verification_profile: inspection

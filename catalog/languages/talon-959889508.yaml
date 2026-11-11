@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .talon
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/talon-959889508
+source: line_commands.talon
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - talon-959889508
+expected: "Linguist classification: Talon"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Talon/line_commands.talon
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Talon/line_commands.talon
+  sha256: d1cd56f52dcd41bb24b88e46f35bbe4189dc888a0765cc15f4858beb85a007e1
+verification_profile: inspection

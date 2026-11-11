@@ -36,7 +36,7 @@ const evidence = {
   records: [],
 };
 let failed = false;
-for (const record of records('languages').filter((r) => r.example_path)) {
+for (const record of records('languages').filter((r) => r.example_path && Object.hasOwn(runs, r.name))) {
   if (selected && ![record.id, record.name].includes(selected)) continue;
   const spec = runs[record.name];
   if (!spec) throw new Error(`No reviewed runner for ${record.name}`);

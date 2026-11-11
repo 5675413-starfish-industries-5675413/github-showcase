@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .gn
   - .gni
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/gn-302957008
+source: clang.gni
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gn-302957008
+expected: "Linguist classification: GN"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/GN/clang.gni
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/GN/clang.gni
+  sha256: 1d93e11a80d10368e5ed9c0e3d2ba67bc9254105546f55fd65df263e8f04dbe1
+verification_profile: inspection

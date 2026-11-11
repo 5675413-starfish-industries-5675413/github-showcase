@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .psc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/papyrus-277
+source: vMFX_FXPlugin.psc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - papyrus-277
+expected: "Linguist classification: Papyrus"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Papyrus/vMFX_FXPlugin.psc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Papyrus/vMFX_FXPlugin.psc
+  sha256: bcbebbbab64c4f910afcab0b3438cdb0498cb10a0cdc12fd56ba063eddadce7f
+verification_profile: inspection

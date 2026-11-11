@@ -8,12 +8,29 @@ extensions:
   - .mps
   - .mpl
   - .msd
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/jetbrains-mps-465165328
+source: field_table.mps
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - jetbrains-mps-465165328
+expected: "Linguist classification: JetBrains MPS"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/JetBrains%20MPS/field_table.mps
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/JetBrains MPS/field_table.mps
+  sha256: 0a4931b885daa91b7eea9da0c45774a6e7c7c3cdaeafb6f3eb726826d3812258
+verification_profile: inspection

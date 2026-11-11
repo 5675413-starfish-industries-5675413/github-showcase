@@ -8,12 +8,29 @@ aliases:
   - m formula language
 extensions:
   - .pq
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/power-query-37496382
+source: q_MxToolboxScore_SOAR3.pq
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - power-query-37496382
+expected: "Linguist classification: Power Query"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Power%20Query/q_MxToolboxScore_SOAR3.pq
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Power Query/q_MxToolboxScore_SOAR3.pq
+  sha256: 2525463f13e5892422722d6446621f77c14264e5f0dc8ee0aadc2e36af51b316
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .pc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/pro-c-991047534
+source: dbFuncs.pc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - pro-c-991047534
+expected: "Linguist classification: Pro*C"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ProC/dbFuncs.pc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ProC/dbFuncs.pc
+  sha256: 39bed473321d4257de89cd630497b9c37692f43c8f072e11169137316b2b5ee9
+verification_profile: inspection

@@ -7,12 +7,29 @@ extensions:
   - .smt2
   - .smt
   - .z3
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/smt-330
+source: bignum_lia1.smt2
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - smt-330
+expected: "Linguist classification: SMT"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/SMT/bignum_lia1.smt2
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/SMT/bignum_lia1.smt2
+  sha256: 021396c8a2d6ddd50254f1d604df428c834140a046c872fa26085c274d4ae3bb
+verification_profile: inspection

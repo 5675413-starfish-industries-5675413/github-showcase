@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .nlogo
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/netlogo-246
+source: Life.nlogo
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - netlogo-246
+expected: "Linguist classification: NetLogo"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/NetLogo/Life.nlogo
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/NetLogo/Life.nlogo
+  sha256: ed04343de4a4d50286dd23bd40f6f1a7d336f250b722f6a2386a843430d5a52d
+verification_profile: inspection

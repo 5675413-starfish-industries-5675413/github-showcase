@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .ql
   - .qll
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/codeql-424259634
+source: tree-sitter-sample.ql
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - codeql-424259634
+expected: "Linguist classification: CodeQL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CodeQL/tree-sitter-sample.ql
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CodeQL/tree-sitter-sample.ql
+  sha256: d8f290f06a238b69f309db3d4255ac8f775f1c0a45785ab72126950db9cea0c7
+verification_profile: inspection

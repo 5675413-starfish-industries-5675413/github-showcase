@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .rpgle
   - .sqlrpgle
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/rpgle-609977990
+source: qcmdexc_ex.rpgle
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - rpgle-609977990
+expected: "Linguist classification: RPGLE"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/RPGLE/qcmdexc_ex.rpgle
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/RPGLE/qcmdexc_ex.rpgle
+  sha256: 98a1ca09cf55cabda38418921f55c8823386b8d134dfd96414b4b6485224b494
+verification_profile: inspection

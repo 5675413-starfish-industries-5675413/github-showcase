@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .uplc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/untyped-plutus-core-1061635506
+source: add_numbers.uplc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - untyped-plutus-core-1061635506
+expected: "Linguist classification: Untyped Plutus Core"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Untyped%20Plutus%20Core/add_numbers.uplc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Untyped Plutus Core/add_numbers.uplc
+  sha256: 8843a8735ca5d52007cc13db5521ca4a3aad0c1e7f16c204bc7ac356b07fd65a
+verification_profile: inspection

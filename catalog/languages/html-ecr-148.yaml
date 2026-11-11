@@ -6,12 +6,29 @@ aliases:
   - ecr
 extensions:
   - .ecr
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/html-ecr-148
+source: greeting.ecr
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - html-ecr-148
+expected: "Linguist classification: HTML+ECR"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/HTML%2BECR/greeting.ecr
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/HTML+ECR/greeting.ecr
+  sha256: d0a5a5ae4fbb8ec1ab60edcfc6af9cfbf8c0cbf86355cfee18b0a06ecc424a0e
+verification_profile: inspection

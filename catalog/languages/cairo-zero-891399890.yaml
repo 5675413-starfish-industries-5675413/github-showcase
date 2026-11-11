@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .cairo
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cairo-zero-891399890
+source: casm.cairo
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cairo-zero-891399890
+expected: "Linguist classification: Cairo Zero"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Cairo%20Zero/casm.cairo
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Cairo Zero/casm.cairo
+  sha256: 08ee0c0c86ce05df22fb8ff0c3ebf0d1d10cd010956145971e61e00199e5f430
+verification_profile: inspection

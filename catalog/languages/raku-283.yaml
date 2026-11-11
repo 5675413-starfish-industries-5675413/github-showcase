@@ -19,12 +19,29 @@ extensions:
   - .raku
   - .rakumod
   - .t
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/raku-283
+source: A.pm
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - raku-283
+expected: "Linguist classification: Raku"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Raku/A.pm
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Raku/A.pm
+  sha256: 5418c27930a1cb9e1392be618da891b3d025969e44e6f5544c3b85fc760afab1
+verification_profile: inspection

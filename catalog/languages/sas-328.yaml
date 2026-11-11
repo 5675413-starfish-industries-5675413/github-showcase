@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .sas
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/sas-328
+source: data.sas
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - sas-328
+expected: "Linguist classification: SAS"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/SAS/data.sas
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/SAS/data.sas
+  sha256: 6be687646a9363f06994c6694d6f5a5fdc7d939aa00c98f749b3a3076dd07a41
+verification_profile: inspection

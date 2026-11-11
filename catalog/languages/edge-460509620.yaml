@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .edge
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/edge-460509620
+source: pricing.edge
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - edge-460509620
+expected: "Linguist classification: Edge"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Edge/pricing.edge
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Edge/pricing.edge
+  sha256: 50e30922a6423bcd5107aeb8358b85427b888b96d55b04fa0a54f27c32922d90
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .uc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ucode-365454253
+source: sys.uc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ucode-365454253
+expected: "Linguist classification: ucode"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ucode/sys.uc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ucode/sys.uc
+  sha256: 0380fba5d843a8950bab0ef70982cb40ab8f475e8d267c873e4199a736b55656
+verification_profile: inspection

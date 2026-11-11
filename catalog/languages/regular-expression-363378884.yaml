@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .regexp
   - .regex
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/regular-expression-363378884
+source: ordinal.regex
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - regular-expression-363378884
+expected: "Linguist classification: Regular Expression"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Regular%20Expression/ordinal.regex
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Regular Expression/ordinal.regex
+  sha256: 44d35bfbac12793c3903f383815f06c7e348876d72dfec6b54496ab61dceb102
+verification_profile: inspection

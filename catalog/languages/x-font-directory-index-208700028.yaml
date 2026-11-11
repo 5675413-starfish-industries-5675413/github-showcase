@@ -4,12 +4,29 @@ upstream_language_id: 208700028
 type: data
 aliases: []
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/x-font-directory-index-208700028
+source: fonts.alias
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - x-font-directory-index-208700028
+expected: "Linguist classification: X Font Directory Index"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/X%20Font%20Directory%20Index/filenames/fonts.alias
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/X Font Directory Index/filenames/fonts.alias
+  sha256: 3fb0aca73c4d7a514586d2421f4b6309e82a563e1ae3159889227c1f00a38ee1
+verification_profile: inspection

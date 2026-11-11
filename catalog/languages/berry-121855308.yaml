@@ -6,12 +6,29 @@ aliases:
   - be
 extensions:
   - .be
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/berry-121855308
+source: berry_schema_validator.be
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - berry-121855308
+expected: "Linguist classification: Berry"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Berry/berry_schema_validator.be
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Berry/berry_schema_validator.be
+  sha256: dbbe02f0d975a57802e1bb8d485fff2b4c7dd0a7b30cac72ecaa7d3aac2179b5
+verification_profile: inspection

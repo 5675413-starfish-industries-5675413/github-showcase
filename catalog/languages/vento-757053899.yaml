@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .vto
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/vento-757053899
+source: index.vto
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - vento-757053899
+expected: "Linguist classification: Vento"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Vento/index.vto
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Vento/index.vto
+  sha256: b6e57cecc8695bbcf54b14f03de0b3c9b16d7a7d47d36f0e0c1fb21f15b9c6c9
+verification_profile: inspection

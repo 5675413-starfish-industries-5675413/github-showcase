@@ -7,12 +7,29 @@ aliases:
   - velocity
 extensions:
   - .vtl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/velocity-template-language-292377326
+source: gateway-dynamo.vtl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - velocity-template-language-292377326
+expected: "Linguist classification: Velocity Template Language"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Velocity%20Template%20Language/gateway-dynamo.vtl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Velocity Template Language/gateway-dynamo.vtl
+  sha256: b1929c0aed9e9cf02027d25f565f6eebc81c9c4fd24476d2521f90b5ff95e59d
+verification_profile: inspection

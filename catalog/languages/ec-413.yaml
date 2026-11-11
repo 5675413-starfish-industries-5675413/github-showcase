@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .ec
   - .eh
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ec-413
+source: List.ec
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ec-413
+expected: "Linguist classification: eC"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/eC/List.ec
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/eC/List.ec
+  sha256: 07db4466f7261008f0e55bbe8e03856367d2f3c092ede79cb67c0c6b3c8a618c
+verification_profile: inspection

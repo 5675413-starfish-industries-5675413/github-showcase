@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .pro
   - .pri
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/qmake-306
+source: qmake
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - qmake-306
+expected: "Linguist classification: QMake"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/QMake/qmake
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/QMake/qmake
+  sha256: 5d6b3a2e5dc7727c521af1d573425c66c857dbddb32cfbe43b9d8bc38e66e0db
+verification_profile: inspection

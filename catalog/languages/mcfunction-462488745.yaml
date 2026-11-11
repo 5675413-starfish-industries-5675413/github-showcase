@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .mcfunction
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/mcfunction-462488745
+source: showcase.mcfunction
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - mcfunction-462488745
+expected: "Linguist classification: mcfunction"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/mcfunction/showcase.mcfunction
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/mcfunction/showcase.mcfunction
+  sha256: cfd89275a5a708de79ae79bc5e33cdd092da34e59c6a5c8be90f4e20820935f4
+verification_profile: inspection

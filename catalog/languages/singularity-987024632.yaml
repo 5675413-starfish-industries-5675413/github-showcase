@@ -4,12 +4,29 @@ upstream_language_id: 987024632
 type: programming
 aliases: []
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/singularity-987024632
+source: Singularity
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - singularity-987024632
+expected: "Linguist classification: Singularity"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Singularity/filenames/Singularity
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Singularity/filenames/Singularity
+  sha256: 0ace48e1ab775b0e51a717ceec875d5bbfe44bb4df3639f188c73097050f82c2
+verification_profile: inspection

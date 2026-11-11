@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .yar
   - .yara
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/yara-805122868
+source: true.yar
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - yara-805122868
+expected: "Linguist classification: YARA"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/YARA/true.yar
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/YARA/true.yar
+  sha256: 77e5a93d6170470cc094cb0a4e491e092bc7d2592d7bdab244e43a8c0e9fc22a
+verification_profile: inspection

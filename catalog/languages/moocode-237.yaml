@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .moo
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/moocode-237
+source: hello.moo
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - moocode-237
+expected: "Linguist classification: Moocode"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Moocode/hello.moo
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Moocode/hello.moo
+  sha256: ca14982ddb810d3f2274008535fe357963531f6d8f4cfd3b18f5735525aa49ee
+verification_profile: inspection

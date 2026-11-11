@@ -6,12 +6,29 @@ aliases:
   - chpl
 extensions:
   - .chpl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/chapel-55
+source: hello.chpl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - chapel-55
+expected: "Linguist classification: Chapel"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Chapel/hello.chpl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Chapel/hello.chpl
+  sha256: 3eea1de60274449ffcb953db5d926e2b4d4a9cde5f54ca2a690932f67f71cb46
+verification_profile: inspection

@@ -9,12 +9,29 @@ extensions:
   - .PcbDoc
   - .PrjPCB
   - .SchDoc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/altium-designer-187772328
+source: Sample Output Job.OutJob
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - altium-designer-187772328
+expected: "Linguist classification: Altium Designer"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Altium%20Designer/Sample%20Output%20Job.OutJob
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Altium Designer/Sample Output Job.OutJob
+  sha256: dac2e0152a089785150bffa31e12bb1c3d4ee61c5d6540aae612707a27a96fa1
+verification_profile: inspection

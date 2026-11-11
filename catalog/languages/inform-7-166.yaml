@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .ni
   - .i7x
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/inform-7-166
+source: story.ni
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - inform-7-166
+expected: "Linguist classification: Inform 7"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Inform%207/story.ni
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Inform 7/story.ni
+  sha256: f2c2862dc175381ac2f6fd516cb43aca1d1054b11b9a55952b2c303694ca7343
+verification_profile: inspection

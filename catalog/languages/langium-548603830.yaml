@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .langium
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/langium-548603830
+source: ox.langium
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - langium-548603830
+expected: "Linguist classification: Langium"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Langium/ox.langium
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Langium/ox.langium
+  sha256: 9cddf5fab3ae732f43ccae0a8d0a52b3c57cd149e11e5293dfe9b68df3f314a8
+verification_profile: inspection

@@ -6,12 +6,29 @@ aliases:
   - dtrace-script
 extensions:
   - .d
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/dtrace-85
+source: counts.d
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - dtrace-85
+expected: "Linguist classification: DTrace"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/DTrace/counts.d
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/DTrace/counts.d
+  sha256: 8304e1b04f304a12a9eace82c4dca468b2affd52dff68b03da70d735094545fe
+verification_profile: inspection

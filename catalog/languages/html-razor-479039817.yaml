@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .cshtml
   - .razor
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/html-razor-479039817
+source: Index.cshtml
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - html-razor-479039817
+expected: "Linguist classification: HTML+Razor"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/HTML%2BRazor/Index.cshtml
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/HTML+Razor/Index.cshtml
+  sha256: 9ba16a575b02bf7b5cd0fa18e847ce067ae13d554ba1c877ededaf427c9d076d
+verification_profile: inspection

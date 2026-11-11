@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .ls
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/loomscript-212
+source: HelloWorld.ls
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - loomscript-212
+expected: "Linguist classification: LoomScript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/LoomScript/HelloWorld.ls
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/LoomScript/HelloWorld.ls
+  sha256: b2f0e9ac1bffd8c91ead4abdf6779c7715560a48f42e79ef2a4e96662ca923c7
+verification_profile: inspection

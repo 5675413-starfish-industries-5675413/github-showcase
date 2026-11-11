@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .carbon
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/carbon-55627273
+source: main.carbon
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - carbon-55627273
+expected: "Linguist classification: Carbon"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Carbon/main.carbon
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Carbon/main.carbon
+  sha256: ec5a90354d1f8f81b70b59f85a6f0184c7d0c2281696fa3dc52ad76ace158bde
+verification_profile: inspection

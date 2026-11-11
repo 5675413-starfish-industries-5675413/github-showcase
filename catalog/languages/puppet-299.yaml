@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .pp
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/puppet-299
+source: hiera_include.pp
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - puppet-299
+expected: "Linguist classification: Puppet"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Puppet/hiera_include.pp
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Puppet/hiera_include.pp
+  sha256: 655b6eaaf3756e6ce16daa5b03af45b2a9e86211128e283d3deda119364b5b84
+verification_profile: inspection

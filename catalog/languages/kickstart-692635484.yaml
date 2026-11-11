@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .ks
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/kickstart-692635484
+source: mysql.ks
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kickstart-692635484
+expected: "Linguist classification: Kickstart"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Kickstart/mysql.ks
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Kickstart/mysql.ks
+  sha256: 1d6ff5ae6f3f73cdfb7d814b66066f2c241e0e0d443a4f0c0d6196d2074538d1
+verification_profile: inspection

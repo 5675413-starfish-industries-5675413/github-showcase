@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .scaml
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/scaml-342
+source: hello.scaml
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - scaml-342
+expected: "Linguist classification: Scaml"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Scaml/hello.scaml
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Scaml/hello.scaml
+  sha256: a6381a3cd960951ffa32a1ef99fb7b1bf1504cb6e6bc56c10a98c19a0a1f20d5
+verification_profile: inspection

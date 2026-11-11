@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .cu
   - .cuh
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cuda-77
+source: vectorAdd.cu
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cuda-77
+expected: "Linguist classification: Cuda"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Cuda/vectorAdd.cu
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Cuda/vectorAdd.cu
+  sha256: ebea64cb858202c82518cc9c6f15f5311522cd224eaec9aa0df2d81db2f275a6
+verification_profile: inspection

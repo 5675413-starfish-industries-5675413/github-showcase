@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .ics
   - .ical
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/icalendar-98384424
+source: todo-2.ical
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - icalendar-98384424
+expected: "Linguist classification: iCalendar"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/iCalendar/todo-2.ical
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/iCalendar/todo-2.ical
+  sha256: 089c6e165f8b95c83023287a1f1caf57c1bf010707db52785abc9b6bc57bd4db
+verification_profile: inspection

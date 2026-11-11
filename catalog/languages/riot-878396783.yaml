@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .riot
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/riot-878396783
+source: todo.riot
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - riot-878396783
+expected: "Linguist classification: Riot"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Riot/todo.riot
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Riot/todo.riot
+  sha256: 3a34ee6e4743539916a40975ad3eebefb42eb6ce34b261cd7d69471bc7eed856
+verification_profile: inspection

@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .asc
   - .pub
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/public-key-298
+source: id_rsa.asc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - public-key-298
+expected: "Linguist classification: Public Key"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Public%20Key/id_rsa.asc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Public Key/id_rsa.asc
+  sha256: 80fd2e90f1208cee0c2827504280d7131a271a7f43f2a54477754a3b790f1b72
+verification_profile: inspection

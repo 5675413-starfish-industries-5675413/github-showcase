@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .dsc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/denizenscript-435000929
+source: sample1.dsc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - denizenscript-435000929
+expected: "Linguist classification: DenizenScript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/DenizenScript/sample1.dsc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/DenizenScript/sample1.dsc
+  sha256: 34ee453e86d7e140410e38af4078d2e44b512161c14ea46ce7b4ef03437975c8
+verification_profile: inspection

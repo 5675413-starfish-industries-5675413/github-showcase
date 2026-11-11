@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .ex
   - .exs
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/elixir-100
+source: mix.lock
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - elixir-100
+expected: "Linguist classification: Elixir"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Elixir/filenames/mix.lock
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Elixir/filenames/mix.lock
+  sha256: fa182e09c232d9d9548226f9d5147d9d37531bc50a9d3c01888f9e6872c4da67
+verification_profile: inspection

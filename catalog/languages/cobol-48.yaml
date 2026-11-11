@@ -9,12 +9,29 @@ extensions:
   - .ccp
   - .cobol
   - .cpy
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cobol-48
+source: hello_world.cbl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cobol-48
+expected: "Linguist classification: COBOL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/COBOL/hello_world.cbl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/COBOL/hello_world.cbl
+  sha256: 3a8bd055e94b28f0eef7cf922c34cd7e48012a5830e6562a73fc4e15ddb9f651
+verification_profile: inspection

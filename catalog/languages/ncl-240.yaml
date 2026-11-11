@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .ncl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ncl-240
+source: gsn_csm_xy2_time_series_inputs.ncl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ncl-240
+expected: "Linguist classification: NCL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/NCL/gsn_csm_xy2_time_series_inputs.ncl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/NCL/gsn_csm_xy2_time_series_inputs.ncl
+  sha256: 48d268e15346287cb600a19e05d533822f9972982325708e4b4a9971483afdf0
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .dart
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/dart-87
+source: equals.dart
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - dart-87
+expected: "Linguist classification: Dart"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Dart/equals.dart
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Dart/equals.dart
+  sha256: 094b52d00c60b1594170b563c08930819eefd6c851e668afd2f791fd7050f500
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .star
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/star-424510560
+source: symop.star
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - star-424510560
+expected: "Linguist classification: STAR"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/STAR/symop.star
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/STAR/symop.star
+  sha256: d9e8a47ae773ffbd6dd36a3c106a0fd70fa30048cd5488e6a91bc34a64bb5e24
+verification_profile: inspection

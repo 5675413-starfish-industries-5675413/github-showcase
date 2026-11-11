@@ -5,12 +5,29 @@ type: data
 aliases:
   - commit
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/git-commit-131750475
+source: COMMIT_EDITMSG
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - git-commit-131750475
+expected: "Linguist classification: Git Commit"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Git%20Commit/filenames/COMMIT_EDITMSG
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Git Commit/filenames/COMMIT_EDITMSG
+  sha256: 4841dcabe41a045f1c681b9f6d7d4fe1d08b5d5467569971dfdd3e4861ebf4ae
+verification_profile: inspection

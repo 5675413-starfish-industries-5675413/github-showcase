@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .json
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/oasv3-json-980062566
+source: ghes-3.4.json
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - oasv3-json-980062566
+expected: "Linguist classification: OASv3-json"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/OASv3-json/ghes-3.4.json
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/OASv3-json/ghes-3.4.json
+  sha256: 4f61180f7f7fbecf45e861ba3f9e8303095ba3f5111d1689de72917f4aa8cb21
+verification_profile: inspection

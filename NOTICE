@@ -1,0 +1,12 @@
+GitHub Showcase authored code is licensed under LICENSE.
+
+Examples identified by origin.kind = linguist-fixture are verbatim samples from
+GitHub Linguist, pinned at d456527fe93355baa28c3c29d542c97282b61bc7.
+Their paths, URLs and SHA-256 digests are in catalog/upstream/sample-imports.json.
+The upstream distribution license is reproduced in licenses/linguist-MIT.txt.
+Embedded copyright and license notices are retained in full. These samples do
+not become original work of GitHub Showcase. Imported samples are inspected as
+data and are never executed by the core or extended runner.
+
+The language inventory is also from this pinned Linguist release. Linguist's
+third-party grammar repositories are not redistributed here.

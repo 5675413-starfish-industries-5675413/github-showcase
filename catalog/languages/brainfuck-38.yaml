@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .b
   - .bf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/brainfuck-38
+source: helloworld.bf
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - brainfuck-38
+expected: "Linguist classification: Brainfuck"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Brainfuck/helloworld.bf
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Brainfuck/helloworld.bf
+  sha256: 8bf2d3b97d1f9c85930220cfc7ce34c6eb5b3938be9d9b5b604c42318680fd96
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .tpl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/smarty-353
+source: header.tpl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - smarty-353
+expected: "Linguist classification: Smarty"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Smarty/header.tpl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Smarty/header.tpl
+  sha256: 50a66559bc15ee505b8a3dd89dcf5abec3a89042da80091d732c3b8183ef2a78
+verification_profile: inspection

@@ -9,12 +9,29 @@ extensions:
   - .eps
   - .epsi
   - .pfa
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/postscript-291
+source: sierpinski.ps
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - postscript-291
+expected: "Linguist classification: PostScript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/PostScript/sierpinski.ps
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/PostScript/sierpinski.ps
+  sha256: c71248ab3c62217cf6b9319d4ad9c70ec10df33e10a534eaba08aea0061e8992
+verification_profile: inspection

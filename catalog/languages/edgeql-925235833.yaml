@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .edgeql
   - .esdl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/edgeql-925235833
+source: default.esdl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - edgeql-925235833
+expected: "Linguist classification: EdgeQL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/EdgeQL/default.esdl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/EdgeQL/default.esdl
+  sha256: 205a31fb75f165a433e8168535a76393df06a1f81d95ae0b9f7a3fce2beb6406
+verification_profile: inspection

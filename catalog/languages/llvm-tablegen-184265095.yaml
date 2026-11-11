@@ -6,12 +6,29 @@ aliases:
   - tablegen
 extensions:
   - .td
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/llvm-tablegen-184265095
+source: AMDGPU.td
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - llvm-tablegen-184265095
+expected: "Linguist classification: LLVM TableGen"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/LLVM%20TableGen/AMDGPU.td
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/LLVM TableGen/AMDGPU.td
+  sha256: b141a66de7e42d679ac525b0c11337ce3ffa0d76c0c1f7f42e7b28eb773aa633
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .polar
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/polar-839112914
+source: gitclub.polar
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - polar-839112914
+expected: "Linguist classification: Polar"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Polar/gitclub.polar
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Polar/gitclub.polar
+  sha256: 7936b39dd759d8f42e16319f0f734526d878ed38c55c6ab1106ada9f000a5096
+verification_profile: inspection

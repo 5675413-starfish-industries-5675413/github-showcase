@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .pike
   - .pmod
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/pike-287
+source: shebang.pike
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - pike-287
+expected: "Linguist classification: Pike"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Pike/shebang.pike
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Pike/shebang.pike
+  sha256: e4c70733cc9fda6024d28d0076d6e16538cd3c7b7c217aaf5a387850a7304eae
+verification_profile: inspection

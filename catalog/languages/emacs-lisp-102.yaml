@@ -13,12 +13,29 @@ extensions:
   - .eld
   - .emacs
   - .emacs.desktop
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/emacs-lisp-102
+source: dude.el
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - emacs-lisp-102
+expected: "Linguist classification: Emacs Lisp"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Emacs%20Lisp/dude.el
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Emacs Lisp/dude.el
+  sha256: b54698eda2cb508f5bd884bb627b34754187c48f3f00f5b3712ef228942a77b7
+verification_profile: inspection

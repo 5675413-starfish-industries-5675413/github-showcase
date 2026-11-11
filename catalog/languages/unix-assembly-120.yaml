@@ -9,12 +9,29 @@ aliases:
 extensions:
   - .s
   - .ms
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/unix-assembly-120
+source: hello.s
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - unix-assembly-120
+expected: "Linguist classification: Unix Assembly"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Unix%20Assembly/hello.s
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Unix Assembly/hello.s
+  sha256: dda552f0bf77a6a39606324673b6178a4b621e35fbe61d80330e1bc4b4b31ca0
+verification_profile: inspection

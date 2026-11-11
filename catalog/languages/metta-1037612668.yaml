@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .metta
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/metta-1037612668
+source: schemes.metta
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - metta-1037612668
+expected: "Linguist classification: MeTTa"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/MeTTa/schemes.metta
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/MeTTa/schemes.metta
+  sha256: 58d6bad005591b5481a70ccd3ca6710a265da73c9a8336a727b0c1f70d7e6fee
+verification_profile: inspection

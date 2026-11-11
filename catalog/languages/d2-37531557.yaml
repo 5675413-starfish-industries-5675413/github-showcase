@@ -6,12 +6,29 @@ aliases:
   - d2lang
 extensions:
   - .d2
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/d2-37531557
+source: anthias-diagram-overview.d2
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - d2-37531557
+expected: "Linguist classification: D2"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/D2/anthias-diagram-overview.d2
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/D2/anthias-diagram-overview.d2
+  sha256: b44a12909056a16b304d195296b8713807a8faaca0297d29e55e5e9509c72552
+verification_profile: inspection

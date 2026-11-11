@@ -6,12 +6,29 @@ aliases:
   - basic for android
 extensions:
   - .bas
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/b4x-96642275
+source: B4XMainPage.bas
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - b4x-96642275
+expected: "Linguist classification: B4X"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/B4X/B4XMainPage.bas
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/B4X/B4XMainPage.bas
+  sha256: ec5ddf68c55c09734a0115c8ec4d91c7532efed287aa3b5f5baaea9a00f9cb6f
+verification_profile: inspection

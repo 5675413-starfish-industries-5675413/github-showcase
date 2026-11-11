@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .xpm
   - .pm
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/x-pixmap-781846279
+source: stick-unfocus.xpm
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - x-pixmap-781846279
+expected: "Linguist classification: X PixMap"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/X%20PixMap/stick-unfocus.xpm
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/X PixMap/stick-unfocus.xpm
+  sha256: 0a891a3e748981cd7fc1199570951ca4f11fda9991db03ecfda4583f18b3c7ba
+verification_profile: inspection

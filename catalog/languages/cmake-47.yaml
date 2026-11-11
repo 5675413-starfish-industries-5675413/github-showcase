@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .cmake
   - .cmake.in
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cmake-47
+source: CMakeLists.txt
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cmake-47
+expected: "Linguist classification: CMake"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CMake/filenames/CMakeLists.txt
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CMake/filenames/CMakeLists.txt
+  sha256: 30ec4be94a374cb5e78e0c068bcdc9e0365e7a9c1e6f162d2583833625b37707
+verification_profile: inspection

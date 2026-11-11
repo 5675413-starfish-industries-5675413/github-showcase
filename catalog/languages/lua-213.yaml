@@ -12,12 +12,29 @@ extensions:
   - .rbxs
   - .rockspec
   - .wlua
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/lua-213
+source: h-counter.pd_lua
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - lua-213
+expected: "Linguist classification: Lua"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lua/h-counter.pd_lua
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Lua/h-counter.pd_lua
+  sha256: 18fe9619806602e0ce8c633286657c3db763dbec6427f5b9793ba78125de9752
+verification_profile: inspection

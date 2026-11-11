@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .sql
   - .db2
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/sqlpl-334
+source: sleep.sql
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - sqlpl-334
+expected: "Linguist classification: SQLPL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/SQLPL/sleep.sql
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/SQLPL/sleep.sql
+  sha256: 8f0aafa7e712c66466ac48e152ad47fc1872cf93c1c3ce7bf4ef07a2dc641386
+verification_profile: inspection

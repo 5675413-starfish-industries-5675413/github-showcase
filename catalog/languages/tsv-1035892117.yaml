@@ -7,12 +7,29 @@ aliases:
 extensions:
   - .tsv
   - .vcf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/tsv-1035892117
+source: input.tsv
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - tsv-1035892117
+expected: "Linguist classification: TSV"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/TSV/input.tsv
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/TSV/input.tsv
+  sha256: 939be1d3201af572377a2f4f14de7b84cad0e6df3e20d108608bd2e07f19299c
+verification_profile: inspection

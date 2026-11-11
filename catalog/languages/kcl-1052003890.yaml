@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .k
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/kcl-1052003890
+source: simple.k
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kcl-1052003890
+expected: "Linguist classification: KCL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/KCL/simple.k
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/KCL/simple.k
+  sha256: f05c68e0092e453a46706cb7063d7e86d7ed9240bbf306f21e21d5b877ab8514
+verification_profile: inspection

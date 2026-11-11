@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .bsl
   - .os
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/1c-enterprise-0
+source: ci_before_script.os
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - 1c-enterprise-0
+expected: "Linguist classification: 1C Enterprise"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/1C%20Enterprise/ci_before_script.os
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/1C Enterprise/ci_before_script.os
+  sha256: ff93d4bba8b9b9f89877dfc3ea6bab66e446ac4b1b81e17fe2d63784dd4db345
+verification_profile: inspection

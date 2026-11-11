@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .svx
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/mdsvex-566198445
+source: Stores.svx
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - mdsvex-566198445
+expected: "Linguist classification: mdsvex"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/mdsvex/Stores.svx
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/mdsvex/Stores.svx
+  sha256: 090eaa66cec6aed9d2363b4f68cc0c622e424da13f6542cd9776b71602d17488
+verification_profile: inspection

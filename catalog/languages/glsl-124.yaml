@@ -27,12 +27,29 @@ extensions:
   - .vs
   - .vsh
   - .vshader
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/glsl-124
+source: myfragment.frg
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - glsl-124
+expected: "Linguist classification: GLSL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/GLSL/myfragment.frg
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/GLSL/myfragment.frg
+  sha256: 7e868e55a8b1eb2895ae55c2b4d44dc67f7c2e7cc7610ab14455a9d2262e532c
+verification_profile: inspection

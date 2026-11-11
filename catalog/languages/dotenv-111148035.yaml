@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .env
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/dotenv-111148035
+source: .env.local
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - dotenv-111148035
+expected: "Linguist classification: Dotenv"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Dotenv/filenames/.env.local
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Dotenv/filenames/.env.local
+  sha256: cbd8cde325e4ff778fbc7b7b5d328a272264e7630b2c429910a9040aa9b3f077
+verification_profile: inspection

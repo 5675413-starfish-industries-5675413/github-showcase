@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .pml
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/promela-441858312
+source: attacker_4_FINITE.pml
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - promela-441858312
+expected: "Linguist classification: Promela"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Promela/attacker_4_FINITE.pml
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Promela/attacker_4_FINITE.pml
+  sha256: 539cd69cd587174262981d750ad20105fe0367cb9057d8aeeb4096478c8d35b6
+verification_profile: inspection

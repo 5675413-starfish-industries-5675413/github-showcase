@@ -6,12 +6,29 @@ aliases:
   - bend2
 extensions:
   - .bend
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/bend-571794812
+source: bitonic_sort.bend
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - bend-571794812
+expected: "Linguist classification: Bend"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Bend/bitonic_sort.bend
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Bend/bitonic_sort.bend
+  sha256: 3489edbea0a12cc0693a0dfc9587e146b2f8c60245f287f0dfc054f36c3f306e
+verification_profile: inspection
