@@ -135,18 +135,20 @@
     "id": "pages",
     "name": "GitHub Pages",
     "purpose": "Publish the static explorer from main.",
-    "status": "configured",
+    "status": "demonstrated",
     "configuration": [
       ".github/workflows/pages.yml"
     ],
     "prerequisites": [
       "Repository access and relevant GitHub feature permissions."
     ],
-    "evidence": [],
-    "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42941104081"
     ],
-    "reviewed": "2026-11-09",
+    "limitations": [
+      "First successful deployment: 4b13cf978be1c6170d78cbd6bea871bb72ba8e8c. This demonstrates static Pages publishing, not human review or a tagged release."
+    ],
+    "reviewed": "2026-11-10",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
