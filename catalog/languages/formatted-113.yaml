@@ -7,7 +7,7 @@ extensions:
   - .for
   - .eam.fs
 example_path: examples/languages/data/formatted-113
-source: hello.for
+source: hello.eam.fs
 demonstration: native
 requirements:
   - Text editor

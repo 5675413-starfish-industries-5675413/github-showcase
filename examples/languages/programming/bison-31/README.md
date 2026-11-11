@@ -2,7 +2,7 @@
 
 A minimal greeting or native declaration. Some languages require a containing application or target-specific runtime.
 
-Open `hello.yacc` to inspect the authored source. The catalog makes no compile/run or full standards-conformance claim without matching evidence.
+Open `hello.bison` to inspect the authored source. The catalog makes no compile/run or full standards-conformance claim without matching evidence.
 
 From the repository root, after installing the pinned Ruby bundle:
 

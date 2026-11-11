@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .myt
 example_path: examples/languages/programming/myghty-239
-source: hello.myghty
+source: hello.myt
 demonstration: native
 requirements:
   - Text editor

@@ -18,7 +18,7 @@ results = input.map do |item|
   begin
     blob = Linguist::FileBlob.new(File.join(root, item.fetch('path')), root)
     language = Linguist.detect(blob)
-    {id: item.fetch('id'), detected: language&.name, error: nil}
+    {id: item.fetch('id'), detected: language&.name, group: language&.group&.name, error: nil}
   rescue StandardError => error
     {id: item.fetch('id'), detected: nil, error: error.message}
   end

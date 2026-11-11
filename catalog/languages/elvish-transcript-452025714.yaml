@@ -23,5 +23,8 @@ limitations:
     containing application or target-specific runtime.
   - "Inspection profile: runtime behavior and full standards conformance have
     not been verified."
+  - The pinned inventory has no automatic filename, extension or interpreter
+    mapping for this console/transcript language. Select the language explicitly
+    in a syntax highlighter; automatic detection remains not tested.
 license: MIT
 verification_profile: inspection

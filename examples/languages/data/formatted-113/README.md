@@ -2,7 +2,7 @@
 
 A minimal native document demonstrating the format. A text editor can inspect its structure.
 
-Open `hello.for` to inspect the authored source. The catalog makes no compile/run or full standards-conformance claim without matching evidence.
+Open `hello.eam.fs` to inspect the authored source. The catalog makes no compile/run or full standards-conformance claim without matching evidence.
 
 From the repository root, after installing the pinned Ruby bundle:
 

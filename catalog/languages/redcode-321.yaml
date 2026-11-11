@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .cw
 example_path: examples/languages/programming/redcode-321
-source: hello.red
+source: hello.cw
 demonstration: native
 requirements:
   - Text editor

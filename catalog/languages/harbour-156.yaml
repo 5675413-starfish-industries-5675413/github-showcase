@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .hb
 example_path: examples/languages/programming/harbour-156
-source: hello.prg
+source: hello.hb
 demonstration: native
 requirements:
   - Text editor

@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .bison
 example_path: examples/languages/programming/bison-31
-source: hello.yacc
+source: hello.bison
 demonstration: native
 requirements:
   - Text editor
