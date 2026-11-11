@@ -5,12 +5,24 @@ type: programming
 aliases: []
 extensions:
   - .minid
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/minid-231
+source: hello.minid
+demonstration: native
+requirements:
+  - Text editor
+  - A MiniD-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - minid-231
+expected: "Linguist classification: MiniD"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

@@ -1,0 +1,10 @@
+PCBNEW-BOARD Version 1 date 01/01/2026
+$GENERAL
+LayerCount 2
+Ly 1FFF8001
+$EndGENERAL
+$SHEETDESCR
+Sheet A4 11700 8267
+Title "Hello, world!"
+$EndSHEETDESCR
+$EndBOARD

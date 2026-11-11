@@ -7,12 +7,24 @@ extensions:
   - .numpy
   - .numpyw
   - .numsc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/numpy-254
+source: hello.numpy
+demonstration: native
+requirements:
+  - Text editor
+  - A NumPy-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - numpy-254
+expected: "Linguist classification: NumPy"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

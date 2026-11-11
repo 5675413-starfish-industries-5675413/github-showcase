@@ -5,12 +5,24 @@ type: data
 aliases: []
 extensions:
   - .ninja
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/ninja-250
+source: build.ninja
+demonstration: native
+requirements:
+  - Text editor
+  - A Ninja-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ninja-250
+expected: "Linguist classification: Ninja"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal native document demonstrating the format. A text editor can
+    inspect its structure.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

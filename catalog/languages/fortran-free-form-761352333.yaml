@@ -8,12 +8,24 @@ extensions:
   - .f03
   - .f08
   - .f95
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/fortran-free-form-761352333
+source: hello.f90
+demonstration: native
+requirements:
+  - Text editor
+  - A Fortran Free Form-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - fortran-free-form-761352333
+expected: "Linguist classification: Fortran Free Form"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

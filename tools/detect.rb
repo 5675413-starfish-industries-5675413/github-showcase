@@ -1,6 +1,13 @@
 require 'json'
 require 'digest'
+require 'linguist/samples'
+require 'pp'
+# Build the classifier from the pinned gem's corpus, as upstream does.
+unless File.exist?(Linguist::Samples::PATH)
+  File.write(Linguist::Samples::PATH, "#frozen_string_literal: true\nDATA = #{PP.pp(Linguist::Samples.data, +'')}")
+end
 require 'linguist'
+require 'linguist/file_blob'
 root = File.expand_path('..', __dir__)
 lock = JSON.parse(File.read(File.join(root, 'catalog/upstream/linguist.lock.json')))
 spec = Gem.loaded_specs.fetch('github-linguist')

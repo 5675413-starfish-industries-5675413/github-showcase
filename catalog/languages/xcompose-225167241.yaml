@@ -4,12 +4,24 @@ upstream_language_id: 225167241
 type: data
 aliases: []
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/xcompose-225167241
+source: .XCompose
+demonstration: native
+requirements:
+  - Text editor
+  - A XCompose-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - xcompose-225167241
+expected: "Linguist classification: XCompose"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal native document demonstrating the format. A text editor can
+    inspect its structure.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

@@ -6,12 +6,24 @@ aliases:
   - c2hs
 extensions:
   - .chs
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/c2hs-haskell-45
+source: Hello.chs
+demonstration: native
+requirements:
+  - Text editor
+  - A C2hs Haskell-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - c2hs-haskell-45
+expected: "Linguist classification: C2hs Haskell"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection
