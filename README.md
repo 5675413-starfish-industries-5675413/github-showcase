@@ -4,6 +4,8 @@ Languages, formats, and workflows—demonstrated, not just listed.
 
 An independent collection of small language examples, meaningful file-format demonstrations, and inspectable GitHub workflows. The repository is the collection. Its Astro website is the searchable view.
 
+[Explore the live collection](https://5675413-starfish-industries-5675413.github.io/github-showcase/)
+
 ## Start here
 
 - [Language catalog](catalog/languages) · [Format catalog](catalog/formats) · [Platform catalog](catalog/features)
@@ -53,6 +55,6 @@ Every language in the pinned Linguist revision has a record. Seven language exam
 
 ## Platform status
 
-[The first CI demonstration](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417) passed. Other workflows remain configuration until their actual runs succeed. Pages requires repository settings. Human review, release evidence, extended toolchains, the pinned Linguist detection audit, and optional integrations remain pending. See [repository settings](docs/repository-settings.md) and [the feature matrix](docs/platform-feature-matrix.md).
+[The first CI demonstration](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417) passed. [GitHub Pages is deployed](https://5675413-starfish-industries-5675413.github.io/github-showcase/) from `main`, with [the first successful run](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42941104081) recorded. Other workflows remain configuration until their actual runs succeed. Human review, release evidence, extended toolchains, the pinned Linguist detection audit, and optional integrations remain pending. See [repository settings](docs/repository-settings.md) and [the feature matrix](docs/platform-feature-matrix.md).
 
 Original material is [MIT licensed](LICENSE); upstream exceptions are in [NOTICE.md](NOTICE.md). This is not an official GitHub product.
