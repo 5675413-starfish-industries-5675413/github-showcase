@@ -8,28 +8,22 @@ extensions:
   - .jav
   - .jsh
 example_path: examples/languages/programming/java-181
-source: generated-jooq-table.java
-demonstration: native
+source: Hello.java
+demonstration: print
 requirements:
-  - Text editor for source inspection
-  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
-  - Original project dependencies may be required to compile or execute this
-    fixture
+  - Java 17+
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
 run:
   - npm
   - run
-  - linguist:audit
+  - examples:extended
   - --
   - java-181
-expected: "Linguist classification: Java"
+expected: |
+  Hello, world!
 limitations:
-  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
-    profiles; detection is independent.
-license: MIT (GitHub Linguist distribution); embedded notices preserved
-origin:
-  kind: linguist-fixture
-  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Java/generated-jooq-table.java
-  revision: d456527fe93355baa28c3c29d542c97282b61bc7
-  path: samples/Java/generated-jooq-table.java
-  sha256: 75212013824b8a181bec4e246cb9681040171de12d0d4fa820ecb4cd828d99a1
-verification_profile: inspection
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

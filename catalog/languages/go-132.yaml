@@ -7,28 +7,22 @@ aliases:
 extensions:
   - .go
 example_path: examples/languages/programming/go-132
-source: gen-go-linguist-thrift.go
-demonstration: native
+source: hello.go
+demonstration: print
 requirements:
-  - Text editor for source inspection
-  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
-  - Original project dependencies may be required to compile or execute this
-    fixture
+  - Go 1.22+
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
 run:
   - npm
   - run
-  - linguist:audit
+  - examples:extended
   - --
   - go-132
-expected: "Linguist classification: Go"
+expected: |
+  Hello, world!
 limitations:
-  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
-    profiles; detection is independent.
-license: MIT (GitHub Linguist distribution); embedded notices preserved
-origin:
-  kind: linguist-fixture
-  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Go/gen-go-linguist-thrift.go
-  revision: d456527fe93355baa28c3c29d542c97282b61bc7
-  path: samples/Go/gen-go-linguist-thrift.go
-  sha256: 15e07fe304dfa74a1921afe0259202e57b12e71591c29e69c08d053d07d6d262
-verification_profile: inspection
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

@@ -118,7 +118,10 @@ const source = r.source_text;
                 </audio>
               )}
               <p>
-                <a href={`${base}/samples/${r.id}/${r.download_name}`} download={r.source}>
+                <a
+                  href={`${base}/samples/${r.id}/${r.download_name}`}
+                  download={r.source}
+                >
                   Download {r.source}
                 </a>
               </p>
@@ -138,7 +141,9 @@ const source = r.source_text;
               <h2>Try it locally</h2>
               <p>
                 {r.run
-                  ? (r.verification_profile || collection === 'formats' ? 'Run from the repository root.' : 'Run from the example directory.')
+                  ? r.verification_profile || collection === 'formats'
+                    ? 'Run from the repository root.'
+                    : 'Run from the example directory.'
                   : 'Use the appropriate viewer, or run the core structural checks from the repository root.'}
               </p>
               <pre><code>{r.run?r.run.join(' '):'npm run examples:core'}</code></pre>
@@ -168,8 +173,10 @@ const source = r.source_text;
         <section>
           <h2>Evidence & provenance</h2>
           <p>
-            Results are generated from independent verification profiles only when the
-            example, catalog and verifier fingerprints match. Each axis reports only its own check; detection does not imply compilation, execution or full standards conformance.
+            Results are generated from independent verification profiles only
+            when the example, catalog and verifier fingerprints match. Each axis
+            reports only its own check; detection does not imply compilation,
+            execution or full standards conformance.
           </p>
           <a href={`${base}/reports/evidence.json`}>
             Download this build’s raw evidence ↗
@@ -180,8 +187,18 @@ const source = r.source_text;
           <p>
             <strong>License:</strong> {r.license}
           </p>
-          {r.origin && <p>Verbatim fixture from <a href={r.origin.url}>GitHub Linguist</a> at <code>{r.origin.revision}</code>. Source SHA-256: <code>{r.origin.sha256}</code>.</p>}
-          {r.verification_profile && <p><strong>Verification profile:</strong> {r.verification_profile}</p>}
+          {r.origin && (
+            <p>
+              Verbatim fixture from <a href={r.origin.url}>GitHub Linguist</a>{' '}
+              at <code>{r.origin.revision}</code>. Source SHA-256:{' '}
+              <code>{r.origin.sha256}</code>.
+            </p>
+          )}
+          {r.verification_profile && (
+            <p>
+              <strong>Verification profile:</strong> {r.verification_profile}
+            </p>
+          )}
           {r.recipe && (
             <a href={`${repo}/blob/${ref}/${r.recipe}`}>Generation recipe ↗</a>
           )}

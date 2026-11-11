@@ -10,28 +10,22 @@ extensions:
   - .h.in
   - .idc
 example_path: examples/languages/programming/c-41
-source: hello.h
-demonstration: native
+source: hello.c
+demonstration: print
 requirements:
-  - Text editor for source inspection
-  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
-  - Original project dependencies may be required to compile or execute this
-    fixture
+  - C compiler (cc)
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
 run:
   - npm
   - run
-  - linguist:audit
+  - examples:extended
   - --
   - c-41
-expected: "Linguist classification: C"
+expected: |
+  Hello, world!
 limitations:
-  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
-    profiles; detection is independent.
-license: MIT (GitHub Linguist distribution); embedded notices preserved
-origin:
-  kind: linguist-fixture
-  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/C/hello.h
-  revision: d456527fe93355baa28c3c29d542c97282b61bc7
-  path: samples/C/hello.h
-  sha256: cf31947c075a0dfa9238926dabeb945e3e27c986af42e0eae98bffc1482fdb57
-verification_profile: inspection
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

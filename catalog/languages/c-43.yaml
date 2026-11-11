@@ -26,28 +26,22 @@ extensions:
   - .tpp
   - .txx
 example_path: examples/languages/programming/c-43
-source: render_adapter.cpp
-demonstration: native
+source: hello.cpp
+demonstration: print
 requirements:
-  - Text editor for source inspection
-  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
-  - Original project dependencies may be required to compile or execute this
-    fixture
+  - C++ compiler (c++)
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
 run:
   - npm
   - run
-  - linguist:audit
+  - examples:extended
   - --
   - c-43
-expected: "Linguist classification: C++"
+expected: |
+  Hello, world!
 limitations:
-  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
-    profiles; detection is independent.
-license: MIT (GitHub Linguist distribution); embedded notices preserved
-origin:
-  kind: linguist-fixture
-  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/C%2B%2B/render_adapter.cpp
-  revision: d456527fe93355baa28c3c29d542c97282b61bc7
-  path: samples/C++/render_adapter.cpp
-  sha256: 212842a570e1d21c63d8ac6bb64c8ca4b3235e25473b873d55d73c5f3f99cc75
-verification_profile: inspection
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

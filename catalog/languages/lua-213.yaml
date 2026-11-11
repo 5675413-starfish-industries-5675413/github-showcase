@@ -13,28 +13,22 @@ extensions:
   - .rockspec
   - .wlua
 example_path: examples/languages/programming/lua-213
-source: h-counter.pd_lua
-demonstration: native
+source: hello.lua
+demonstration: print
 requirements:
-  - Text editor for source inspection
-  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
-  - Original project dependencies may be required to compile or execute this
-    fixture
+  - Lua 5.4
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
 run:
   - npm
   - run
-  - linguist:audit
+  - examples:extended
   - --
   - lua-213
-expected: "Linguist classification: Lua"
+expected: |
+  Hello, world!
 limitations:
-  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
-    profiles; detection is independent.
-license: MIT (GitHub Linguist distribution); embedded notices preserved
-origin:
-  kind: linguist-fixture
-  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lua/h-counter.pd_lua
-  revision: d456527fe93355baa28c3c29d542c97282b61bc7
-  path: samples/Lua/h-counter.pd_lua
-  sha256: 18fe9619806602e0ce8c633286657c3db763dbec6427f5b9793ba78125de9752
-verification_profile: inspection
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

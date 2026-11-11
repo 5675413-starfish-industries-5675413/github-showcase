@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npm run catalog:build && astro dev --root website",
-    "build": "npm run catalog:build && astro build --root website",
+    "build": "npm run catalog:build && npm run reports:export && astro build --root website",
     "test": "node --test tests/*.test.mjs",
     "catalog:validate": "node tools/validate-catalog.mjs",
     "catalog:build": "node tools/build-catalog.mjs",
@@ -17,7 +17,14 @@
     "examples:core": "node tools/run-example.mjs",
     "linguist:audit": "node tools/linguist-audit.mjs",
     "verify": "npm run catalog:validate && npm test && npm run examples:core && npm run build && npm run links:check",
-    "format:check": "prettier --check tools tests website/src website/astro.config.mjs"
+    "format:check": "prettier --check tools tests website/src website/astro.config.mjs",
+    "examples:extended": "node tools/run-extended.mjs",
+    "examples:changed": "node tools/run-changed.mjs",
+    "api:demo": "node examples/integrations/github-api.mjs",
+    "formats:generate": "python3 recipes/generate-formats.py && python3 recipes/generate-extra-formats.py",
+    "upstream:propose": "node tools/upstream-update.mjs",
+    "reports:export": "node tools/export-reports.mjs",
+    "verify:full": "npm run linguist:audit && npm run examples:extended && npm run verify"
   },
   "dependencies": {
     "ajv": "8.20.0",

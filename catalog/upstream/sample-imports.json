@@ -608,28 +608,12 @@
     "sha256": "d524f4e2fec332368d1bfd7ee4eb0e7281a1deb4ca34b8d61ce0de6461c1a7b4"
   },
   {
-    "id": "c-41",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/C/hello.h",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/C/hello.h",
-    "sha256": "cf31947c075a0dfa9238926dabeb945e3e27c986af42e0eae98bffc1482fdb57"
-  },
-  {
     "id": "c-42",
     "kind": "linguist-fixture",
     "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/C%23/FileScopedNamespace.cs",
     "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
     "path": "samples/C#/FileScopedNamespace.cs",
     "sha256": "0530e39338d6c8624f0d350bf8eeb8424e6c452c09144fafcb145324fa84ca12"
-  },
-  {
-    "id": "c-43",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/C%2B%2B/render_adapter.cpp",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/C++/render_adapter.cpp",
-    "sha256": "212842a570e1d21c63d8ac6bb64c8ca4b3235e25473b873d55d73c5f3f99cc75"
   },
   {
     "id": "c3-769248603",
@@ -1848,14 +1832,6 @@
     "sha256": "77a29e3c1916f881beba0881fc0e1d2b4ddfd62ed9e1007550e5babbc0f62d87"
   },
   {
-    "id": "go-132",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Go/gen-go-linguist-thrift.go",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Go/gen-go-linguist-thrift.go",
-    "sha256": "15e07fe304dfa74a1921afe0259202e57b12e71591c29e69c08d053d07d6d262"
-  },
-  {
     "id": "go-checksums-1054391671",
     "kind": "linguist-fixture",
     "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Go%20Checksums/filenames/go.work.sum",
@@ -2374,14 +2350,6 @@
     "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
     "path": "samples/JASS/OctavePerlin.j",
     "sha256": "3b00d488a50eea3c9eb312cb6196461350b1cd961f02595d7b6da7fc5a5d4249"
-  },
-  {
-    "id": "java-181",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Java/generated-jooq-table.java",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Java/generated-jooq-table.java",
-    "sha256": "75212013824b8a181bec4e246cb9681040171de12d0d4fa820ecb4cd828d99a1"
   },
   {
     "id": "java-properties-519377561",
@@ -2918,14 +2886,6 @@
     "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
     "path": "samples/LTspice Symbol/random-shapes.asy",
     "sha256": "d16f285f18880b8c35302e886fdd51d4a8478ce7c8514bf17d7066ef56d40b93"
-  },
-  {
-    "id": "lua-213",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lua/h-counter.pd_lua",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Lua/h-counter.pd_lua",
-    "sha256": "18fe9619806602e0ce8c633286657c3db763dbec6427f5b9793ba78125de9752"
   },
   {
     "id": "luau-365050359",
@@ -3848,22 +3808,6 @@
     "sha256": "9ea0bd3dc607e5e9b37d5bf9ddfe0cad847e76825e17eb716230c90d3c717557"
   },
   {
-    "id": "perl-282",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Perl/perl",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Perl/perl",
-    "sha256": "5b42353d5d26ef7c2b6e8fe2919216532ead21316f670dca2d818c4945607ac5"
-  },
-  {
-    "id": "php-272",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/PHP/php-script",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/PHP/php-script",
-    "sha256": "a8dd825eaf4f2a7b8c5444ef4e19896d6f0a2b53ed89e08f56964a2a99603c3e"
-  },
-  {
     "id": "pic-425",
     "kind": "linguist-fixture",
     "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Pic/dextroamphetamine.chem",
@@ -4568,28 +4512,12 @@
     "sha256": "a087f520adccdc1ed32288e1e090e9a21e8fb59959643d5f49f12f4b0f9e29ca"
   },
   {
-    "id": "ruby-326",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Ruby/foo.rb",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Ruby/foo.rb",
-    "sha256": "00378ff84be52dd81d36028e8147528069deec225edbe3bdc0f5425b38b84c75"
-  },
-  {
     "id": "runoff-315",
     "kind": "linguist-fixture",
     "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/RUNOFF/contributing.rnh",
     "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
     "path": "samples/RUNOFF/contributing.rnh",
     "sha256": "b715b5903377d072fc657993b30910db28afdff2759b5f375839c0eca21d941b"
-  },
-  {
-    "id": "rust-327",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Rust/main.rs",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Rust/main.rs",
-    "sha256": "253119c741cc543bb203a0de3540e13abcf71e50a8b952aa58ab49b87c8a255a"
   },
   {
     "id": "sail-1029438153",
@@ -5096,14 +5024,6 @@
     "sha256": "427d958cab980319236cf56f356678238e4d01cb039a5a9f98cbd0e9031fcfbd"
   },
   {
-    "id": "tcl-367",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Tcl/filenames/starfield",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/Tcl/filenames/starfield",
-    "sha256": "4e30d9b33937e7525e9e8dbd5362611f5e23947538e1d26176aae29fe14fc8bb"
-  },
-  {
     "id": "tea-370",
     "kind": "linguist-fixture",
     "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Tea/foo.tea",
@@ -5334,14 +5254,6 @@
     "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
     "path": "samples/Type Language/builtin.tl",
     "sha256": "ef9012cf1b245efe2d95bfd134d9042f0362a78a18fe3a4011400faffea01f53"
-  },
-  {
-    "id": "typescript-378",
-    "kind": "linguist-fixture",
-    "url": "https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/TypeScript/hello.ts",
-    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
-    "path": "samples/TypeScript/hello.ts",
-    "sha256": "dcc62e4a18325773332e645365de256e46ae08fd1609ff72edd1d7367ed4b632"
   },
   {
     "id": "typespec-952272597",

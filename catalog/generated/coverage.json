@@ -6,7 +6,7 @@
     "sha256": "09c13db185b6f9b8f64b932dcd79815fef4a67624ab2dade9c194388d1dbe29d"
   },
   "inventory": 845,
-  "examples": 7,
+  "examples": 845,
   "categories": {
     "programming": 569,
     "markup": 71,
@@ -14,11 +14,11 @@
     "prose": 18
   },
   "detection": 0,
-  "validation": 4,
-  "execution": 3,
+  "validation": 0,
+  "execution": 0,
   "formats": {
-    "total": 8,
-    "validated": 8
+    "total": 24,
+    "validated": 0
   },
   "features": {
     "total": 10,

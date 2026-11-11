@@ -55,6 +55,8 @@ export function fingerprint(record) {
       'tools/validate-formats.py',
       'tools/linguist-audit.mjs',
       'tools/detect.rb',
+      'tools/run-extended.mjs',
+      'Gemfile.lock',
       'Gemfile',
       'catalog/upstream/linguist.lock.json',
     ].map(read),
@@ -103,7 +105,13 @@ export function validateRecord(record, kind) {
       if (!fs.existsSync(safePath(`${record.example_path}/${file}`)))
         throw new Error(`Missing example file ${file}`);
   }
-  if (record.origin && hash(fs.readFileSync(safePath(`${record.example_path}/${record.source}`))) !== record.origin.sha256) throw new Error(`Source checksum mismatch: ${record.id}`);
+  if (
+    record.origin &&
+    hash(
+      fs.readFileSync(safePath(`${record.example_path}/${record.source}`)),
+    ) !== record.origin.sha256
+  )
+    throw new Error(`Source checksum mismatch: ${record.id}`);
   if (kind === 'feature')
     for (const p of record.configuration)
       if (!fs.existsSync(safePath(p)))
@@ -134,16 +142,23 @@ export function validateInventory(languages, baseline) {
   }
 }
 export function loadEvidence() {
-  const validate = new Ajv().compile(json('catalog/schemas/verification.schema.json'));
-  const reports = ['latest', 'extended', 'detection'].flatMap(name => {
-    const p = `verification/${name}.json`;
-    if (!fs.existsSync(path.join(root,p))) return [];
-    const report = json(p);
-    if (!validate(report)) throw new Error('Invalid verification evidence: '+JSON.stringify(validate.errors));
-    return [report];
-  }).sort((a,b)=>a.at.localeCompare(b.at));
+  const validate = new Ajv().compile(
+    json('catalog/schemas/verification.schema.json'),
+  );
+  const reports = ['latest', 'extended', 'detection']
+    .flatMap((name) => {
+      const p = `verification/${name}.json`;
+      if (!fs.existsSync(path.join(root, p))) return [];
+      const report = json(p);
+      if (!validate(report))
+        throw new Error(
+          'Invalid verification evidence: ' + JSON.stringify(validate.errors),
+        );
+      return [report];
+    })
+    .sort((a, b) => a.at.localeCompare(b.at));
   if (!reports.length) return null;
-  return {...reports.at(-1),records:reports.flatMap(r=>r.records)};
+  return { ...reports.at(-1), records: reports.flatMap((r) => r.records) };
 }
 export function loadCatalog() {
   const evidence = loadEvidence();

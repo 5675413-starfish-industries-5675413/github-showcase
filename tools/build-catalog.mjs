@@ -22,7 +22,12 @@ for (const kind of ['languages', 'formats'])
       const bytes = fs.readFileSync(safePath(`${r.example_path}/${r.source}`));
       if (!bytes.includes(0)) r.source_text = bytes.toString('utf8');
       r.download_name = kind === 'languages' ? 'source.txt' : r.source;
-      const target = path.join(root, 'website/public/samples', r.id, r.download_name);
+      const target = path.join(
+        root,
+        'website/public/samples',
+        r.id,
+        r.download_name,
+      );
       fs.mkdirSync(path.dirname(target), { recursive: true });
       fs.copyFileSync(safePath(`${r.example_path}/${r.source}`), target);
     }

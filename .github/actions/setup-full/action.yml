@@ -1,0 +1,12 @@
+name: Set up full verification
+description: Install pinned Linguist and extended toolchain prerequisites
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup
+    - run: sudo apt-get update && sudo apt-get install -y libicu-dev cmake pkg-config lua5.4 tcl php-cli poppler-utils ffmpeg
+      shell: bash
+    - uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199
+      with:
+        ruby-version: '3.3.13'
+        bundler-cache: true
