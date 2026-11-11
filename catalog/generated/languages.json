@@ -6511,7 +6511,7 @@
     "license": "MIT",
     "verification": {
       "detection": "not-tested",
-      "validation": "not-tested",
+      "validation": "passed",
       "execution": "not-tested"
     },
     "source_text": "body { color: #101828; }\n",
@@ -13714,7 +13714,7 @@
     "license": "MIT",
     "verification": {
       "detection": "not-tested",
-      "validation": "not-tested",
+      "validation": "passed",
       "execution": "not-tested"
     },
     "source_text": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\"><title>Hello</title></head><body><h1>Hello, world!</h1></body></html>\n",
@@ -15654,7 +15654,7 @@
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
-      "execution": "not-tested"
+      "execution": "passed"
     },
     "source_text": "console.log(\"Hello, world!\");\n",
     "download_name": "source.txt"
@@ -16171,7 +16171,7 @@
     "license": "MIT",
     "verification": {
       "detection": "not-tested",
-      "validation": "not-tested",
+      "validation": "passed",
       "execution": "not-tested"
     },
     "source_text": "{\"message\":\"Hello, world!\"}\n",
@@ -19412,7 +19412,7 @@
     "license": "MIT",
     "verification": {
       "detection": "not-tested",
-      "validation": "not-tested",
+      "validation": "passed",
       "execution": "not-tested"
     },
     "source_text": "# Hello, world!\n",
@@ -27154,7 +27154,7 @@
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
-      "execution": "not-tested"
+      "execution": "passed"
     },
     "source_text": "print(\"Hello, world!\")\n",
     "download_name": "source.txt"
@@ -30691,7 +30691,7 @@
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
-      "execution": "not-tested"
+      "execution": "passed"
     },
     "source_text": "#!/usr/bin/env bash\nprintf 'Hello, world!\\n'\n",
     "download_name": "source.txt"

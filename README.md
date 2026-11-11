@@ -1,20 +1,10 @@
 # GitHub Showcase
 
-Languages, formats, and workflows—demonstrated, not just listed.
+An inspectable collection of **845 language examples**, **24 file-format samples**, and working GitHub workflows. The Astro explorer is published on [GitHub Pages](https://5675413-starfish-industries-5675413.github.io/github-showcase/).
 
-An independent collection of small language examples, meaningful file-format demonstrations, and inspectable GitHub workflows. The repository is the collection. Its Astro website is the searchable view.
+## Run locally
 
-[Explore the live collection](https://5675413-starfish-industries-5675413.github.io/github-showcase/)
-
-## Start here
-
-- [Language catalog](catalog/languages) · [Format catalog](catalog/formats) · [Platform catalog](catalog/features)
-- [Coverage report](catalog/generated/coverage.md) · [Verification policy](docs/verification-policy.md)
-- [Contribution guide](CONTRIBUTING.md) · [Project blueprint](docs/blueprint.md)
-
-## Quick start
-
-Requires Node.js 22.12+ (Node.js 24 recommended), npm, Python 3, and Bash for the core profile.
+Requires Node.js 24, npm, Python 3.11+ and Bash.
 
 ```sh
 npm ci
@@ -22,39 +12,34 @@ npm run verify
 npm run dev
 ```
 
-Open the printed URL with `/github-showcase/`. Individual sample READMEs document their requirements. Installing the website does not install every language toolchain.
+Open the printed URL under `/github-showcase/`.
 
-```sh
-npm run catalog:validate  # strict schemas, paths, exact upstream inventory
-npm run catalog:build     # exports and coverage, no network required
-npm run examples:core     # reviewed examples; writes local evidence
-npm test                  # failure/denial and stale-evidence tests
-npm run build             # static Astro site
-npm run links:check       # built local pages and assets
-npm run linguist:audit    # currently exits 2: detection audit not implemented
-```
-
-## Honest coverage
-
-Every language in the pinned Linguist revision has a record. Seven language examples currently span programming, markup, data, and prose. Eight curated format targets cover structured data, images, audio, archives, compression, databases, and subtitles.
-
-**Cataloged does not mean tested.** Detection, validation, and execution are separate. The language bar is not the coverage report. No detection result is claimed. Structural checks are limited to the included samples. Missing examples and toolchains remain explicit.
-
-## Repository map
-
-| Path | Contents |
+| Command | Purpose |
 | --- | --- |
-| `catalog/` | Pinned inventory, strict schemas, records, generated exports |
-| `examples/` | Inspectable language and format samples |
-| `recipes/` | Deterministic format generation |
-| `tools/` | Validation, building, reviewed runner and link checks |
-| `tests/` | Inventory, schema, path safety and stale evidence checks |
-| `verification/` | Core profile and local evidence policy |
-| `website/` | Astro explorer, detail pages, coverage, walkthrough |
-| `.github/` | CI, Pages, release, dependency and contribution configuration |
+| `npm run verify` | Strict catalog checks, failure-path tests, 31 core sample checks, static build and local links |
+| `npm run linguist:audit` | Classify all samples with the pinned Ruby Linguist bundle |
+| `npm run examples:extended` | Compile/run 11 additional greetings and decode PDF/video |
+| `npm run examples:changed -- main` | Select modified language examples for their reviewed profile |
+| `npm run verify:full` | Detection, extended and core verification together |
+| `npm run upstream:propose` | Download an immutable upstream candidate and a reviewable diff |
+| `npm run reports:export` | JSON/CSV reports, coverage history and SHA-256 checksums |
+| `npm run api:demo` | Real read-only public GitHub API request |
 
-## Platform status
+See [development setup](docs/development.md) for toolchains. The website installation does not install hundreds of language runtimes. Docker and the devcontainer provide a tested core environment.
 
-[The first CI demonstration](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417) passed. [GitHub Pages is deployed](https://5675413-starfish-industries-5675413.github.io/github-showcase/) from `main`, with [the first successful run](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42941104081) recorded. Other workflows remain configuration until their actual runs succeed. Human review, release evidence, extended toolchains, the pinned Linguist detection audit, and optional integrations remain pending. See [repository settings](docs/repository-settings.md) and [the feature matrix](docs/platform-feature-matrix.md).
+## Read the evidence
 
-Original material is [MIT licensed](LICENSE); upstream exceptions are in [NOTICE.md](NOTICE.md). This is not an official GitHub product.
+The pinned inventory has 845 entries. Every entry has a source example and README. Most are attributed syntax fixtures from Linguist; original greetings form the executable profiles. Imported fixtures are never executed automatically. Three transcript entries require explicit language selection because the pinned classifier has no automatic mapping. OpenAPI parent entries accept their documented JSON/YAML child classifications.
+
+[Hosted detection](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105729) recorded 842 recognized examples. [Extended verification](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105858) ran 11 additional greetings and two decoders. [The container check](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105850) built and ran the core profile with networking disabled, then checked development-container prerequisites. These links prove those revisions only. The deployed site's reports are rebuilt from matching evidence at deployment time.
+
+Detection, structural validation, compilation, execution and human review are distinct. [Verification policy](docs/verification-policy.md) explains the limits. [Completion audit](docs/completion-plan.md) records remaining account/human actions.
+
+## Explore the repository
+
+- [Languages](catalog/languages), [formats](catalog/formats), [platform features](catalog/features)
+- [Coverage](catalog/generated/coverage.md), [upstream provenance](NOTICE.md), [full blueprint](docs/blueprint.md)
+- [Contribution guide](CONTRIBUTING.md), [repository settings](docs/repository-settings.md), [release process](docs/release-process.md)
+- [API and signed-webhook examples](examples/integrations), [manual verification profile](verification/manual.md)
+
+Original material is [MIT licensed](LICENSE). Imported source retains [its attribution and embedded notices](NOTICE.md). This is an independent project, not an official GitHub product.

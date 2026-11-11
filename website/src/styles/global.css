@@ -875,3 +875,35 @@ audio {
   max-width: 100%;
   margin: 20px 0;
 }
+
+.detail table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.detail th,
+.detail td {
+  padding: 0.65rem;
+  border-bottom: 1px solid #d9ddd8;
+  text-align: left;
+}
+.detail video {
+  max-width: 100%;
+  height: auto;
+}
+.detail code {
+  overflow-wrap: anywhere;
+}
+.detail pre {
+  max-height: 36rem;
+  overflow: auto;
+}
+@media (max-width: 640px) {
+  .detail table {
+    font-size: 0.8rem;
+  }
+  .detail th,
+  .detail td {
+    padding: 0.35rem;
+  }
+}

@@ -99,13 +99,41 @@ const source = r.source_text;
                 <h2>The example</h2>
                 <a href={sourceUrl!}>Open source ↗</a>
               </div>
-              {r.media_type === 'image/svg+xml' && (
+              {['image/svg+xml', 'image/png', 'image/gif'].includes(
+                r.media_type,
+              ) && (
                 <img
                   class="format-preview"
                   src={`${base}/samples/${r.id}/${r.download_name}`}
-                  alt="Hello, world! rendered as SVG"
+                  alt="Hello, world! rendered in the sample image"
                   width="320"
                   height="80"
+                />
+              )}
+              {r.media_type === 'video/mp4' && (
+                <video
+                  controls
+                  preload="metadata"
+                  width="480"
+                  src={`${base}/samples/${r.id}/${r.download_name}`}
+                >
+                  <track
+                    kind="captions"
+                    src={`${base}/samples/format-webvtt/hello.vtt`}
+                    srclang="en"
+                    label="English"
+                    default
+                  />
+                  Your browser does not support this video.
+                </video>
+              )}
+              {r.id === 'format-xlsx' && (
+                <img
+                  class="format-preview"
+                  src={`${base}/samples/format-xlsx/preview.png`}
+                  alt="Spreadsheet greeting with a LEN formula showing 13"
+                  width="490"
+                  height="160"
                 />
               )}
               {r.media_type === 'audio/wav' && (

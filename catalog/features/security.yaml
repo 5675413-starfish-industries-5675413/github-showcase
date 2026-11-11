@@ -1,0 +1,18 @@
+{
+  "id": "security",
+  "name": "Security scanning",
+  "purpose": "Scan authored application code and maintain dependencies.",
+  "status": "configured",
+  "configuration": [
+    ".github/workflows/security.yml",
+    ".github/codeql.yml"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [],
+  "limitations": [
+    "Secret scanning/push protection and automated dependency fixes enabled. CodeQL run evidence will be recorded after completion."
+  ],
+  "reviewed": "2026-11-11"
+}

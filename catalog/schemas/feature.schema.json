@@ -28,7 +28,8 @@
       "enum": [
         "pending",
         "configured",
-        "demonstrated"
+        "demonstrated",
+        "blocked"
       ]
     },
     "configuration": {

@@ -1,17 +1,24 @@
 # Repository settings
 
-Configuration files do not prove that hosted settings are enabled. Record actual evidence here after inspection.
+Inspected/configured on November 11, 2026. Repository: [https://github.com/5675413-starfish-industries-5675413/github-showcase](https://github.com/5675413-starfish-industries-5675413/github-showcase).
 
-| Setting | Intended configuration | Verified status |
-| --- | --- | --- |
-| Pages | GitHub Actions source; github-pages environment | [Deployed](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42941104081) at `4b13cf9`; HTTPS enforced |
-| Actions | Read-only default token; scoped job permissions | Workflow files configured; hosted defaults pending |
-| CI checks | Core validation on push and pull request | [Successful PR validation](https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417) at `48e58eb` |
-| Pull requests | Human review, normal merge policy | [PR #1](https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/1) merged; no submitted human review |
-| Discussions, Projects, milestones | Optional; configure when used | Pending |
-| Dependency updates | Dependabot npm and actions weekly | Configuration present; hosted run pending |
-| Private vulnerability reporting / scanning | Enable where available | Pending availability review |
-| Rulesets | Avoid claiming or enabling unreviewed merge restrictions | Not configured |
-| Repository secrets | None required by the current static project | No custom names requested |
+| Capability | Actual state |
+| --- | --- |
+| Repository | Public; description/topics/homepage configured; template reuse enabled; merged branches auto-delete |
+| Issues | Enabled; [implementation issue #9](https://github.com/5675413-starfish-industries-5675413/github-showcase/issues/9); catalog, verification and platform labels |
+| Milestone | [Showcase v0.2](https://github.com/5675413-starfish-industries-5675413/github-showcase/milestone/1) |
+| Discussions | Enabled; Announcements, General, Ideas, Polls, Q&A, Show and tell categories exist |
+| Project | Creation blocked: current token lacks `read:project`/`project`; browser access was not approved |
+| Ruleset | [Verified main](https://github.com/5675413-starfish-industries-5675413/github-showcase/rules/27070656): PRs, resolved review threads, no force push/deletion, four required checks; no mandatory human approval count |
+| Required checks | `validation / verify`, `audit`, `examples`, `core-container`; GitHub Actions app 15368; up-to-date branch required |
+| Actions defaults | Read-only token; workflow approval permission disabled; elevated permissions only in publishing/scanning jobs |
+| Pages | Actions source; HTTPS enforced; github-pages environment; deploy only main |
+| Security | Secret scanning and push protection enabled; vulnerability alerts and automated security fixes enabled; scoped CodeQL workflow added |
+| Dependencies | Weekly npm/Actions Dependabot updates; genuine PRs #2-6 proposed the pinned action upgrades |
+| Custom secrets | None provisioned. Publishing uses the built-in scoped GitHub token/OIDC. Never put a webhook secret in source. |
+| Codespaces | Devcontainer image built and prerequisites checked in CI; no billable interactive session created |
+| Packages | Core runner container builds and runs offline in CI; publication is main-only in the container workflow |
 
-Pages is enabled with the GitHub Actions build type. The live URL is [https://5675413-starfish-industries-5675413.github.io/github-showcase/](https://5675413-starfish-industries-5675413.github.io/github-showcase/). The deployment job has only pages:write and id-token:write. The first successful deployment records SHA `4b13cf978be1c6170d78cbd6bea871bb72ba8e8c`; source links on the public site were checked against that SHA.
+A repository Project needs the account owner to grant Project access or create the board in the GitHub UI. The scoped board setup is: title `GitHub Showcase`, link this repository, add issue #9, group Status into Todo/In progress/Done, and use milestone Showcase v0.2. A source-controlled plan is in `docs/completion-plan.md`; it is not falsely labeled a hosted Project.
+
+Human approval is recorded only when a person actually submits a review. Required checks do not imply it.

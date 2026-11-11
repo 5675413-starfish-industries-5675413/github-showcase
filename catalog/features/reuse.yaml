@@ -1,0 +1,21 @@
+{
+  "id": "reuse",
+  "name": "Reusable workflows and template",
+  "purpose": "Reuse setup and core validation.",
+  "status": "demonstrated",
+  "configuration": [
+    ".github/actions/setup/action.yml",
+    ".github/actions/setup-full/action.yml",
+    ".github/workflows/reusable-validation.yml"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
+  ],
+  "limitations": [
+    "Template reuse enabled; no downstream repository created for demonstration."
+  ],
+  "reviewed": "2026-11-11"
+}

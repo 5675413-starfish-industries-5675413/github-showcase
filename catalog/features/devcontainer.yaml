@@ -1,17 +1,20 @@
 {
   "id": "devcontainer",
   "name": "Development container",
-  "purpose": "Describe a reproducible development entry point.",
-  "status": "configured",
+  "purpose": "Provide Node/Python core prerequisites.",
+  "status": "demonstrated",
   "configuration": [
-    ".devcontainer/devcontainer.json"
+    ".devcontainer/devcontainer.json",
+    ".devcontainer/Dockerfile"
   ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105850"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Image build and prerequisites verified; no interactive Codespaces session launched."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

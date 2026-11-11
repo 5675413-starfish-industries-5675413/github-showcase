@@ -1,0 +1,21 @@
+{
+  "id": "integrations",
+  "name": "API and signed webhooks",
+  "purpose": "Demonstrate real REST reads and authenticated raw-body verification.",
+  "status": "demonstrated",
+  "configuration": [
+    "examples/integrations/github-api.mjs",
+    "examples/integrations/webhook.mjs",
+    "tests/webhook.test.mjs"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
+  ],
+  "limitations": [
+    "Webhook verifier is tested locally in CI, not registered as a public webhook. REST read was also exercised directly."
+  ],
+  "reviewed": "2026-11-11"
+}

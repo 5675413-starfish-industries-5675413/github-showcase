@@ -100,6 +100,16 @@ const categories = [
           <option value="validation">Validation passed</option>
           <option value="execution">Execution passed</option>
           <option value="detection">Detection passed</option>
+          <option value="failed">Any failed check</option>
+          <option value="unexecuted">Execution not tested</option>
+          <option value="inspection">Inspection profile</option>
+        </select>
+        <label for="platform">Platform</label>
+        <select id="platform">
+          <option value="">Any platform</option>
+          <option value="inspection">Any OS · source inspection</option>
+          <option value="linux">Linux · reviewed runtime</option>
+          <option value="macos">macOS · core runtime</option>
         </select>
         <label for="runtime">Runtime or viewer</label>
         <input
@@ -159,7 +169,9 @@ const categories = [
             ? 'Executed'
             : r.verification.validation === 'passed'
               ? 'Validated'
-              : 'Example present'
+              : r.verification.detection === 'passed'
+                ? 'Detected'
+                : 'Example present'
           : r.status || 'Example pending';
         return (
           <a
@@ -171,6 +183,14 @@ const categories = [
             data-category={r.type || r.family || r.status}
             data-runtime={(r.requirements || []).join(' ').toLowerCase()}
             data-present={!!r.example_path}
+            data-profile={r.verification_profile || 'core'}
+            data-platform={
+              r.verification_profile === 'inspection'
+                ? 'inspection'
+                : r.verification_profile === 'extended'
+                  ? 'linux'
+                  : 'linux macos'
+            }
             data-validation={r.verification.validation}
             data-execution={r.verification.execution}
             data-detection={r.verification.detection}
@@ -234,6 +254,7 @@ const categories = [
   const category = document.querySelector<HTMLSelectElement>('#category')!;
   const status = document.querySelector<HTMLSelectElement>('#status');
   const runtime = document.querySelector<HTMLInputElement>('#runtime');
+  const platform = document.querySelector<HTMLSelectElement>('#platform');
   const more = document.querySelector<HTMLButtonElement>('#more')!;
   let limit = 50;
   const params = new URLSearchParams(location.search);
@@ -241,6 +262,7 @@ const categories = [
   category.value = params.get('category') || '';
   if (status) status.value = params.get('status') || '';
   if (runtime) runtime.value = params.get('runtime') || '';
+  if (platform) platform.value = params.get('platform') || '';
   function filter(reset = true) {
     if (reset) limit = 50;
     const q = search.value.toLowerCase().trim(),
@@ -254,12 +276,22 @@ const categories = [
         (d.name || '').includes(q) &&
         (!type || d.category === type) &&
         (!tool || (d.runtime || '').includes(tool)) &&
+        (!platform?.value ||
+          (d.platform || '').split(' ').includes(platform.value)) &&
         (!state ||
-          (state === 'present'
-            ? d.present === 'true'
-            : state === 'missing'
-              ? d.present === 'false'
-              : d[state] === 'passed'));
+          (state === 'failed'
+            ? ['detection', 'validation', 'execution'].some(
+                (a) => d[a] === 'failed',
+              )
+            : state === 'unexecuted'
+              ? d.execution === 'not-tested'
+              : state === 'inspection'
+                ? d.profile === 'inspection'
+                : state === 'present'
+                  ? d.present === 'true'
+                  : state === 'missing'
+                    ? d.present === 'false'
+                    : d[state] === 'passed'));
       row.hidden = !match || matched >= limit;
       if (match) matched++;
     });
@@ -273,6 +305,7 @@ const categories = [
       ['category', type],
       ['status', state],
       ['runtime', runtime?.value || ''],
+      ['platform', platform?.value || ''],
     ])
       if (v) p.set(k, v);
     history.replaceState(
@@ -281,13 +314,14 @@ const categories = [
       location.pathname + (p.size ? '?' + p : '') + location.hash,
     );
   }
-  for (const input of [search, category, status, runtime])
+  for (const input of [search, category, status, runtime, platform])
     input?.addEventListener('input', () => filter());
   function reset() {
     search.value = '';
     category.value = '';
     if (status) status.value = '';
     if (runtime) runtime.value = '';
+    if (platform) platform.value = '';
     filter();
     search.focus();
   }

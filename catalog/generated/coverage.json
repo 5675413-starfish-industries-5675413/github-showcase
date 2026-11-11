@@ -14,14 +14,14 @@
     "prose": 18
   },
   "detection": 0,
-  "validation": 0,
-  "execution": 0,
+  "validation": 4,
+  "execution": 3,
   "formats": {
     "total": 24,
-    "validated": 0
+    "validated": 24
   },
   "features": {
-    "total": 10,
-    "demonstrated": 2
+    "total": 17,
+    "demonstrated": 11
   }
 }

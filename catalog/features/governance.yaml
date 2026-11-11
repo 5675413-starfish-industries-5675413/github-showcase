@@ -1,0 +1,19 @@
+{
+  "id": "governance",
+  "name": "Required-check ruleset",
+  "purpose": "Require verified PR changes on main.",
+  "status": "demonstrated",
+  "configuration": [
+    "docs/repository-settings.md"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/rules/27070656"
+  ],
+  "limitations": [
+    "Human approvals are encouraged but not required by the ruleset."
+  ],
+  "reviewed": "2026-11-11"
+}

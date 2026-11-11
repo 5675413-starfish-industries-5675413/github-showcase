@@ -10,6 +10,11 @@ import {
   safePath,
 } from './lib/catalog.mjs';
 const catalog = loadCatalog();
+// Clear previous exports so retired active sample files cannot linger.
+fs.rmSync(path.join(root, 'website/public/samples'), {
+  recursive: true,
+  force: true,
+});
 const evidence = loadEvidence();
 fs.mkdirSync(path.join(root, 'website/public/reports'), { recursive: true });
 fs.writeFileSync(
@@ -30,6 +35,11 @@ for (const kind of ['languages', 'formats'])
       );
       fs.mkdirSync(path.dirname(target), { recursive: true });
       fs.copyFileSync(safePath(`${r.example_path}/${r.source}`), target);
+      if (r.id === 'format-xlsx')
+        fs.copyFileSync(
+          safePath(`${r.example_path}/preview.png`),
+          path.join(path.dirname(target), 'preview.png'),
+        );
     }
 
 const languages = catalog.languages;

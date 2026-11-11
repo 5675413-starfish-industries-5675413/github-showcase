@@ -18,3 +18,27 @@ jobs:
       - run: docker run --rm --network none showcase-core
       - run: docker build -t showcase-dev .devcontainer
       - run: docker run --rm showcase-dev sh -c 'node --version && npm --version && python3 --version'
+  publish:
+    needs: core-container
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Build and publish verified core runner
+        env:
+          REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          ACTOR: ${{ github.actor }}
+          REVISION: ${{ github.sha }}
+        run: |
+          echo "$REGISTRY_TOKEN" | docker login ghcr.io -u "$ACTOR" --password-stdin
+          docker build --label "org.opencontainers.image.source=https://github.com/$REPOSITORY" --label "org.opencontainers.image.revision=$REVISION" -t "ghcr.io/$REPOSITORY:$REVISION" -t "ghcr.io/$REPOSITORY:latest" .
+          docker push "ghcr.io/$REPOSITORY:$REVISION"
+          docker push "ghcr.io/$REPOSITORY:latest"
+          docker logout ghcr.io

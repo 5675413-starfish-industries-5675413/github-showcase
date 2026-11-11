@@ -1,17 +1,23 @@
 {
   "id": "dependabot",
   "name": "Dependency maintenance",
-  "purpose": "Propose npm and Actions updates.",
-  "status": "configured",
+  "purpose": "Propose reviewed npm and Actions updates.",
+  "status": "demonstrated",
   "configuration": [
     ".github/dependabot.yml"
   ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/2",
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/3",
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/4",
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/5",
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/6"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Dependency proposals must pass tests before adoption."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }
