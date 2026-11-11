@@ -1,0 +1,19 @@
+id: livescript-208
+name: LiveScript
+upstream_language_id: 208
+type: programming
+aliases:
+  - live-script
+  - ls
+extensions:
+  - .ls
+  - ._ls
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

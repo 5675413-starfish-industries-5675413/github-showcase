@@ -1,0 +1,22 @@
+id: max-227
+name: Max
+upstream_language_id: 227
+type: programming
+aliases:
+  - max/msp
+  - maxmsp
+extensions:
+  - .maxpat
+  - .maxhelp
+  - .maxproj
+  - .mxt
+  - .pat
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

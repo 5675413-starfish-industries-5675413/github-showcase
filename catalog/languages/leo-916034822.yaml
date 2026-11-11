@@ -1,0 +1,16 @@
+id: leo-916034822
+name: Leo
+upstream_language_id: 916034822
+type: programming
+aliases: []
+extensions:
+  - .leo
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

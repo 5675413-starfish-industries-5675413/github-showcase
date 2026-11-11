@@ -1,0 +1,16 @@
+id: textmate-properties-981795023
+name: TextMate Properties
+upstream_language_id: 981795023
+type: data
+aliases:
+  - tm-properties
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

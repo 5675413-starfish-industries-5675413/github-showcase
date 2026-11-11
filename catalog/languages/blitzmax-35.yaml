@@ -1,0 +1,17 @@
+id: blitzmax-35
+name: BlitzMax
+upstream_language_id: 35
+type: programming
+aliases:
+  - bmax
+extensions:
+  - .bmx
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

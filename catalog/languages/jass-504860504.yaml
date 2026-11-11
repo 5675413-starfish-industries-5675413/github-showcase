@@ -1,0 +1,17 @@
+id: jass-504860504
+name: JASS
+upstream_language_id: 504860504
+type: programming
+aliases:
+  - jass2
+extensions:
+  - .j
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,7 @@
+node_modules/
+catalog/generated/
+catalog/upstream/
+website/dist/
+website/.astro/
+website/public/samples/
+website/public/reports/

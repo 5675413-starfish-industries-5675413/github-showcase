@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "at",
+    "environment",
+    "records"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "at": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "object",
+      "required": [
+        "node",
+        "platform",
+        "arch"
+      ],
+      "properties": {
+        "node": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "arch": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "fingerprint",
+          "command",
+          "exit_code",
+          "stdout",
+          "stderr"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fingerprint": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "command": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "exit_code": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "stdout": {
+            "type": "string"
+          },
+          "stderr": {
+            "type": "string"
+          },
+          "error": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "detection": {
+            "enum": [
+              "passed",
+              "failed",
+              "not-tested"
+            ]
+          },
+          "validation": {
+            "enum": [
+              "passed",
+              "failed",
+              "not-tested"
+            ]
+          },
+          "execution": {
+            "enum": [
+              "passed",
+              "failed",
+              "not-tested"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

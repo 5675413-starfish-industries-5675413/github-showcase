@@ -1,0 +1,17 @@
+id: go-workspace-934546256
+name: Go Workspace
+upstream_language_id: 934546256
+type: data
+aliases:
+  - go.work
+  - go work
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

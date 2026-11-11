@@ -1,0 +1,15 @@
+id: pip-requirements-684385621
+name: Pip Requirements
+upstream_language_id: 684385621
+type: data
+aliases: []
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: opentype-feature-file-374317347
+name: OpenType Feature File
+upstream_language_id: 374317347
+type: data
+aliases:
+  - AFDKO
+extensions:
+  - .fea
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

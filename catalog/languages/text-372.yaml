@@ -1,0 +1,25 @@
+id: text-372
+name: Text
+upstream_language_id: 372
+type: prose
+aliases:
+  - fundamental
+  - indented text
+  - plain text
+  - paragraph indent text
+  - parindent
+extensions:
+  - .txt
+  - .fr
+  - .nb
+  - .ncl
+  - .no
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

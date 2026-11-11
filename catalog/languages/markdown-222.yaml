@@ -1,0 +1,31 @@
+id: markdown-222
+name: Markdown
+upstream_language_id: 222
+type: prose
+aliases:
+  - md
+  - pandoc
+extensions:
+  - .md
+  - .livemd
+  - .markdown
+  - .mdown
+  - .mdwn
+  - .mkd
+  - .mkdn
+  - .mkdown
+  - .ronn
+  - .scd
+  - .workbook
+example_path: examples/languages/prose/markdown
+source: hello.md
+demonstration: render
+requirements:
+  - Markdown viewer; Node.js
+run: null
+expected: |
+  Valid sample
+limitations:
+  - Core check covers this sample structure/content only; full syntax
+    conformance and rendered appearance are not verified.
+license: MIT

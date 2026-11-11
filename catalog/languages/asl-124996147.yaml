@@ -1,0 +1,17 @@
+id: asl-124996147
+name: ASL
+upstream_language_id: 124996147
+type: programming
+aliases: []
+extensions:
+  - .asl
+  - .dsl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: basic-28923963
+name: BASIC
+upstream_language_id: 28923963
+type: programming
+aliases: []
+extensions:
+  - .bas
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

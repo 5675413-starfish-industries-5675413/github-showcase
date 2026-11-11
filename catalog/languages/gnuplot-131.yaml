@@ -1,0 +1,21 @@
+id: gnuplot-131
+name: Gnuplot
+upstream_language_id: 131
+type: programming
+aliases: []
+extensions:
+  - .gp
+  - .gnu
+  - .gnuplot
+  - .p
+  - .plot
+  - .plt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

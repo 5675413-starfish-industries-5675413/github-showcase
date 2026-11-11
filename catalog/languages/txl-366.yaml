@@ -1,0 +1,16 @@
+id: txl-366
+name: TXL
+upstream_language_id: 366
+type: programming
+aliases: []
+extensions:
+  - .txl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

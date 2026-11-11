@@ -1,0 +1,16 @@
+id: tolk-678673060
+name: Tolk
+upstream_language_id: 678673060
+type: programming
+aliases: []
+extensions:
+  - .tolk
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

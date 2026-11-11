@@ -1,0 +1,17 @@
+id: oasv2-yaml-105187618
+name: OASv2-yaml
+upstream_language_id: 105187618
+type: data
+aliases: []
+extensions:
+  - .yaml
+  - .yml
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

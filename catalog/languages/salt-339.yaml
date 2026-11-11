@@ -1,0 +1,18 @@
+id: salt-339
+name: Salt
+upstream_language_id: 339
+type: programming
+aliases:
+  - saltstack
+  - saltstate
+extensions:
+  - .sls
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: wdl-374521672
+name: WDL
+upstream_language_id: 374521672
+type: programming
+aliases:
+  - Workflow Description Language
+extensions:
+  - .wdl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

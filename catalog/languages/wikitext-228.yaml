@@ -1,0 +1,20 @@
+id: wikitext-228
+name: Wikitext
+upstream_language_id: 228
+type: prose
+aliases:
+  - mediawiki
+  - wiki
+extensions:
+  - .mediawiki
+  - .wiki
+  - .wikitext
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

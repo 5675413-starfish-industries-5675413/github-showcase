@@ -1,0 +1,23 @@
+id: coffeescript-63
+name: CoffeeScript
+upstream_language_id: 63
+type: programming
+aliases:
+  - coffee
+  - coffee-script
+extensions:
+  - .coffee
+  - ._coffee
+  - .cake
+  - .cjsx
+  - .coffee.erb
+  - .iced
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

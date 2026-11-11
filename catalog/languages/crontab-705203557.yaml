@@ -1,0 +1,17 @@
+id: crontab-705203557
+name: crontab
+upstream_language_id: 705203557
+type: data
+aliases:
+  - cron
+  - cron table
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

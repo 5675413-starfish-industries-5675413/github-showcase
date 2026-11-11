@@ -1,0 +1,311 @@
+---
+import languages from '../../../catalog/generated/languages.json';
+import formats from '../../../catalog/generated/formats.json';
+import features from '../../../catalog/generated/features.json';
+import coverage from '../../../catalog/generated/coverage.json';
+const { kind = 'languages' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const data = ({ languages, formats, features } as any)[kind]
+  .slice()
+  .sort(
+    (a: any, b: any) =>
+      Number(Boolean(b.example_path)) - Number(Boolean(a.example_path)) ||
+      a.name.localeCompare(b.name),
+  );
+const types = [
+  ...new Set(data.map((r: any) => r.type || r.family || r.status)),
+] as string[];
+const categories = [
+  ['languages', 'Languages', languages.length],
+  ['formats', 'Formats', formats.length],
+  ['features', 'GitHub platform', features.length],
+];
+---
+
+<section class="intro">
+  <div>
+    <div class="eyebrow">
+      <span class="tiny-square"></span> THE OPEN COLLECTION
+    </div>
+    <h1>
+      Explore what code
+      <br />
+      can be.
+    </h1>
+    <p>
+      Languages, formats, and workflows—demonstrated,
+      <br class="desktop" /> not just listed. Small examples with evidence you
+      can inspect.
+    </p>
+  </div>
+  <aside class="baseline">
+    <span class="eyebrow">THE BASELINE</span>
+    <div class="baseline-number">
+      {coverage.inventory}
+      <span>language entries</span>
+    </div>
+    <p>
+      Every entry in one pinned Linguist revision.
+      <br />
+      Every gap visible.
+    </p>
+    <a href={`${base}/coverage/`}>
+      See the coverage breakdown <span>↗</span>
+    </a>
+  </aside>
+</section>
+<div class="collection-nav" aria-label="Catalog collections">
+  {categories.map(([key, label, count]) => (
+    <a
+      class:list={{ active: key === kind }}
+      href={`${base}/${key}/`}
+      aria-current={key === kind ? 'page' : undefined}
+    >
+      {label}
+      <span>{count}</span>
+    </a>
+  ))}
+  <span class="baseline-label">
+    LINGUIST <code>{coverage.baseline.revision.slice(0, 7)}</code>
+  </span>
+</div>
+<section class="explorer" data-explorer>
+  <aside class="filters">
+    <div class="filter-title">
+      Filter collection
+      <button id="reset" type="button">
+        Reset
+      </button>
+    </div>
+    <label for="category">
+      {kind === 'languages'
+        ? 'Language category'
+        : kind === 'formats'
+          ? 'Format family'
+          : 'Implementation'}
+    </label>
+    <select id="category">
+      <option value="">All categories</option>
+      {types.sort().map((type) => (
+        <option value={type}>{type}</option>
+      ))}
+    </select>
+    {kind !== 'features' && (
+      <>
+        <label for="status">Evidence</label>
+        <select id="status">
+          <option value="">Any status</option>
+          <option value="present">Example present</option>
+          <option value="missing">Example missing</option>
+          <option value="validation">Validation passed</option>
+          <option value="execution">Execution passed</option>
+          <option value="detection">Detection passed</option>
+        </select>
+        <label for="runtime">Runtime or viewer</label>
+        <input
+          id="runtime"
+          type="search"
+          placeholder="e.g. Python or browser"
+        />
+      </>
+    )}
+    <div class="filter-note">
+      <span class="eyebrow">A NOTE ON EVIDENCE</span>
+      <p>
+        Cataloged does not mean tested. Detection, validation, and execution are
+        independent checks.
+      </p>
+      <a href={`${base}/coverage/`}>How we measure →</a>
+    </div>
+  </aside>
+  <div class="results">
+    <label class="sr-only" for="search">
+      Search the collection
+    </label>
+    <div class="search-wrap">
+      <span aria-hidden="true">⌕</span>
+      <input
+        id="search"
+        type="search"
+        placeholder={
+          kind === 'languages'
+            ? 'Search languages, aliases, or extensions…'
+            : 'Search the collection…'
+        }
+      />
+      <kbd aria-hidden="true">/</kbd>
+    </div>
+    <div class="result-heading">
+      <p id="result-count" role="status" aria-live="polite">
+        {data.length} entries
+      </p>
+      <span>Examples first · A–Z</span>
+    </div>
+    <div class="table-heading">
+      <span>
+        {kind === 'languages'
+          ? 'LANGUAGE'
+          : kind === 'formats'
+            ? 'FORMAT'
+            : 'CAPABILITY'}
+      </span>
+      <span>CATEGORY</span>
+      <span>EVIDENCE</span>
+    </div>
+    <div id="entry-list">
+      {data.map((r: any) => {
+        const status = r.example_path
+          ? r.verification.execution === 'passed'
+            ? 'Executed'
+            : r.verification.validation === 'passed'
+              ? 'Validated'
+              : 'Example present'
+          : r.status || 'Example pending';
+        return (
+          <a
+            class="entry"
+            href={`${base}/${kind}/${r.id}/`}
+            data-name={[r.name, ...(r.aliases || []), ...(r.extensions || [])]
+              .join(' ')
+              .toLowerCase()}
+            data-category={r.type || r.family || r.status}
+            data-runtime={(r.requirements || []).join(' ').toLowerCase()}
+            data-present={!!r.example_path}
+            data-validation={r.verification.validation}
+            data-execution={r.verification.execution}
+            data-detection={r.verification.detection}
+          >
+            <div class="entry-name">
+              <span
+                class:list={['entry-symbol', { available: !!r.example_path }]}
+                aria-hidden="true"
+              >
+                {r.example_path ? '⌘' : '·'}
+              </span>
+              <div>
+                <strong>{r.name}</strong>
+                <small>
+                  {(r.extensions || []).slice(0, 4).join('  ') ||
+                    r.purpose ||
+                    'No standard extension'}
+                </small>
+              </div>
+            </div>
+            <span class="category-text">
+              {r.type || r.family || 'platform'}
+            </span>
+            <span
+              class:list={[
+                'status',
+                { pass: status === 'Executed' || status === 'Validated' },
+              ]}
+            >
+              {status}
+            </span>
+            <span class="entry-arrow" aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        );
+      })}
+    </div>
+    <div id="empty" hidden>
+      <h2>No matching entries</h2>
+      <p>Try a different name, extension, or category.</p>
+      <button id="clear-empty">Clear all filters</button>
+    </div>
+    <button id="more" class="more" hidden>
+      Show more entries
+    </button>
+    <noscript>
+      <p>
+        Search and filters need JavaScript. All entries remain available below.
+      </p>
+    </noscript>
+    <div class="collection-foot">
+      Built from the catalog. No inflated counts.{' '}
+      <a href={`${base}/about/`}>Read the scope ↗</a>
+    </div>
+  </div>
+</section>
+<script>
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('.entry'));
+  const search = document.querySelector<HTMLInputElement>('#search')!;
+  const category = document.querySelector<HTMLSelectElement>('#category')!;
+  const status = document.querySelector<HTMLSelectElement>('#status');
+  const runtime = document.querySelector<HTMLInputElement>('#runtime');
+  const more = document.querySelector<HTMLButtonElement>('#more')!;
+  let limit = 50;
+  const params = new URLSearchParams(location.search);
+  search.value = params.get('q') || '';
+  category.value = params.get('category') || '';
+  if (status) status.value = params.get('status') || '';
+  if (runtime) runtime.value = params.get('runtime') || '';
+  function filter(reset = true) {
+    if (reset) limit = 50;
+    const q = search.value.toLowerCase().trim(),
+      type = category.value,
+      state = status?.value || '',
+      tool = runtime?.value.toLowerCase().trim() || '';
+    let matched = 0;
+    rows.forEach((row) => {
+      const d = row.dataset;
+      const match =
+        (d.name || '').includes(q) &&
+        (!type || d.category === type) &&
+        (!tool || (d.runtime || '').includes(tool)) &&
+        (!state ||
+          (state === 'present'
+            ? d.present === 'true'
+            : state === 'missing'
+              ? d.present === 'false'
+              : d[state] === 'passed'));
+      row.hidden = !match || matched >= limit;
+      if (match) matched++;
+    });
+    document.querySelector('#result-count')!.textContent =
+      `${matched} ${matched === 1 ? 'entry' : 'entries'}${matched > limit ? ` · showing ${limit}` : ''}`;
+    document.querySelector<HTMLElement>('#empty')!.hidden = matched !== 0;
+    more.hidden = matched <= limit;
+    const p = new URLSearchParams();
+    for (const [k, v] of [
+      ['q', search.value],
+      ['category', type],
+      ['status', state],
+      ['runtime', runtime?.value || ''],
+    ])
+      if (v) p.set(k, v);
+    history.replaceState(
+      null,
+      '',
+      location.pathname + (p.size ? '?' + p : '') + location.hash,
+    );
+  }
+  for (const input of [search, category, status, runtime])
+    input?.addEventListener('input', () => filter());
+  function reset() {
+    search.value = '';
+    category.value = '';
+    if (status) status.value = '';
+    if (runtime) runtime.value = '';
+    filter();
+    search.focus();
+  }
+  document.querySelector('#reset')!.addEventListener('click', reset);
+  document.querySelector('#clear-empty')!.addEventListener('click', reset);
+  more.addEventListener('click', () => {
+    limit += 50;
+    filter(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (
+      e.key === '/' &&
+      !(e.target instanceof HTMLInputElement) &&
+      !(e.target instanceof HTMLSelectElement)
+    ) {
+      e.preventDefault();
+      search.focus();
+    }
+  });
+  filter();
+</script>

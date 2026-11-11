@@ -1,0 +1,17 @@
+id: kaitai-struct-818804755
+name: Kaitai Struct
+upstream_language_id: 818804755
+type: programming
+aliases:
+  - ksy
+extensions:
+  - .ksy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

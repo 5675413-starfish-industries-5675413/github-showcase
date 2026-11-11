@@ -1,0 +1,17 @@
+id: berry-121855308
+name: Berry
+upstream_language_id: 121855308
+type: programming
+aliases:
+  - be
+extensions:
+  - .be
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

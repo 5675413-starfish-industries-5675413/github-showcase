@@ -1,0 +1,19 @@
+id: kicad-layout-187
+name: KiCad Layout
+upstream_language_id: 187
+type: data
+aliases:
+  - pcbnew
+extensions:
+  - .kicad_pcb
+  - .kicad_mod
+  - .kicad_wks
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,20 @@
+id: adblock-filter-list-884614762
+name: Adblock Filter List
+upstream_language_id: 884614762
+type: data
+aliases:
+  - ad block filters
+  - ad block
+  - adb
+  - adblock
+extensions:
+  - .txt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

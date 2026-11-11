@@ -1,0 +1,19 @@
+id: ros-interface-809230569
+name: ROS Interface
+upstream_language_id: 809230569
+type: data
+aliases:
+  - rosmsg
+extensions:
+  - .msg
+  - .action
+  - .srv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

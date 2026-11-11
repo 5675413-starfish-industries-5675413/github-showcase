@@ -1,0 +1,17 @@
+id: tree-sitter-query-436081647
+name: Tree-sitter Query
+upstream_language_id: 436081647
+type: data
+aliases:
+  - tsq
+extensions:
+  - .scm
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

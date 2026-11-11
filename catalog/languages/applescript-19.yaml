@@ -1,0 +1,19 @@
+id: applescript-19
+name: AppleScript
+upstream_language_id: 19
+type: programming
+aliases:
+  - apples
+  - osascript
+extensions:
+  - .applescript
+  - .scpt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

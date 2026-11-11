@@ -1,0 +1,21 @@
+id: motorola-68k-assembly-477582706
+name: Motorola 68K Assembly
+upstream_language_id: 477582706
+type: programming
+aliases:
+  - m68k
+extensions:
+  - .asm
+  - .i
+  - .inc
+  - .s
+  - .x68
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

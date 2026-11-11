@@ -1,0 +1,16 @@
+id: isabelle-170
+name: Isabelle
+upstream_language_id: 170
+type: programming
+aliases: []
+extensions:
+  - .thy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

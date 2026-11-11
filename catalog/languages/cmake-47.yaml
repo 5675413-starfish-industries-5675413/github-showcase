@@ -1,0 +1,17 @@
+id: cmake-47
+name: CMake
+upstream_language_id: 47
+type: programming
+aliases: []
+extensions:
+  - .cmake
+  - .cmake.in
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

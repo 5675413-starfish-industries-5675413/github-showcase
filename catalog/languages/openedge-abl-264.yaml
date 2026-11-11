@@ -1,0 +1,21 @@
+id: openedge-abl-264
+name: OpenEdge ABL
+upstream_language_id: 264
+type: programming
+aliases:
+  - progress
+  - openedge
+  - abl
+extensions:
+  - .p
+  - .cls
+  - .w
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

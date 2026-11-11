@@ -1,0 +1,5 @@
+name: core
+requirements: [Node.js, Python 3, Bash]
+timeout_seconds_per_example: 10
+output_limit_bytes: 65536
+policy: reviewed-allowlist

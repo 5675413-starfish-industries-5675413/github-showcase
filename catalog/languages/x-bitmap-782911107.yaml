@@ -1,0 +1,17 @@
+id: x-bitmap-782911107
+name: X BitMap
+upstream_language_id: 782911107
+type: data
+aliases:
+  - xbm
+extensions:
+  - .xbm
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,19 @@
+id: go-checksums-1054391671
+name: Go Checksums
+upstream_language_id: 1054391671
+type: data
+aliases:
+  - go.sum
+  - go sum
+  - go.work.sum
+  - go work sum
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

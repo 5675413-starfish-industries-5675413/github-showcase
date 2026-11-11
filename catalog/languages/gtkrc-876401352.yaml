@@ -1,0 +1,19 @@
+id: gtkrc-876401352
+name: GtkRC
+upstream_language_id: 876401352
+type: data
+aliases:
+  - gtk
+  - gtk 1
+  - gtk 2
+extensions:
+  - .gtkrc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

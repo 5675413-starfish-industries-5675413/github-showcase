@@ -1,0 +1,16 @@
+id: luau-365050359
+name: Luau
+upstream_language_id: 365050359
+type: programming
+aliases: []
+extensions:
+  - .luau
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

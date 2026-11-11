@@ -1,0 +1,16 @@
+id: fluent-206353404
+name: Fluent
+upstream_language_id: 206353404
+type: programming
+aliases: []
+extensions:
+  - .ftl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

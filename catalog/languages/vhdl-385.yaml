@@ -1,0 +1,23 @@
+id: vhdl-385
+name: VHDL
+upstream_language_id: 385
+type: programming
+aliases: []
+extensions:
+  - .vhdl
+  - .vhd
+  - .vhf
+  - .vhi
+  - .vho
+  - .vhs
+  - .vht
+  - .vhw
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

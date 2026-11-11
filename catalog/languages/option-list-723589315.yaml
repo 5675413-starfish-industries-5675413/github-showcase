@@ -1,0 +1,17 @@
+id: option-list-723589315
+name: Option List
+upstream_language_id: 723589315
+type: data
+aliases:
+  - opts
+  - ackrc
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

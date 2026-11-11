@@ -1,0 +1,19 @@
+id: rocq-prover-69
+name: Rocq Prover
+upstream_language_id: 69
+type: programming
+aliases:
+  - coq
+  - rocq
+extensions:
+  - .v
+  - .coq
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

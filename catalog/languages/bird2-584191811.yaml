@@ -1,0 +1,17 @@
+id: bird2-584191811
+name: BIRD2
+upstream_language_id: 584191811
+type: data
+aliases:
+  - bird
+  - bird3
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

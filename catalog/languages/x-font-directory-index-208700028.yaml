@@ -1,0 +1,15 @@
+id: x-font-directory-index-208700028
+name: X Font Directory Index
+upstream_language_id: 208700028
+type: data
+aliases: []
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

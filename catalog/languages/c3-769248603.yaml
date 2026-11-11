@@ -1,0 +1,16 @@
+id: c3-769248603
+name: C3
+upstream_language_id: 769248603
+type: programming
+aliases: []
+extensions:
+  - .c3
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

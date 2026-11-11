@@ -1,0 +1,17 @@
+id: tmdl-769162295
+name: TMDL
+upstream_language_id: 769162295
+type: data
+aliases:
+  - Tabular Model Definition Language
+extensions:
+  - .tmdl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

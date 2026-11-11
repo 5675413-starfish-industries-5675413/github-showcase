@@ -1,0 +1,16 @@
+id: kolmafia-ash-852099832
+name: KoLmafia ASH
+upstream_language_id: 852099832
+type: programming
+aliases: []
+extensions:
+  - .ash
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

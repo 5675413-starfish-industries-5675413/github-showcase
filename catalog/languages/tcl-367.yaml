@@ -1,0 +1,23 @@
+id: tcl-367
+name: Tcl
+upstream_language_id: 367
+type: programming
+aliases:
+  - sdc
+  - xdc
+extensions:
+  - .tcl
+  - .adp
+  - .sdc
+  - .tcl.in
+  - .tm
+  - .xdc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

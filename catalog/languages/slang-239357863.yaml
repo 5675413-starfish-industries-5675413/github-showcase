@@ -1,0 +1,16 @@
+id: slang-239357863
+name: Slang
+upstream_language_id: 239357863
+type: programming
+aliases: []
+extensions:
+  - .slang
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

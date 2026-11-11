@@ -1,0 +1,16 @@
+id: oberon-677210597
+name: Oberon
+upstream_language_id: 677210597
+type: programming
+aliases: []
+extensions:
+  - .ob2
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

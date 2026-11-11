@@ -1,0 +1,19 @@
+id: typescript-378
+name: TypeScript
+upstream_language_id: 378
+type: programming
+aliases:
+  - ts
+extensions:
+  - .ts
+  - .cts
+  - .mts
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

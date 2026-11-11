@@ -1,0 +1,17 @@
+id: sage-338
+name: Sage
+upstream_language_id: 338
+type: programming
+aliases: []
+extensions:
+  - .sage
+  - .sagews
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

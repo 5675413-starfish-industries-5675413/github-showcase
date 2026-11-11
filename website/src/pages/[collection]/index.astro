@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/BaseLayout.astro';
+import Explorer from '../../components/Explorer.astro';
+export function getStaticPaths() {
+  return ['languages', 'formats', 'features'].map((collection) => ({
+    params: { collection },
+  }));
+}
+const { collection } = Astro.params;
+---
+
+<Layout title={`${collection} collection`}>
+  <Explorer kind={collection} />
+</Layout>

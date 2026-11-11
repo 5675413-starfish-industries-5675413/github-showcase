@@ -1,0 +1,16 @@
+id: oasv3-json-980062566
+name: OASv3-json
+upstream_language_id: 980062566
+type: data
+aliases: []
+extensions:
+  - .json
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: objdump-256
+name: ObjDump
+upstream_language_id: 256
+type: data
+aliases: []
+extensions:
+  - .objdump
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

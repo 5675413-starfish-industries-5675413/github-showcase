@@ -1,0 +1,19 @@
+id: css-50
+name: CSS
+upstream_language_id: 50
+type: markup
+aliases: []
+extensions:
+  - .css
+example_path: examples/languages/markup/css
+source: hello.css
+demonstration: native
+requirements:
+  - Web browser; Node.js
+run: null
+expected: |
+  Valid sample
+limitations:
+  - Core check covers this sample structure/content only; full syntax
+    conformance and rendered appearance are not verified.
+license: MIT

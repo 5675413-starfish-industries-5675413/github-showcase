@@ -1,0 +1,16 @@
+id: vyper-1055641948
+name: Vyper
+upstream_language_id: 1055641948
+type: programming
+aliases: []
+extensions:
+  - .vy
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

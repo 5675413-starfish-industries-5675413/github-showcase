@@ -1,0 +1,20 @@
+id: altium-designer-187772328
+name: Altium Designer
+upstream_language_id: 187772328
+type: data
+aliases:
+  - altium
+extensions:
+  - .OutJob
+  - .PcbDoc
+  - .PrjPCB
+  - .SchDoc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

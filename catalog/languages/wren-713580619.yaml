@@ -1,0 +1,17 @@
+id: wren-713580619
+name: Wren
+upstream_language_id: 713580619
+type: programming
+aliases:
+  - wrenlang
+extensions:
+  - .wren
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

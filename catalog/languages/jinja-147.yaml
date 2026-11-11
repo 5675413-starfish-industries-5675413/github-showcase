@@ -1,0 +1,22 @@
+id: jinja-147
+name: Jinja
+upstream_language_id: 147
+type: markup
+aliases:
+  - django
+  - html+django
+  - html+jinja
+  - htmldjango
+extensions:
+  - .jinja
+  - .j2
+  - .jinja2
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

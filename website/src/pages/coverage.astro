@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import c from '../../../catalog/generated/coverage.json';
+const rows = [
+  [
+    'Inventory coverage',
+    c.inventory,
+    c.inventory,
+    'Records matching the pinned upstream inventory.',
+  ],
+  [
+    'Example coverage',
+    c.examples,
+    c.inventory,
+    'An inspectable example is present.',
+  ],
+  [
+    'Detection coverage',
+    c.detection,
+    c.inventory,
+    'A pinned Linguist classifier recognizes the example.',
+  ],
+  [
+    'Validation coverage',
+    c.validation,
+    c.inventory,
+    'The relevant core structural/content check passed.',
+  ],
+  [
+    'Execution coverage',
+    c.execution,
+    c.inventory,
+    'The program ran and produced its expected output.',
+  ],
+  [
+    'Format validation',
+    c.formats.validated,
+    c.formats.total,
+    'The curated sample passed its format check.',
+  ],
+  [
+    'Platform demonstrations',
+    c.features.demonstrated,
+    c.features.total,
+    'A hosted demonstration has recorded evidence.',
+  ],
+];
+---
+
+<Layout title="Coverage">
+  <article class="detail wide">
+    <p class="eyebrow">ACCOUNT FOR EVERYTHING. PROVE EACH CLAIM.</p>
+    <h1>Coverage, without shortcuts.</h1>
+    <p class="lead">One inventory. Several independent measures of progress.</p>
+    <div class="coverage-table">
+      {rows.map(([name, count, total, definition]) => (
+        <div>
+          <h2>{name}</h2>
+          <p>{definition}</p>
+          <strong>
+            {count}
+            <small> / {total}</small>
+          </strong>
+          <progress
+            value={Number(count)}
+            max={Number(total)}
+            aria-label={String(name)}
+          />
+        </div>
+      ))}
+    </div>
+    <section>
+      <h2>The pinned baseline</h2>
+      <p>
+        GitHub Linguist revision{' '}
+        <a href={`${c.baseline.repository}/tree/${c.baseline.revision}`}>
+          <code>{c.baseline.revision}</code>
+        </a>
+      </p>
+      <p>
+        SHA-256: <code>{c.baseline.sha256}</code>
+      </p>
+      <div class="evidence-grid">
+        {Object.entries(c.categories).map(([category, total]) => (
+          <div>
+            <span>{category}</span>
+            <strong>{total}</strong>
+          </div>
+        ))}
+      </div>
+    </section>
+    <section>
+      <h2>How to read these numbers</h2>
+      <p>
+        Inventory completeness is not example completeness. Language statistics
+        are not catalog coverage. No detection audit has been recorded. Syntax
+        checks are deliberately narrow and their limits appear on every example
+        page.
+      </p>
+      <p>
+        Run <code>npm run verify</code> to validate the catalog, test failure
+        cases, run the reviewed examples, build the site, and check internal
+        links. Builds without matching evidence display “not tested.”
+      </p>
+    </section>
+  </article>
+</Layout>

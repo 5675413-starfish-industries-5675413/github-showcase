@@ -1,0 +1,19 @@
+id: autoit-27
+name: AutoIt
+upstream_language_id: 27
+type: programming
+aliases:
+  - au3
+  - AutoIt3
+  - AutoItScript
+extensions:
+  - .au3
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

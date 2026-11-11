@@ -1,0 +1,18 @@
+id: texinfo-988020015
+name: Texinfo
+upstream_language_id: 988020015
+type: prose
+aliases: []
+extensions:
+  - .texinfo
+  - .texi
+  - .txi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

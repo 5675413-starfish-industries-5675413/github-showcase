@@ -1,0 +1,27 @@
+{
+  "id": "format-json",
+  "name": "JSON document",
+  "family": "structured-data",
+  "extensions": [
+    ".json"
+  ],
+  "media_type": "application/json",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/structured-data",
+  "source": "hello.json",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-json"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

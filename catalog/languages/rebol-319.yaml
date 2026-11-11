@@ -1,0 +1,20 @@
+id: rebol-319
+name: Rebol
+upstream_language_id: 319
+type: programming
+aliases: []
+extensions:
+  - .reb
+  - .r
+  - .r2
+  - .r3
+  - .rebol
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

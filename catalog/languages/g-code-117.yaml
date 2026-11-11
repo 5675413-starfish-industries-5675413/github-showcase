@@ -1,0 +1,19 @@
+id: g-code-117
+name: G-code
+upstream_language_id: 117
+type: programming
+aliases: []
+extensions:
+  - .g
+  - .cnc
+  - .gco
+  - .gcode
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: object-data-instance-notation-985227236
+name: Object Data Instance Notation
+upstream_language_id: 985227236
+type: data
+aliases: []
+extensions:
+  - .odin
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

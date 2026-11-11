@@ -1,0 +1,20 @@
+id: nim-249
+name: Nim
+upstream_language_id: 249
+type: programming
+aliases: []
+extensions:
+  - .nim
+  - .nim.cfg
+  - .nimble
+  - .nimrod
+  - .nims
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

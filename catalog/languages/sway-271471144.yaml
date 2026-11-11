@@ -1,0 +1,16 @@
+id: sway-271471144
+name: Sway
+upstream_language_id: 271471144
+type: programming
+aliases: []
+extensions:
+  - .sw
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

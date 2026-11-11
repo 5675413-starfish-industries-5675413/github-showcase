@@ -1,0 +1,16 @@
+id: gedcom-459577965
+name: GEDCOM
+upstream_language_id: 459577965
+type: data
+aliases: []
+extensions:
+  - .ged
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

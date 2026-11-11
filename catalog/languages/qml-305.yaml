@@ -1,0 +1,17 @@
+id: qml-305
+name: QML
+upstream_language_id: 305
+type: programming
+aliases: []
+extensions:
+  - .qml
+  - .qbs
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

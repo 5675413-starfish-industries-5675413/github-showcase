@@ -1,0 +1,16 @@
+id: sas-328
+name: SAS
+upstream_language_id: 328
+type: programming
+aliases: []
+extensions:
+  - .sas
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

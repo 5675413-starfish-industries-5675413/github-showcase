@@ -1,0 +1,16 @@
+id: glyph-bitmap-distribution-format-997665271
+name: Glyph Bitmap Distribution Format
+upstream_language_id: 997665271
+type: data
+aliases: []
+extensions:
+  - .bdf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

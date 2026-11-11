@@ -1,0 +1,16 @@
+id: swift-362
+name: Swift
+upstream_language_id: 362
+type: programming
+aliases: []
+extensions:
+  - .swift
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

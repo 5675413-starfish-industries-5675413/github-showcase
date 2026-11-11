@@ -1,0 +1,17 @@
+id: webvtt-658679714
+name: WebVTT
+upstream_language_id: 658679714
+type: data
+aliases:
+  - vtt
+extensions:
+  - .vtt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: python-traceback-304
+name: Python traceback
+upstream_language_id: 304
+type: data
+aliases: []
+extensions:
+  - .pytb
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

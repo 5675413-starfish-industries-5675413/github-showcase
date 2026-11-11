@@ -1,0 +1,16 @@
+id: jcl-316620079
+name: JCL
+upstream_language_id: 316620079
+type: programming
+aliases: []
+extensions:
+  - .jcl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

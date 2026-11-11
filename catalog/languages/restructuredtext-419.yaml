@@ -1,0 +1,20 @@
+id: restructuredtext-419
+name: reStructuredText
+upstream_language_id: 419
+type: prose
+aliases:
+  - rst
+extensions:
+  - .rst
+  - .rest
+  - .rest.txt
+  - .rst.txt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

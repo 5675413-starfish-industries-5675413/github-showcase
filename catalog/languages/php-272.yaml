@@ -1,0 +1,26 @@
+id: php-272
+name: PHP
+upstream_language_id: 272
+type: programming
+aliases:
+  - inc
+extensions:
+  - .php
+  - .aw
+  - .ctp
+  - .fcgi
+  - .inc
+  - .php3
+  - .php4
+  - .php5
+  - .phps
+  - .phpt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

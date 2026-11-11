@@ -1,0 +1,26 @@
+id: yaml-407
+name: YAML
+upstream_language_id: 407
+type: data
+aliases:
+  - yml
+extensions:
+  - .yml
+  - .mir
+  - .reek
+  - .rviz
+  - .sublime-syntax
+  - .syntax
+  - .yaml
+  - .yaml-tmlanguage
+  - .yaml.sed
+  - .yml.mysql
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

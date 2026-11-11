@@ -1,0 +1,17 @@
+id: d2-37531557
+name: D2
+upstream_language_id: 37531557
+type: markup
+aliases:
+  - d2lang
+extensions:
+  - .d2
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

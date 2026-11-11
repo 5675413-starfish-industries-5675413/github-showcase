@@ -1,0 +1,16 @@
+id: mirc-script-517654727
+name: mIRC Script
+upstream_language_id: 517654727
+type: programming
+aliases: []
+extensions:
+  - .mrc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

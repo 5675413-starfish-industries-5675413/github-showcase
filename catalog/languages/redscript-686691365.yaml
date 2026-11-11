@@ -1,0 +1,16 @@
+id: redscript-686691365
+name: Redscript
+upstream_language_id: 686691365
+type: programming
+aliases: []
+extensions:
+  - .reds
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

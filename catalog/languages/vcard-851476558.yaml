@@ -1,0 +1,18 @@
+id: vcard-851476558
+name: vCard
+upstream_language_id: 851476558
+type: data
+aliases:
+  - virtual contact file
+  - electronic business card
+extensions:
+  - .vcf
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

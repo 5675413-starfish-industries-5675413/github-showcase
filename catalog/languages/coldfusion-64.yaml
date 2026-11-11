@@ -1,0 +1,20 @@
+id: coldfusion-64
+name: ColdFusion
+upstream_language_id: 64
+type: programming
+aliases:
+  - cfm
+  - cfml
+  - coldfusion html
+extensions:
+  - .cfm
+  - .cfml
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

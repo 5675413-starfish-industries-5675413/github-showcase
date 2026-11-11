@@ -1,0 +1,19 @@
+id: fortran-107
+name: Fortran
+upstream_language_id: 107
+type: programming
+aliases: []
+extensions:
+  - .f
+  - .f77
+  - .for
+  - .fpp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: game-maker-language-125
+name: Game Maker Language
+upstream_language_id: 125
+type: programming
+aliases: []
+extensions:
+  - .gml
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

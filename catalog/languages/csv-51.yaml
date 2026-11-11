@@ -1,0 +1,16 @@
+id: csv-51
+name: CSV
+upstream_language_id: 51
+type: data
+aliases: []
+extensions:
+  - .csv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

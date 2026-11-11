@@ -1,0 +1,16 @@
+id: edge-460509620
+name: Edge
+upstream_language_id: 460509620
+type: markup
+aliases: []
+extensions:
+  - .edge
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

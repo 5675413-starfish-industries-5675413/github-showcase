@@ -1,0 +1,16 @@
+id: edje-data-collection-342840478
+name: Edje Data Collection
+upstream_language_id: 342840478
+type: data
+aliases: []
+extensions:
+  - .edc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

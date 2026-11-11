@@ -1,0 +1,16 @@
+id: janet-1028705371
+name: Janet
+upstream_language_id: 1028705371
+type: programming
+aliases: []
+extensions:
+  - .janet
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

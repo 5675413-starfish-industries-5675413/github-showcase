@@ -1,0 +1,15 @@
+id: browserslist-153503348
+name: Browserslist
+upstream_language_id: 153503348
+type: data
+aliases: []
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

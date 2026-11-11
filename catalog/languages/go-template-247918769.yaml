@@ -1,0 +1,21 @@
+id: go-template-247918769
+name: Go Template
+upstream_language_id: 247918769
+type: markup
+aliases:
+  - gotmpl
+extensions:
+  - .gohtml
+  - .gotmpl
+  - .html.tmpl
+  - .tmpl
+  - .tpl
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

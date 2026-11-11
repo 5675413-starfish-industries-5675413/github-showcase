@@ -1,0 +1,17 @@
+id: dtrace-85
+name: DTrace
+upstream_language_id: 85
+type: programming
+aliases:
+  - dtrace-script
+extensions:
+  - .d
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

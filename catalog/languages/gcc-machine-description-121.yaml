@@ -1,0 +1,16 @@
+id: gcc-machine-description-121
+name: GCC Machine Description
+upstream_language_id: 121
+type: programming
+aliases: []
+extensions:
+  - .md
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

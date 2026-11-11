@@ -1,0 +1,30 @@
+id: wolfram-language-224
+name: Wolfram Language
+upstream_language_id: 224
+type: programming
+aliases:
+  - mathematica
+  - mma
+  - wolfram
+  - wolfram lang
+  - wl
+extensions:
+  - .mathematica
+  - .cdf
+  - .m
+  - .ma
+  - .mt
+  - .nb
+  - .nbp
+  - .wl
+  - .wls
+  - .wlt
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

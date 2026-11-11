@@ -1,0 +1,16 @@
+id: sip-796891177
+name: SIP
+upstream_language_id: 796891177
+type: programming
+aliases: []
+extensions:
+  - .sip
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

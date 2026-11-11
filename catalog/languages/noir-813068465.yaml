@@ -1,0 +1,17 @@
+id: noir-813068465
+name: Noir
+upstream_language_id: 813068465
+type: programming
+aliases:
+  - nargo
+extensions:
+  - .nr
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

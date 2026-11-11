@@ -1,0 +1,23 @@
+id: sql-333
+name: SQL
+upstream_language_id: 333
+type: data
+aliases: []
+extensions:
+  - .sql
+  - .ddl
+  - .inc
+  - .mysql
+  - .prc
+  - .tab
+  - .udf
+  - .viw
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

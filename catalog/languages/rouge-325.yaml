@@ -1,0 +1,16 @@
+id: rouge-325
+name: Rouge
+upstream_language_id: 325
+type: programming
+aliases: []
+extensions:
+  - .rg
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

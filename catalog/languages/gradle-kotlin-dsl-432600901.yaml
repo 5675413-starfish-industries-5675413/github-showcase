@@ -1,0 +1,16 @@
+id: gradle-kotlin-dsl-432600901
+name: Gradle Kotlin DSL
+upstream_language_id: 432600901
+type: data
+aliases: []
+extensions:
+  - .gradle.kts
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

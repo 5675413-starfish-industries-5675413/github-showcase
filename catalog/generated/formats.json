@@ -1,0 +1,262 @@
+[
+  {
+    "id": "format-csv",
+    "name": "CSV table",
+    "family": "structured-data",
+    "extensions": [
+      ".csv"
+    ],
+    "media_type": "text/csv",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/structured-data",
+    "source": "hello.csv",
+    "demonstration": "store",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-csv"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    },
+    "source_text": "message\n\"Hello, world!\"\n"
+  },
+  {
+    "id": "format-gzip",
+    "name": "Gzip stream",
+    "family": "compression",
+    "extensions": [
+      ".txt.gz"
+    ],
+    "media_type": "application/gzip",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/compression",
+    "source": "hello.txt.gz",
+    "demonstration": "store",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-gzip"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "format-json",
+    "name": "JSON document",
+    "family": "structured-data",
+    "extensions": [
+      ".json"
+    ],
+    "media_type": "application/json",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/structured-data",
+    "source": "hello.json",
+    "demonstration": "store",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-json"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    },
+    "source_text": "{\"message\":\"Hello, world!\"}\n"
+  },
+  {
+    "id": "format-sqlite",
+    "name": "SQLite database",
+    "family": "databases",
+    "extensions": [
+      ".sqlite"
+    ],
+    "media_type": "application/vnd.sqlite3",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/databases",
+    "source": "hello.sqlite",
+    "demonstration": "query",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-sqlite"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "format-svg",
+    "name": "SVG document",
+    "family": "images",
+    "extensions": [
+      ".svg"
+    ],
+    "media_type": "image/svg+xml",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/images",
+    "source": "hello.svg",
+    "demonstration": "render",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-svg"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    },
+    "source_text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"320\" height=\"80\" viewBox=\"0 0 320 80\"><rect width=\"320\" height=\"80\" fill=\"white\"/><text x=\"16\" y=\"48\" fill=\"#101828\" font-family=\"sans-serif\" font-size=\"28\">Hello, world!</text></svg>\n"
+  },
+  {
+    "id": "format-wav",
+    "name": "PCM WAV tone",
+    "family": "audio",
+    "extensions": [
+      ".wav"
+    ],
+    "media_type": "audio/wav",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/audio",
+    "source": "tone.wav",
+    "demonstration": "native",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-wav"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "format-webvtt",
+    "name": "WebVTT subtitles",
+    "family": "subtitles",
+    "extensions": [
+      ".vtt"
+    ],
+    "media_type": "text/vtt",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/subtitles",
+    "source": "hello.vtt",
+    "demonstration": "render",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-webvtt"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    },
+    "source_text": "WEBVTT\n\n00:00.000 --> 00:02.000\nHello, world!\n"
+  },
+  {
+    "id": "format-zip",
+    "name": "ZIP archive",
+    "family": "archives",
+    "extensions": [
+      ".zip"
+    ],
+    "media_type": "application/zip",
+    "recipe": "recipes/generate-formats.py",
+    "related": [],
+    "example_path": "examples/formats/archives",
+    "source": "hello.zip",
+    "demonstration": "store",
+    "requirements": [
+      "Python 3 (standard library)"
+    ],
+    "run": [
+      "python3",
+      "tools/validate-formats.py",
+      "format-zip"
+    ],
+    "expected": "Valid sample\n",
+    "limitations": [
+      "Structural/content validation only; manual viewer/decoder verification is pending."
+    ],
+    "license": "MIT",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "passed",
+      "execution": "not-tested"
+    }
+  }
+]

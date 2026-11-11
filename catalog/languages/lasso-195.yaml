@@ -1,0 +1,20 @@
+id: lasso-195
+name: Lasso
+upstream_language_id: 195
+type: programming
+aliases:
+  - lassoscript
+extensions:
+  - .lasso
+  - .las
+  - .lasso8
+  - .lasso9
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

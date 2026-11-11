@@ -1,0 +1,18 @@
+id: java-server-pages-182
+name: Java Server Pages
+upstream_language_id: 182
+type: programming
+aliases:
+  - jsp
+extensions:
+  - .jsp
+  - .tag
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

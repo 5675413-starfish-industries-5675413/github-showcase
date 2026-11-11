@@ -1,0 +1,17 @@
+id: rmarkdown-313
+name: RMarkdown
+upstream_language_id: 313
+type: prose
+aliases: []
+extensions:
+  - .qmd
+  - .rmd
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

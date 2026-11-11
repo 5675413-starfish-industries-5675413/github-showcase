@@ -1,0 +1,19 @@
+id: conll-u-421026389
+name: CoNLL-U
+upstream_language_id: 421026389
+type: data
+aliases:
+  - CoNLL
+  - CoNLL-X
+extensions:
+  - .conllu
+  - .conll
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

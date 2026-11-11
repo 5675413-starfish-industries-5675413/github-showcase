@@ -1,0 +1,17 @@
+id: dns-zone-84
+name: DNS Zone
+upstream_language_id: 84
+type: data
+aliases: []
+extensions:
+  - .zone
+  - .arpa
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

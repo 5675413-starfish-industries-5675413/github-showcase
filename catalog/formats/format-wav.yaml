@@ -1,0 +1,27 @@
+{
+  "id": "format-wav",
+  "name": "PCM WAV tone",
+  "family": "audio",
+  "extensions": [
+    ".wav"
+  ],
+  "media_type": "audio/wav",
+  "recipe": "recipes/generate-formats.py",
+  "related": [],
+  "example_path": "examples/formats/audio",
+  "source": "tone.wav",
+  "demonstration": "native",
+  "requirements": [
+    "Python 3 (standard library)"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-wav"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Structural/content validation only; manual viewer/decoder verification is pending."
+  ],
+  "license": "MIT"
+}

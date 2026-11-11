@@ -1,0 +1,17 @@
+id: java-template-engine-599494012
+name: Java Template Engine
+upstream_language_id: 599494012
+type: programming
+aliases:
+  - jte
+extensions:
+  - .jte
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,17 @@
+id: purebasic-301
+name: PureBasic
+upstream_language_id: 301
+type: programming
+aliases: []
+extensions:
+  - .pb
+  - .pbi
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

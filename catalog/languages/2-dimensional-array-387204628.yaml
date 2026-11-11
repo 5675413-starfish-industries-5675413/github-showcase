@@ -1,0 +1,16 @@
+id: 2-dimensional-array-387204628
+name: 2-Dimensional Array
+upstream_language_id: 387204628
+type: data
+aliases: []
+extensions:
+  - .2da
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

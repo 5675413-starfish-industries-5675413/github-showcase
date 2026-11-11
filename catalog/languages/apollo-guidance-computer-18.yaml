@@ -1,0 +1,16 @@
+id: apollo-guidance-computer-18
+name: Apollo Guidance Computer
+upstream_language_id: 18
+type: programming
+aliases: []
+extensions:
+  - .agc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

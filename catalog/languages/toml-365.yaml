@@ -1,0 +1,17 @@
+id: toml-365
+name: TOML
+upstream_language_id: 365
+type: data
+aliases: []
+extensions:
+  - .toml
+  - .toml.example
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

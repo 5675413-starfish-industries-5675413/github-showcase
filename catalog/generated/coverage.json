@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "repository": "https://github.com/github-linguist/linguist",
+    "revision": "d456527fe93355baa28c3c29d542c97282b61bc7",
+    "path": "lib/linguist/languages.yml",
+    "sha256": "09c13db185b6f9b8f64b932dcd79815fef4a67624ab2dade9c194388d1dbe29d"
+  },
+  "inventory": 845,
+  "examples": 7,
+  "categories": {
+    "programming": 569,
+    "markup": 71,
+    "data": 187,
+    "prose": 18
+  },
+  "detection": 0,
+  "validation": 4,
+  "execution": 3,
+  "formats": {
+    "total": 8,
+    "validated": 8
+  },
+  "features": {
+    "total": 10,
+    "demonstrated": 1
+  }
+}

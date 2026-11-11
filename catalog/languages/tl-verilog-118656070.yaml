@@ -1,0 +1,16 @@
+id: tl-verilog-118656070
+name: TL-Verilog
+upstream_language_id: 118656070
+type: programming
+aliases: []
+extensions:
+  - .tlv
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

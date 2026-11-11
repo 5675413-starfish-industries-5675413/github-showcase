@@ -1,0 +1,16 @@
+id: quakec-472308069
+name: QuakeC
+upstream_language_id: 472308069
+type: programming
+aliases: []
+extensions:
+  - .qc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: linux-kernel-module-203
+name: Linux Kernel Module
+upstream_language_id: 203
+type: data
+aliases: []
+extensions:
+  - .mod
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

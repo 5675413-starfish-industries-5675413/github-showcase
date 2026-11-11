@@ -1,0 +1,24 @@
+id: pascal-281
+name: Pascal
+upstream_language_id: 281
+type: programming
+aliases:
+  - delphi
+  - objectpascal
+extensions:
+  - .pas
+  - .dfm
+  - .dpr
+  - .inc
+  - .lpr
+  - .pascal
+  - .pp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

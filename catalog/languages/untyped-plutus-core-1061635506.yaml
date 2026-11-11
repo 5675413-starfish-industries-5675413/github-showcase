@@ -1,0 +1,16 @@
+id: untyped-plutus-core-1061635506
+name: Untyped Plutus Core
+upstream_language_id: 1061635506
+type: programming
+aliases: []
+extensions:
+  - .uplc
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

@@ -1,0 +1,16 @@
+id: redirect-rules-1020148948
+name: Redirect Rules
+upstream_language_id: 1020148948
+type: data
+aliases:
+  - redirects
+extensions: []
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

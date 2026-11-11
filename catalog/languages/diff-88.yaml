@@ -1,0 +1,18 @@
+id: diff-88
+name: Diff
+upstream_language_id: 88
+type: data
+aliases:
+  - udiff
+extensions:
+  - .diff
+  - .patch
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

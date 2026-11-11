@@ -1,0 +1,8 @@
+node_modules/
+website/dist/
+website/.astro/
+.DS_Store
+.env*
+verification/latest.json
+website/public/reports/
+website/public/samples/

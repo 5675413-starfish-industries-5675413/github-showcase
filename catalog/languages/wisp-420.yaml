@@ -1,0 +1,16 @@
+id: wisp-420
+name: wisp
+upstream_language_id: 420
+type: programming
+aliases: []
+extensions:
+  - .wisp
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

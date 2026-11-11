@@ -1,0 +1,22 @@
+name: Propose an example
+description: Add or improve a language or format demonstration
+title: 'Example: '
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Catalog entry or format
+    validations:
+      required: true
+  - type: textarea
+    id: demonstration
+    attributes:
+      label: Demonstration, requirements, and expected result
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: Licensing and source attribution
+    validations:
+      required: true

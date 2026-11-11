@@ -1,0 +1,17 @@
+id: formatted-113
+name: Formatted
+upstream_language_id: 113
+type: data
+aliases: []
+extensions:
+  - .for
+  - .eam.fs
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

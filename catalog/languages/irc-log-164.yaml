@@ -1,0 +1,19 @@
+id: irc-log-164
+name: IRC log
+upstream_language_id: 164
+type: data
+aliases:
+  - irc
+  - irc logs
+extensions:
+  - .irclog
+  - .weechatlog
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

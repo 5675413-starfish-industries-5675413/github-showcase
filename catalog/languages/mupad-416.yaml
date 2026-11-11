@@ -1,0 +1,16 @@
+id: mupad-416
+name: mupad
+upstream_language_id: 416
+type: programming
+aliases: []
+extensions:
+  - .mu
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

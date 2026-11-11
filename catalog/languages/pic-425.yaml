@@ -1,0 +1,18 @@
+id: pic-425
+name: Pic
+upstream_language_id: 425
+type: markup
+aliases:
+  - pikchr
+extensions:
+  - .pic
+  - .chem
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)

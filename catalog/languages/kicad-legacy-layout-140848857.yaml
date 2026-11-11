@@ -1,0 +1,16 @@
+id: kicad-legacy-layout-140848857
+name: KiCad Legacy Layout
+upstream_language_id: 140848857
+type: data
+aliases: []
+extensions:
+  - .brd
+example_path: null
+source: null
+demonstration: pending
+requirements: []
+run: null
+expected: null
+limitations:
+  - Example not yet contributed. Toolchain requirements not yet assessed.
+license: MIT (catalog metadata; see NOTICE.md)
