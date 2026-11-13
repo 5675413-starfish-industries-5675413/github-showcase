@@ -4100,7 +4100,7 @@
     "extensions": [
       ".cabal"
     ],
-    "example_path": "examples/languages/data/cabal-config-677095381",
+    "example_path": "examples/languages/data/vendor/cabal-config-677095381",
     "source": "defaults.cabal",
     "demonstration": "native",
     "requirements": [
@@ -4117,7 +4117,8 @@
     ],
     "expected": "Linguist classification: Cabal Config",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -8968,7 +8969,7 @@
       ".ex",
       ".exs"
     ],
-    "example_path": "examples/languages/programming/elixir-100",
+    "example_path": "examples/languages/programming/vendor/elixir-100",
     "source": "mix.lock",
     "demonstration": "native",
     "requirements": [
@@ -8985,7 +8986,8 @@
     ],
     "expected": "Linguist classification: Elixir",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -10962,7 +10964,7 @@
     "type": "data",
     "aliases": [],
     "extensions": [],
-    "example_path": "examples/languages/data/gemfile-lock-907065713",
+    "example_path": "examples/languages/data/vendor/gemfile-lock-907065713",
     "source": "Gemfile.lock",
     "demonstration": "native",
     "requirements": [
@@ -10979,7 +10981,8 @@
     ],
     "expected": "Linguist classification: Gemfile.lock",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -12164,7 +12167,7 @@
       "go mod"
     ],
     "extensions": [],
-    "example_path": "examples/languages/data/go-module-947461016",
+    "example_path": "examples/languages/data/vendor/go-module-947461016",
     "source": "go.mod",
     "demonstration": "native",
     "requirements": [
@@ -12181,7 +12184,8 @@
     ],
     "expected": "Linguist classification: Go Module",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -12492,7 +12496,7 @@
     "extensions": [
       ".gradle"
     ],
-    "example_path": "examples/languages/data/gradle-136",
+    "example_path": "examples/languages/data/vendor/gradle-136",
     "source": "builder.gradle",
     "demonstration": "native",
     "requirements": [
@@ -12509,7 +12513,8 @@
     ],
     "expected": "Linguist classification: Gradle",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -12537,7 +12542,7 @@
     "extensions": [
       ".gradle.kts"
     ],
-    "example_path": "examples/languages/data/gradle-kotlin-dsl-432600901",
+    "example_path": "examples/languages/data/vendor/gradle-kotlin-dsl-432600901",
     "source": "build.gradle.kts",
     "demonstration": "native",
     "requirements": [
@@ -12554,7 +12559,8 @@
     ],
     "expected": "Linguist classification: Gradle Kotlin DSL",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {
@@ -19610,7 +19616,7 @@
     "type": "data",
     "aliases": [],
     "extensions": [],
-    "example_path": "examples/languages/data/maven-pom-226",
+    "example_path": "examples/languages/data/vendor/maven-pom-226",
     "source": "pom.xml",
     "demonstration": "native",
     "requirements": [
@@ -19627,7 +19633,8 @@
     ],
     "expected": "Linguist classification: Maven POM",
     "limitations": [
-      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent."
+      "Verbatim syntax fixture. Compilation and execution are outside the reviewed profiles; detection is independent.",
+      "Vendored syntax data: dependency declarations belong to the upstream fixture, not this project."
     ],
     "license": "MIT (GitHub Linguist distribution); embedded notices preserved",
     "origin": {

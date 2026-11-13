@@ -6,7 +6,7 @@ aliases:
   - go.mod
   - go mod
 extensions: []
-example_path: examples/languages/data/go-module-947461016
+example_path: examples/languages/data/vendor/go-module-947461016
 source: go.mod
 demonstration: native
 requirements:
@@ -24,6 +24,8 @@ expected: "Linguist classification: Go Module"
 limitations:
   - Verbatim syntax fixture. Compilation and execution are outside the reviewed
     profiles; detection is independent.
+  - "Vendored syntax data: dependency declarations belong to the upstream
+    fixture, not this project."
 license: MIT (GitHub Linguist distribution); embedded notices preserved
 origin:
   kind: linguist-fixture

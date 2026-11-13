@@ -52,9 +52,19 @@ for (const r of records('languages')) {
   const chosen = options[0];
   if (!chosen) continue;
   const source = path.basename(chosen.p);
-  // Keep imported Python manifests out of GitHub's automatic dependency graph.
+  // Keep imported package manifests out of GitHub's automatic dependency graph.
   // Their declarations are syntax data, never dependencies of this repository.
-  const vendor = ['toml-365', 'pip-requirements-684385621'].includes(r.id)
+  const vendor = [
+    'cabal-config-677095381',
+    'elixir-100',
+    'gemfile-lock-907065713',
+    'go-module-947461016',
+    'gradle-136',
+    'gradle-kotlin-dsl-432600901',
+    'maven-pom-226',
+    'pip-requirements-684385621',
+    'toml-365',
+  ].includes(r.id)
     ? 'vendor/'
     : '';
   const example = `examples/languages/${r.type}/${vendor}${r.id}`;
