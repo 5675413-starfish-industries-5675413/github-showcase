@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .ex
   - .exs
-example_path: examples/languages/programming/elixir-100
+example_path: examples/languages/programming/vendor/elixir-100
 source: mix.lock
 demonstration: native
 requirements:
@@ -24,6 +24,8 @@ expected: "Linguist classification: Elixir"
 limitations:
   - Verbatim syntax fixture. Compilation and execution are outside the reviewed
     profiles; detection is independent.
+  - "Vendored syntax data: dependency declarations belong to the upstream
+    fixture, not this project."
 license: MIT (GitHub Linguist distribution); embedded notices preserved
 origin:
   kind: linguist-fixture
