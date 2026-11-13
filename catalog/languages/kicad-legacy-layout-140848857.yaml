@@ -5,12 +5,25 @@ type: data
 aliases: []
 extensions:
   - .brd
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/kicad-legacy-layout-140848857
+source: hello.brd
+demonstration: native
+requirements:
+  - Text editor
+  - A KiCad Legacy Layout-compatible toolchain for optional rendering or
+    execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kicad-legacy-layout-140848857
+expected: "Linguist classification: KiCad Legacy Layout"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal native document demonstrating the format. A text editor can
+    inspect its structure.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

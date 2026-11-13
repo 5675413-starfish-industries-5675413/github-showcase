@@ -6,3 +6,8 @@ website/.astro/
 verification/latest.json
 website/public/reports/
 website/public/samples/
+.bundle/
+vendor/bundle/
+verification/detection.json
+verification/extended.json
+.cache/

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .ha
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/hare-463518941
+source: contains.ha
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - hare-463518941
+expected: "Linguist classification: Hare"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Hare/contains.ha
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Hare/contains.ha
+  sha256: 653f3e6242cf5d931c3fff213b420d8e5a041c298f22389647ac168bc6ef0de0
+verification_profile: inspection

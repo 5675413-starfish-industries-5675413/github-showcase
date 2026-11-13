@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .mps
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/mathematical-programming-system-429002699
+source: advanced-problem.mps
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - mathematical-programming-system-429002699
+expected: "Linguist classification: Mathematical Programming System"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Mathematical%20Programming%20System/advanced-problem.mps
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Mathematical Programming System/advanced-problem.mps
+  sha256: f51f12e217b5961310f8f9a620890e09433ab862a96bb752a1153ae08995210e
+verification_profile: inspection

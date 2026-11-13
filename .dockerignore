@@ -1,0 +1,10 @@
+.git
+node_modules
+website/dist
+website/.astro
+website/public/reports
+website/public/samples
+verification
+.bundle
+vendor
+.cache

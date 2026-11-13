@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .cook
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/cooklang-788037493
+source: simple_recipe.cook
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cooklang-788037493
+expected: "Linguist classification: Cooklang"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Cooklang/simple_recipe.cook
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Cooklang/simple_recipe.cook
+  sha256: ede2851faa3a4d21093fac2d2c40b4472326f75dcc553bb86eab39fe11d53b35
+verification_profile: inspection

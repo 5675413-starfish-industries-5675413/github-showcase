@@ -6,12 +6,29 @@ aliases:
   - cds
 extensions:
   - .cds
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cap-cds-390788699
+source: admin-service.cds
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cap-cds-390788699
+expected: "Linguist classification: CAP CDS"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CAP%20CDS/admin-service.cds
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CAP CDS/admin-service.cds
+  sha256: a18ec0401721a2d5de559309d7644f01148a44668bbf346509a38b4b566fa234
+verification_profile: inspection

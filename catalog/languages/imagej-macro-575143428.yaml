@@ -6,12 +6,29 @@ aliases:
   - ijm
 extensions:
   - .ijm
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/imagej-macro-575143428
+source: simple.ijm
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - imagej-macro-575143428
+expected: "Linguist classification: ImageJ Macro"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ImageJ%20Macro/simple.ijm
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ImageJ Macro/simple.ijm
+  sha256: e0fce95225f43e9bd65665c83cde913d162a73636b0810ec33d2a495a9420a0a
+verification_profile: inspection

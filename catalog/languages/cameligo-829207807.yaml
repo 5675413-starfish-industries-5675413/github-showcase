@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .mligo
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cameligo-829207807
+source: FA1.2.mligo
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cameligo-829207807
+expected: "Linguist classification: CameLIGO"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CameLIGO/FA1.2.mligo
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CameLIGO/FA1.2.mligo
+  sha256: 829520158b2d10f603ce777bd7ca9060bd066dad0c5fd87c79acf5a4dfce5b89
+verification_profile: inspection

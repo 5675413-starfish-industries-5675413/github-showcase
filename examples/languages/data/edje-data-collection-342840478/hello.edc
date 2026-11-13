@@ -1,0 +1,11 @@
+collections {
+  group { name: "hello";
+    parts {
+      part { name: "greeting"; type: TEXT;
+        description { state: "default" 0.0;
+          text { text: "Hello, world!"; font: "Sans"; size: 24; }
+        }
+      }
+    }
+  }
+}

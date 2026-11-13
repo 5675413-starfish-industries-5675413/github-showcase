@@ -4,12 +4,29 @@ upstream_language_id: 171
 type: programming
 aliases: []
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/isabelle-root-171
+source: ROOT
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - isabelle-root-171
+expected: "Linguist classification: Isabelle ROOT"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Isabelle%20ROOT/filenames/ROOT
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Isabelle ROOT/filenames/ROOT
+  sha256: aea763337bfd44767a66e555f4f8aef9ee19cbcdc211aff35420f6cd000582e4
+verification_profile: inspection

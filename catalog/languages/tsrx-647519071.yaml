@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .tsrx
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/tsrx-647519071
+source: docs-footer.tsrx
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - tsrx-647519071
+expected: "Linguist classification: TSRX"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/TSRX/docs-footer.tsrx
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/TSRX/docs-footer.tsrx
+  sha256: b45ef7e089ff8e95fda17e978ece68f4683d2358b3b8660f49b96f8e25fb5dc6
+verification_profile: inspection

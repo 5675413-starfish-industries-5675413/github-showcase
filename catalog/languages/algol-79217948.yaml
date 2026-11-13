@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .alg
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/algol-79217948
+source: example15.alg
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - algol-79217948
+expected: "Linguist classification: ALGOL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ALGOL/example15.alg
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ALGOL/example15.alg
+  sha256: 9139df6356111cbdcbd6bff43a274606cd789e9549af6402904730d7b9907ba1
+verification_profile: inspection

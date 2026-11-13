@@ -1,0 +1,4 @@
+rule greet
+  command = printf 'Hello, world!\n'
+build greeting: greet
+default greeting

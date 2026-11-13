@@ -24,12 +24,29 @@ extensions:
   - ".9"
   - .man
   - .mdoc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/roff-manpage-612669833
+source: gather_profile_stats.man
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - roff-manpage-612669833
+expected: "Linguist classification: Roff Manpage"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Roff%20Manpage/gather_profile_stats.man
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Roff Manpage/gather_profile_stats.man
+  sha256: 46e1d2ad6a5892ca299bc720edb7112a7853749cab2f6e438c1561c83d9a4390
+verification_profile: inspection

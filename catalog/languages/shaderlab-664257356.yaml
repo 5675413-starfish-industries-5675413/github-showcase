@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .shader
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/shaderlab-664257356
+source: DepthOfField.shader
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - shaderlab-664257356
+expected: "Linguist classification: ShaderLab"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ShaderLab/DepthOfField.shader
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ShaderLab/DepthOfField.shader
+  sha256: e54445f7aaa7de257ffe8497030f9b105284fdb26129cf4af4c826278814a468
+verification_profile: inspection

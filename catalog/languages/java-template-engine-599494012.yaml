@@ -6,12 +6,29 @@ aliases:
   - jte
 extensions:
   - .jte
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/java-template-engine-599494012
+source: baseLayout.jte
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - java-template-engine-599494012
+expected: "Linguist classification: Java Template Engine"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Java%20Template%20Engine/baseLayout.jte
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Java Template Engine/baseLayout.jte
+  sha256: 9a8189a087d922d83b1e821a842e21acf0b88bccecec428de03c51017386c301
+verification_profile: inspection

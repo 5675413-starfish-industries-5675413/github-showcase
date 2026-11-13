@@ -1,0 +1,20 @@
+{
+  "id": "container",
+  "name": "Core runner container",
+  "purpose": "Run verification in an isolated Linux container.",
+  "status": "demonstrated",
+  "configuration": [
+    "Dockerfile",
+    ".github/workflows/container.yml"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105850"
+  ],
+  "limitations": [
+    "Core container verified with networking disabled; registry publication runs only on main."
+  ],
+  "reviewed": "2026-11-11"
+}

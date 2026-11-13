@@ -1,0 +1,6 @@
+{
+  "Version": 0.2,
+  "ModuleName": "hello",
+  "Options": {"TargetType": "Executable", "TargetFileName": "hello"},
+  "Files": ["hello.ec"]
+}

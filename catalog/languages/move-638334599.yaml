@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .move
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/move-638334599
+source: Main.move
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - move-638334599
+expected: "Linguist classification: Move"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Move/Main.move
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Move/Main.move
+  sha256: c033bafcbacd824cf806e50eed7d94285a470b8be1a32240f780ca1dd7b0746d
+verification_profile: inspection

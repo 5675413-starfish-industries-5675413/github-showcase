@@ -1,0 +1,28 @@
+{
+  "id": "format-pdf",
+  "name": "PDF document",
+  "family": "documents",
+  "extensions": [
+    ".pdf"
+  ],
+  "media_type": "application/pdf",
+  "recipe": "recipes/generate-rich-formats.py",
+  "related": [],
+  "example_path": "examples/formats/documents",
+  "source": "hello.pdf",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3.11+ for bounded structural/content checks",
+    "A compatible viewer or decoder for interactive viewing"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-pdf"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Checks cover this sample\u2019s structure and expected content, not the entire format specification. Decoder checks are in the extended profile."
+  ],
+  "license": "MIT"
+}

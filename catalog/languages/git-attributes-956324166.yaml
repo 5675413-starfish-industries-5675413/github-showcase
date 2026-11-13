@@ -5,12 +5,29 @@ type: data
 aliases:
   - gitattributes
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/git-attributes-956324166
+source: .gitattributes
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - git-attributes-956324166
+expected: "Linguist classification: Git Attributes"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Git%20Attributes/filenames/.gitattributes
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Git Attributes/filenames/.gitattributes
+  sha256: 738708d35817b1182479b6579a30289d003148dddc08dd72cab446eb1a856742
+verification_profile: inspection

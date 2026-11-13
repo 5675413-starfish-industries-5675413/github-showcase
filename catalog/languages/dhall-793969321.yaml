@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .dhall
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/dhall-793969321
+source: remoteSystemsA.dhall
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - dhall-793969321
+expected: "Linguist classification: Dhall"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Dhall/remoteSystemsA.dhall
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Dhall/remoteSystemsA.dhall
+  sha256: 766db6e9de1f4d7c4e77277aaaee085dd5a2180f8df24c929ff4f5983dc0c923
+verification_profile: inspection

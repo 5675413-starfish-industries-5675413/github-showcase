@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .tftpl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/terraform-template-856832701
+source: donors.tftpl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - terraform-template-856832701
+expected: "Linguist classification: Terraform Template"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Terraform%20Template/donors.tftpl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Terraform Template/donors.tftpl
+  sha256: 1e574797595a736833ed7c38c653b36130f3efa3eb975eb2dea3eb6b041940ad
+verification_profile: inspection

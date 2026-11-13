@@ -1,18 +1,20 @@
 {
   "id": "review",
   "name": "Contribution review",
-  "purpose": "Document ownership and review expectations.",
+  "purpose": "Provide ownership, PR context and normal review flow.",
   "status": "configured",
   "configuration": [
     ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/CODEOWNERS"
   ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/8"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "No independent human review has been submitted."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

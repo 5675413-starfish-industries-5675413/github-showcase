@@ -1,0 +1,8 @@
+[Add greeting
+Showcase <example@example.invalid>**20260101000000
+ Ignore-this: 0123456789abcdef
+] {
+addfile ./hello.txt
+hunk ./hello.txt 1
++Hello, world!
+}

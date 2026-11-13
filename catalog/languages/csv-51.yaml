@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .csv
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/csv-51
+source: cars.csv
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - csv-51
+expected: "Linguist classification: CSV"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CSV/cars.csv
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CSV/cars.csv
+  sha256: c66e450dc7404032e170eb676e3ddc3cdfb9574a5ca3aab601f696eb7ef735ae
+verification_profile: inspection

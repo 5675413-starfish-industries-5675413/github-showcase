@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .e
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/eiffel-99
+source: app_embedded_web_service.e
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - eiffel-99
+expected: "Linguist classification: Eiffel"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Eiffel/app_embedded_web_service.e
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Eiffel/app_embedded_web_service.e
+  sha256: 92938eda0c01c7d8f7e1f431e8cefd1fdc20cf1affc70c56598a076ea237d9e9
+verification_profile: inspection

@@ -1,0 +1,19 @@
+{
+  "id": "upstream",
+  "name": "Upstream proposals",
+  "purpose": "Review immutable candidate inventories.",
+  "status": "configured",
+  "configuration": [
+    "tools/upstream-update.mjs",
+    ".github/workflows/upstream-update.yml",
+    "docs/upstream-updates.md"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [],
+  "limitations": [
+    "Direct API proposal run completed with no changes to the pinned baseline; hosted workflow evidence follows its first run."
+  ],
+  "reviewed": "2026-11-11"
+}

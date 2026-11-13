@@ -6,12 +6,29 @@ aliases:
   - ksy
 extensions:
   - .ksy
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/kaitai-struct-818804755
+source: iso9660.ksy
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kaitai-struct-818804755
+expected: "Linguist classification: Kaitai Struct"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Kaitai%20Struct/iso9660.ksy
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Kaitai Struct/iso9660.ksy
+  sha256: e7b3661d28e0c4e95e9f142535fc64c6183a40f3709cb3eaa809e47691bebf00
+verification_profile: inspection

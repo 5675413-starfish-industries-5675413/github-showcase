@@ -1,8 +1,11 @@
 {
   "name": "GitHub Showcase",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
-  "postCreateCommand": "npm ci",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "npm ci && npm run verify",
   "forwardPorts": [
     4321
-  ]
+  ],
+  "remoteUser": "node"
 }

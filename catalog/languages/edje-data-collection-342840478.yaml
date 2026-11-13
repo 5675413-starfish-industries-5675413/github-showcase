@@ -5,12 +5,25 @@ type: data
 aliases: []
 extensions:
   - .edc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/edje-data-collection-342840478
+source: hello.edc
+demonstration: native
+requirements:
+  - Text editor
+  - A Edje Data Collection-compatible toolchain for optional rendering or
+    execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - edje-data-collection-342840478
+expected: "Linguist classification: Edje Data Collection"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal native document demonstrating the format. A text editor can
+    inspect its structure.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

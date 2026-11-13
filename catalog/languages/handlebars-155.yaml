@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .handlebars
   - .hbs
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/handlebars-155
+source: basic.handlebars
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - handlebars-155
+expected: "Linguist classification: Handlebars"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Handlebars/basic.handlebars
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Handlebars/basic.handlebars
+  sha256: ec99edf0a8dd08fb1d8365c28ced8c85e12fbe409da7bc93d1b1abd422b879a8
+verification_profile: inspection

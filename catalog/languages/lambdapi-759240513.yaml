@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .lp
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/lambdapi-759240513
+source: List.lp
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - lambdapi-759240513
+expected: "Linguist classification: Lambdapi"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lambdapi/List.lp
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Lambdapi/List.lp
+  sha256: ca790a1ba6944ad952db344ff4c4532ac776ee7056135c7dd770574069b10375
+verification_profile: inspection

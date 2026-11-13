@@ -1,0 +1,28 @@
+GIT
+  remote: https://github.com/github-linguist/linguist.git
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  ref: d456527fe93355baa28c3c29d542c97282b61bc7
+  specs:
+    github-linguist (9.7.0)
+      cgi
+      charlock_holmes (~> 0.7.7)
+      mini_mime (~> 1.0)
+      rugged (~> 1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cgi (0.5.2)
+    charlock_holmes (0.7.9)
+    mini_mime (1.1.5)
+    rugged (1.9.6)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  github-linguist!
+
+BUNDLED WITH
+   2.5.22

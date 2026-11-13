@@ -6,12 +6,29 @@ aliases:
   - nush
 extensions:
   - .nu
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/nu-253
+source: nu
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - nu-253
+expected: "Linguist classification: Nu"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Nu/nu
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Nu/nu
+  sha256: b2c1146de8f8773153c3cad6b7d63e1f97a5a8d8b01ab7124cc08db92a9ede30
+verification_profile: inspection

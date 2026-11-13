@@ -83,3 +83,38 @@ test('feature demonstration requires evidence', () => {
     /items/,
   );
 });
+
+test('independent matching evidence merges axes and stale reports cannot override it', () => {
+  const r = records('languages').find((r) => r.name === 'Python');
+  const f = fingerprint(r);
+  assert.deepEqual(
+    evidenceFor(r, {
+      records: [
+        { id: r.id, fingerprint: f, execution: 'passed' },
+        { id: r.id, fingerprint: f, detection: 'passed' },
+        { id: r.id, fingerprint: 'stale', execution: 'failed' },
+      ],
+    }),
+    { detection: 'passed', execution: 'passed', validation: 'not-tested' },
+  );
+  assert.equal(
+    evidenceFor(r, {
+      records: [
+        { id: r.id, fingerprint: f, execution: 'passed' },
+        { id: r.id, fingerprint: f, execution: 'failed' },
+      ],
+    }).execution,
+    'failed',
+  );
+});
+test('imported fixture checksum changes are rejected', () => {
+  const r = records('languages').find((r) => r.origin);
+  assert.throws(
+    () =>
+      validateRecord(
+        { ...r, origin: { ...r.origin, sha256: '0'.repeat(64) } },
+        'language',
+      ),
+    /checksum/,
+  );
+});

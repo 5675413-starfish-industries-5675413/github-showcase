@@ -7,12 +7,29 @@ extensions:
   - .ld
   - .lds
   - .x
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/linker-script-202
+source: link.ld
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - linker-script-202
+expected: "Linguist classification: Linker Script"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Linker%20Script/link.ld
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Linker Script/link.ld
+  sha256: a35e45f8054e4b4977fafde8b3afd0c8629d91aed4ea2aee913717bc580bb3d8
+verification_profile: inspection

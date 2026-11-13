@@ -1,0 +1,20 @@
+{
+  "id": "extended",
+  "name": "Extended runtimes",
+  "purpose": "Compile and execute authored greetings and decode media.",
+  "status": "demonstrated",
+  "configuration": [
+    "tools/run-extended.mjs",
+    ".github/workflows/extended.yml"
+  ],
+  "prerequisites": [
+    "Repository access and the relevant toolchain or GitHub permissions."
+  ],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105858"
+  ],
+  "limitations": [
+    "11 extra language greetings plus PDF/video checks; imported fixtures are never executed."
+  ],
+  "reviewed": "2026-11-11"
+}

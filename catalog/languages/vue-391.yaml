@@ -5,12 +5,29 @@ type: markup
 aliases: []
 extensions:
   - .vue
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/vue-391
+source: basic.vue
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - vue-391
+expected: "Linguist classification: Vue"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Vue/basic.vue
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Vue/basic.vue
+  sha256: ff415b1ecbcb8e10defffe929c2c7711d387513ca16d7213396ded37a8f2dbab
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: prose
 aliases: []
 extensions:
   - .org
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/prose/org-267
+source: org.org
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - org-267
+expected: "Linguist classification: Org"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Org/org.org
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Org/org.org
+  sha256: 917058de5a1a6ac2fcf318363e786be4094a91e77852e1c39cd44bb61434b535
+verification_profile: inspection

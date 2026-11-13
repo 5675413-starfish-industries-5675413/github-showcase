@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .bdf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/glyph-bitmap-distribution-format-997665271
+source: bitbuntu.bdf
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - glyph-bitmap-distribution-format-997665271
+expected: "Linguist classification: Glyph Bitmap Distribution Format"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Glyph%20Bitmap%20Distribution%20Format/bitbuntu.bdf
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Glyph Bitmap Distribution Format/bitbuntu.bdf
+  sha256: ede56204dca9a149288f58f87708ff4ca8e2669ace7c4c27c1a5aa1c0f5a8b43
+verification_profile: inspection

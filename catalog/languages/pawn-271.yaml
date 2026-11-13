@@ -7,12 +7,29 @@ extensions:
   - .pwn
   - .inc
   - .sma
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/pawn-271
+source: timertest.pwn
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - pawn-271
+expected: "Linguist classification: Pawn"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Pawn/timertest.pwn
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Pawn/timertest.pwn
+  sha256: 6316850789804e5960ee636bdc4449064ad3e79e7ae8dcbebf7c9d142fbcf77a
+verification_profile: inspection

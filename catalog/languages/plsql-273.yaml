@@ -20,12 +20,29 @@ extensions:
   - .tps
   - .trg
   - .vw
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/plsql-273
+source: print_bool.prc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - plsql-273
+expected: "Linguist classification: PLSQL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/PLSQL/print_bool.prc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/PLSQL/print_bool.prc
+  sha256: 200adb4e370b668be943f193b56e6f14f48dc84a67ce22568bc2152b90818a77
+verification_profile: inspection

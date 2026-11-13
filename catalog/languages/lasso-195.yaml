@@ -9,12 +9,29 @@ extensions:
   - .las
   - .lasso8
   - .lasso9
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/lasso-195
+source: json.lasso9
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - lasso-195
+expected: "Linguist classification: Lasso"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lasso/json.lasso9
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Lasso/json.lasso9
+  sha256: 1353f9fe5eed690648da3929ff94e64ba4e0ba84d0fedd806d7e4fcf55e26d6b
+verification_profile: inspection

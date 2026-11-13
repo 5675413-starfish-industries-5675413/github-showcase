@@ -7,12 +7,29 @@ aliases:
   - nushell-script
 extensions:
   - .nu
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/nushell-446573572
+source: this_week_in_nu.nu
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - nushell-446573572
+expected: "Linguist classification: Nushell"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Nushell/this_week_in_nu.nu
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Nushell/this_week_in_nu.nu
+  sha256: 2a90ba1122f88c3338bb22c71acda04dddb664e1fdcf273c252be920095ac12a
+verification_profile: inspection

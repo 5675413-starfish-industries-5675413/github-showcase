@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .json
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/oasv2-json-834374816
+source: pixi.json
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - oasv2-json-834374816
+expected: "Linguist classification: OASv2-json"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/OASv2-json/pixi.json
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/OASv2-json/pixi.json
+  sha256: 34ebeed8bafa1b068c569cc73ba6ddef8fec08a5ea28f75d5209f11d145224a7
+verification_profile: inspection

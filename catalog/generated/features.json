@@ -2,22 +2,47 @@
   {
     "id": "actions",
     "name": "GitHub Actions",
-    "purpose": "Validate the collection on pull requests.",
+    "purpose": "Validate the catalog and website.",
     "status": "demonstrated",
     "configuration": [
       ".github/workflows/ci.yml",
       ".github/workflows/reusable-validation.yml"
     ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
     "evidence": [
-      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417"
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
     ],
     "limitations": [
-      "Successful CI run recorded for branch commit 48e58eb51852eb85097b7832bdd50e5dd4a5cc41. This does not imply human review, merge, Pages deployment, or release."
+      "Passing checks do not establish human review."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "container",
+    "name": "Core runner container",
+    "purpose": "Run verification in an isolated Linux container.",
+    "status": "demonstrated",
+    "configuration": [
+      "Dockerfile",
+      ".github/workflows/container.yml"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105850"
+    ],
+    "limitations": [
+      "Core container verified with networking disabled; registry publication runs only on main."
+    ],
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -27,19 +52,25 @@
   {
     "id": "dependabot",
     "name": "Dependency maintenance",
-    "purpose": "Propose npm and Actions updates.",
-    "status": "configured",
+    "purpose": "Propose reviewed npm and Actions updates.",
+    "status": "demonstrated",
     "configuration": [
       ".github/dependabot.yml"
     ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/2",
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/3",
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/4",
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/5",
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/6"
+    ],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Dependency proposals must pass tests before adoption."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -49,19 +80,22 @@
   {
     "id": "devcontainer",
     "name": "Development container",
-    "purpose": "Describe a reproducible development entry point.",
-    "status": "configured",
+    "purpose": "Provide Node/Python core prerequisites.",
+    "status": "demonstrated",
     "configuration": [
-      ".devcontainer/devcontainer.json"
+      ".devcontainer/devcontainer.json",
+      ".devcontainer/Dockerfile"
     ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105850"
+    ],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Image build and prerequisites verified; no interactive Codespaces session launched."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -71,17 +105,96 @@
   {
     "id": "discussions",
     "name": "Community discussions",
-    "purpose": "Discuss project ideas and examples.",
-    "status": "pending",
-    "configuration": [],
+    "purpose": "Provide topic and Q&A categories.",
+    "status": "configured",
+    "configuration": [
+      "docs/repository-settings.md"
+    ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/discussions"
+    ],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Enabled and categories inspected; no fabricated community conversation."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "extended",
+    "name": "Extended runtimes",
+    "purpose": "Compile and execute authored greetings and decode media.",
+    "status": "demonstrated",
+    "configuration": [
+      "tools/run-extended.mjs",
+      ".github/workflows/extended.yml"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105858"
+    ],
+    "limitations": [
+      "11 extra language greetings plus PDF/video checks; imported fixtures are never executed."
+    ],
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "governance",
+    "name": "Required-check ruleset",
+    "purpose": "Require verified PR changes on main.",
+    "status": "demonstrated",
+    "configuration": [
+      "docs/repository-settings.md"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/rules/27070656"
+    ],
+    "limitations": [
+      "Human approvals are encouraged but not required by the ruleset."
+    ],
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "integrations",
+    "name": "API and signed webhooks",
+    "purpose": "Demonstrate real REST reads and authenticated raw-body verification.",
+    "status": "demonstrated",
+    "configuration": [
+      "examples/integrations/github-api.mjs",
+      "examples/integrations/webhook.mjs",
+      "tests/webhook.test.mjs"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
+    ],
+    "limitations": [
+      "Webhook verifier is tested locally in CI, not registered as a public webhook. REST read was also exercised directly."
+    ],
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -90,21 +203,25 @@
   },
   {
     "id": "issues",
-    "name": "Issue forms",
-    "purpose": "Collect reproducible bugs and example proposals.",
-    "status": "configured",
+    "name": "Issue planning",
+    "purpose": "Track real maintenance with labels and milestone.",
+    "status": "demonstrated",
     "configuration": [
       ".github/ISSUE_TEMPLATE/example.yml",
-      ".github/ISSUE_TEMPLATE/bug.yml"
+      ".github/ISSUE_TEMPLATE/bug.yml",
+      "docs/completion-plan.md"
     ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/issues/9",
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/milestone/1"
+    ],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Issue #9 was created during implementation; it is not backdated to precede all work."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -114,17 +231,24 @@
   {
     "id": "linguist-audit",
     "name": "Linguist detection audit",
-    "purpose": "Compare per-file detection with the pinned baseline.",
-    "status": "pending",
-    "configuration": [],
+    "purpose": "Recognize examples with the pinned classifier.",
+    "status": "demonstrated",
+    "configuration": [
+      "Gemfile",
+      "Gemfile.lock",
+      "tools/detect.rb",
+      ".github/workflows/detection.yml"
+    ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105729"
+    ],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "842 automatic recognitions; three transcript entries require explicit selection. Detection is not execution."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -158,17 +282,19 @@
   {
     "id": "projects",
     "name": "GitHub Projects",
-    "purpose": "Track collection work and milestones.",
-    "status": "pending",
-    "configuration": [],
+    "purpose": "Track repository work on a hosted board.",
+    "status": "blocked",
+    "configuration": [
+      "docs/repository-settings.md"
+    ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
     "evidence": [],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Current GitHub token lacks Project scope. Signed-in browser access was not approved. The board was not created."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",
@@ -198,22 +324,99 @@
     }
   },
   {
+    "id": "reuse",
+    "name": "Reusable workflows and template",
+    "purpose": "Reuse setup and core validation.",
+    "status": "demonstrated",
+    "configuration": [
+      ".github/actions/setup/action.yml",
+      ".github/actions/setup-full/action.yml",
+      ".github/workflows/reusable-validation.yml"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
+    ],
+    "limitations": [
+      "Template reuse enabled; no downstream repository created for demonstration."
+    ],
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
     "id": "review",
     "name": "Contribution review",
-    "purpose": "Document ownership and review expectations.",
+    "purpose": "Provide ownership, PR context and normal review flow.",
     "status": "configured",
     "configuration": [
       ".github/PULL_REQUEST_TEMPLATE.md",
       ".github/CODEOWNERS"
     ],
     "prerequisites": [
-      "Repository access and relevant GitHub feature permissions."
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/pull/8"
+    ],
+    "limitations": [
+      "No independent human review has been submitted."
+    ],
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "security",
+    "name": "Security scanning",
+    "purpose": "Scan authored application code and maintain dependencies.",
+    "status": "demonstrated",
+    "configuration": [
+      ".github/workflows/security.yml",
+      ".github/codeql.yml"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
+    ],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43107425233"
+    ],
+    "limitations": [
+      "CodeQL scans authored tools, website code, integrations and tests. Upstream syntax fixtures are excluded from this application scan."
+    ],
+    "reviewed": "2026-11-11",
+    "verification": {
+      "detection": "not-tested",
+      "validation": "not-tested",
+      "execution": "not-tested"
+    }
+  },
+  {
+    "id": "upstream",
+    "name": "Upstream proposals",
+    "purpose": "Review immutable candidate inventories.",
+    "status": "configured",
+    "configuration": [
+      "tools/upstream-update.mjs",
+      ".github/workflows/upstream-update.yml",
+      "docs/upstream-updates.md"
+    ],
+    "prerequisites": [
+      "Repository access and the relevant toolchain or GitHub permissions."
     ],
     "evidence": [],
     "limitations": [
-      "A real hosted demonstration has not yet been recorded."
+      "Direct API proposal run completed with no changes to the pinned baseline; hosted workflow evidence follows its first run."
     ],
-    "reviewed": "2026-11-09",
+    "reviewed": "2026-11-11",
     "verification": {
       "detection": "not-tested",
       "validation": "not-tested",

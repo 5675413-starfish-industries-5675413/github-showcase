@@ -1,0 +1,4 @@
+languagesystem DFLT dflt;
+feature liga {
+    sub f i by fi;
+} liga;

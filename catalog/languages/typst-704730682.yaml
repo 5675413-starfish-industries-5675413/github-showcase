@@ -6,12 +6,29 @@ aliases:
   - typ
 extensions:
   - .typ
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/typst-704730682
+source: letter.typ
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - typst-704730682
+expected: "Linguist classification: Typst"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Typst/letter.typ
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Typst/letter.typ
+  sha256: 06d7df4233214b997cc4e67fad494debcf2cf4fe10239422f28ac5e7e092f7de
+verification_profile: inspection

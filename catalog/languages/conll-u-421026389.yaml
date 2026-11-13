@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .conllu
   - .conll
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/conll-u-421026389
+source: en-ud-test-abridged.conllu
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - conll-u-421026389
+expected: "Linguist classification: CoNLL-U"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CoNLL-U/en-ud-test-abridged.conllu
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CoNLL-U/en-ud-test-abridged.conllu
+  sha256: c3fd32a88cf16e766694c1d2ae1ba3f3348ad4beb32a09194482d857b469ddb3
+verification_profile: inspection

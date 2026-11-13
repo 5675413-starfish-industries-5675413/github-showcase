@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .fut
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/futhark-97358117
+source: gaussian_blur.fut
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - futhark-97358117
+expected: "Linguist classification: Futhark"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Futhark/gaussian_blur.fut
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Futhark/gaussian_blur.fut
+  sha256: 11e142d04ef0b7fc088b54a43b4cd5023a322820d8e47ec2c455b473cd8a2a1a
+verification_profile: inspection

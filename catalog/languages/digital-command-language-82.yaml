@@ -6,12 +6,29 @@ aliases:
   - dcl
 extensions:
   - .com
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/digital-command-language-82
+source: vmsbackup_build.com
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - digital-command-language-82
+expected: "Linguist classification: DIGITAL Command Language"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/DIGITAL%20Command%20Language/vmsbackup_build.com
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/DIGITAL Command Language/vmsbackup_build.com
+  sha256: f39e9a9ad2734ddff1a91c46347084d43672a331f41de224ad7de99dc10d93c9
+verification_profile: inspection

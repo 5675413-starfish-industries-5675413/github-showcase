@@ -1,15 +1,17 @@
 {
   "id": "projects",
   "name": "GitHub Projects",
-  "purpose": "Track collection work and milestones.",
-  "status": "pending",
-  "configuration": [],
+  "purpose": "Track repository work on a hosted board.",
+  "status": "blocked",
+  "configuration": [
+    "docs/repository-settings.md"
+  ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
   "evidence": [],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Current GitHub token lacks Project scope. Signed-in browser access was not approved. The board was not created."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

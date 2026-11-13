@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .avdl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/avro-idl-785497837
+source: user.avdl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - avro-idl-785497837
+expected: "Linguist classification: Avro IDL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Avro%20IDL/user.avdl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Avro IDL/user.avdl
+  sha256: 9aeade52e0344791eb357ab590693b136c9b4fe0935318087ee1aca8c6624cf0
+verification_profile: inspection

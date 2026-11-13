@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .lgt
   - .logtalk
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/logtalk-210
+source: foo.lgt
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - logtalk-210
+expected: "Linguist classification: Logtalk"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Logtalk/foo.lgt
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Logtalk/foo.lgt
+  sha256: 163616634f55eac91a756b9e927e6d4bfcd1eb88582f3d09ba14e1193592e973
+verification_profile: inspection

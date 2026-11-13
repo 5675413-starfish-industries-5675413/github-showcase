@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .w
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cweb-657332628
+source: sat-life.w
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cweb-657332628
+expected: "Linguist classification: CWeb"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CWeb/sat-life.w
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CWeb/sat-life.w
+  sha256: bdc0ad74d620037e7071d6e3fafe1cb832cfd221582f438dd2519a9b18b8ee17
+verification_profile: inspection

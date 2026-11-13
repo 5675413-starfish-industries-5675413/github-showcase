@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .nit
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/nit-251
+source: hello_world.nit
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - nit-251
+expected: "Linguist classification: Nit"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Nit/hello_world.nit
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Nit/hello_world.nit
+  sha256: 9ca329b07abbbafdd457b17d657edf9ac05726e56a6e145f00e1423996b62fd9
+verification_profile: inspection

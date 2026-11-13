@@ -786,8 +786,24 @@
       grid-column: 2;
       grid-row: 3;
     }
-    .filters label[for='runtime'],
-    #runtime,
+    .filters label[for='platform'] {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .filters label[for='runtime'] {
+      grid-column: 2;
+      grid-row: 4;
+    }
+    #platform {
+      grid-column: 1;
+      grid-row: 5;
+      min-width: 0;
+    }
+    #runtime {
+      grid-column: 2;
+      grid-row: 5;
+      min-width: 0;
+    }
     .filter-note {
       display: none;
     }
@@ -874,4 +890,36 @@ audio {
   display: block;
   max-width: 100%;
   margin: 20px 0;
+}
+
+.detail table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.detail th,
+.detail td {
+  padding: 0.65rem;
+  border-bottom: 1px solid #d9ddd8;
+  text-align: left;
+}
+.detail video {
+  max-width: 100%;
+  height: auto;
+}
+.detail code {
+  overflow-wrap: anywhere;
+}
+.detail pre {
+  max-height: 36rem;
+  overflow: auto;
+}
+@media (max-width: 640px) {
+  .detail table {
+    font-size: 0.8rem;
+  }
+  .detail th,
+  .detail td {
+    padding: 0.35rem;
+  }
 }

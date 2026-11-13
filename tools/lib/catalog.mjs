@@ -53,6 +53,12 @@ export function fingerprint(record) {
       'tools/run-example.mjs',
       'tools/validate-sample.mjs',
       'tools/validate-formats.py',
+      'tools/linguist-audit.mjs',
+      'tools/detect.rb',
+      'tools/run-extended.mjs',
+      'Gemfile.lock',
+      'Gemfile',
+      'catalog/upstream/linguist.lock.json',
     ].map(read),
   ];
   if (record.example_path) {
@@ -78,8 +84,9 @@ export function evidenceFor(record, evidence) {
     validation: 'not-tested',
     execution: 'not-tested',
   };
-  const item = evidence?.records?.find((r) => r.id === record.id);
-  if (item && item.fingerprint === fingerprint(record)) {
+  const current = fingerprint(record);
+  for (const item of evidence?.records || []) {
+    if (item.id !== record.id || item.fingerprint !== current) continue;
     for (const axis of Object.keys(result))
       if (item[axis]) result[axis] = item[axis];
   }
@@ -98,6 +105,13 @@ export function validateRecord(record, kind) {
       if (!fs.existsSync(safePath(`${record.example_path}/${file}`)))
         throw new Error(`Missing example file ${file}`);
   }
+  if (
+    record.origin &&
+    hash(
+      fs.readFileSync(safePath(`${record.example_path}/${record.source}`)),
+    ) !== record.origin.sha256
+  )
+    throw new Error(`Source checksum mismatch: ${record.id}`);
   if (kind === 'feature')
     for (const p of record.configuration)
       if (!fs.existsSync(safePath(p)))
@@ -128,16 +142,23 @@ export function validateInventory(languages, baseline) {
   }
 }
 export function loadEvidence() {
-  if (!fs.existsSync(path.join(root, 'verification/latest.json'))) return null;
-  const evidence = json('verification/latest.json');
   const validate = new Ajv().compile(
     json('catalog/schemas/verification.schema.json'),
   );
-  if (!validate(evidence))
-    throw new Error(
-      'Invalid verification evidence: ' + JSON.stringify(validate.errors),
-    );
-  return evidence;
+  const reports = ['latest', 'extended', 'detection']
+    .flatMap((name) => {
+      const p = `verification/${name}.json`;
+      if (!fs.existsSync(path.join(root, p))) return [];
+      const report = json(p);
+      if (!validate(report))
+        throw new Error(
+          'Invalid verification evidence: ' + JSON.stringify(validate.errors),
+        );
+      return [report];
+    })
+    .sort((a, b) => a.at.localeCompare(b.at));
+  if (!reports.length) return null;
+  return { ...reports.at(-1), records: reports.flatMap((r) => r.records) };
 }
 export function loadCatalog() {
   const evidence = loadEvidence();

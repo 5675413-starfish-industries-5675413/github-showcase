@@ -10,12 +10,29 @@ aliases:
 extensions:
   - .bb
   - .decls
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/blitzbasic-34
+source: PObj.bb
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - blitzbasic-34
+expected: "Linguist classification: BlitzBasic"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/BlitzBasic/PObj.bb
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/BlitzBasic/PObj.bb
+  sha256: cd3be978a2d7572fba045e3ab746f8a3ec4f9b4d9d38e35e389eeb9b5da6f0ee
+verification_profile: inspection

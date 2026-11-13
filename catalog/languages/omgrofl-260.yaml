@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .omgrofl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/omgrofl-260
+source: hello.omgrofl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - omgrofl-260
+expected: "Linguist classification: Omgrofl"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Omgrofl/hello.omgrofl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Omgrofl/hello.omgrofl
+  sha256: d9eb1f667921f5f86f44611a211e7149b5c617410009d102ca0357bf2fc05320
+verification_profile: inspection

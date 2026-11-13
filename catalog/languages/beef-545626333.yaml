@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .bf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/beef-545626333
+source: Program.bf
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - beef-545626333
+expected: "Linguist classification: Beef"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Beef/Program.bf
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Beef/Program.bf
+  sha256: 21f98e05d75a18f40d198471186a84b95fc1268c84d007db93a62f4c97e5c04d
+verification_profile: inspection

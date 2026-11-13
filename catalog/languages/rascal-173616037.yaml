@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .rsc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/rascal-173616037
+source: Syntax.rsc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - rascal-173616037
+expected: "Linguist classification: Rascal"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Rascal/Syntax.rsc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Rascal/Syntax.rsc
+  sha256: a293e8ce653e4396c566b6a61cd100eba46f9e552fdbc3480082e38628d98fb6
+verification_profile: inspection

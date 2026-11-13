@@ -1,0 +1,28 @@
+{
+  "id": "format-bzip2",
+  "name": "Bzip2 stream",
+  "family": "compression",
+  "extensions": [
+    ".bz2"
+  ],
+  "media_type": "application/x-bzip2",
+  "recipe": "recipes/generate-extra-formats.py",
+  "related": [],
+  "example_path": "examples/formats/compression",
+  "source": "hello.txt.bz2",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3.11+ for bounded structural/content checks",
+    "A compatible viewer or decoder for interactive viewing"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-bzip2"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Checks cover this sample\u2019s structure and expected content, not the entire format specification. Decoder checks are in the extended profile."
+  ],
+  "license": "MIT"
+}

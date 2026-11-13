@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .curry
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/curry-439829048
+source: Nat.curry
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - curry-439829048
+expected: "Linguist classification: Curry"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Curry/Nat.curry
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Curry/Nat.curry
+  sha256: 8b6d179c6b7ec69c419a7f3e17487510f48238784e0468f2b6a532660c6665bc
+verification_profile: inspection

@@ -6,12 +6,29 @@ aliases:
   - jass2
 extensions:
   - .j
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/jass-504860504
+source: OctavePerlin.j
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - jass-504860504
+expected: "Linguist classification: JASS"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/JASS/OctavePerlin.j
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/JASS/OctavePerlin.j
+  sha256: 3b00d488a50eea3c9eb312cb6196461350b1cd961f02595d7b6da7fc5a5d4249
+verification_profile: inspection

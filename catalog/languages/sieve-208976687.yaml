@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .sieve
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/sieve-208976687
+source: dovecot-spam1.sieve
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - sieve-208976687
+expected: "Linguist classification: Sieve"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Sieve/dovecot-spam1.sieve
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Sieve/dovecot-spam1.sieve
+  sha256: 152a0e577f753b277c25765c9b6227c7dd454a298207e19f8520a3dec60baaa2
+verification_profile: inspection

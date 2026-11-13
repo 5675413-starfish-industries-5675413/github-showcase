@@ -8,12 +8,29 @@ aliases:
   - imhexpl
 extensions:
   - .hexpat
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/imhex-pattern-language-805861688
+source: sqlite.hexpat
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - imhex-pattern-language-805861688
+expected: "Linguist classification: ImHex Pattern Language"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ImHex%20Pattern%20Language/sqlite.hexpat
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ImHex Pattern Language/sqlite.hexpat
+  sha256: 0ea15911f64e1234bc53d428050af0f2a44938912a64f1ec8019afb45a5bfe9a
+verification_profile: inspection

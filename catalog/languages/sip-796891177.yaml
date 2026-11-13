@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .sip
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/sip-796891177
+source: core.sip
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - sip-796891177
+expected: "Linguist classification: SIP"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/SIP/core.sip
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/SIP/core.sip
+  sha256: dfecb63b5fd5e23b23682a75c74a618a82257675fd158e76390a5440afe8f0af
+verification_profile: inspection

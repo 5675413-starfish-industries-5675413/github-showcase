@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .blade
   - .blade.php
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/blade-33
+source: hello.blade
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - blade-33
+expected: "Linguist classification: Blade"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Blade/hello.blade
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Blade/hello.blade
+  sha256: 69115edb09dbcaf1e2bd258b56e886741ac393bb852b9b6bd11a39ac5c825aa5
+verification_profile: inspection

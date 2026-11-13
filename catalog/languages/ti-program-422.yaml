@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .8xp
   - .8xp.txt
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/ti-program-422
+source: CIRCLES.8xp
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - ti-program-422
+expected: "Linguist classification: TI Program"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/TI%20Program/CIRCLES.8xp
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/TI Program/CIRCLES.8xp
+  sha256: d8c2dd5e8e778757debcea652afa513557f455efca5fcb104a9fd9e47b3f4524
+verification_profile: inspection

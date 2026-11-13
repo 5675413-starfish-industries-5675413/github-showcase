@@ -6,12 +6,29 @@ aliases:
   - hylang
 extensions:
   - .hy
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/hy-159
+source: fibonacci.hy
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - hy-159
+expected: "Linguist classification: Hy"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Hy/fibonacci.hy
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Hy/fibonacci.hy
+  sha256: e432922a00d1e3ebef9b29b346a5232ff56b2850eb6b1e1a729a3df267e45189
+verification_profile: inspection

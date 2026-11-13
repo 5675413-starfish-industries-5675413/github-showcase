@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .gleam
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/gleam-1054258749
+source: websocket.gleam
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gleam-1054258749
+expected: "Linguist classification: Gleam"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Gleam/websocket.gleam
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Gleam/websocket.gleam
+  sha256: da8912e084cb61192a9466a5f07c6b8f32b6c742b008fda4340ff9d89ab7a07c
+verification_profile: inspection

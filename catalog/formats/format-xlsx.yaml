@@ -1,0 +1,28 @@
+{
+  "id": "format-xlsx",
+  "name": "Spreadsheet with formula",
+  "family": "spreadsheets",
+  "extensions": [
+    ".xlsx"
+  ],
+  "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "recipe": "recipes/generate-workbook.mjs",
+  "related": [],
+  "example_path": "examples/formats/spreadsheets",
+  "source": "hello.xlsx",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3.11+ for bounded structural/content checks",
+    "A compatible viewer or decoder for interactive viewing"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-xlsx"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Checks cover this sample\u2019s structure and expected content, not the entire format specification. Decoder checks are in the extended profile."
+  ],
+  "license": "MIT"
+}

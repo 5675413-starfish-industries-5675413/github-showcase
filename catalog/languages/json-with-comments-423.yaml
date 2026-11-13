@@ -24,12 +24,29 @@ extensions:
   - .sublime_metrics
   - .sublime_session
   - .tsconfig.json
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/json-with-comments-423
+source: RunBuild.sublime-macro
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - json-with-comments-423
+expected: "Linguist classification: JSON with Comments"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/JSON%20with%20Comments/RunBuild.sublime-macro
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/JSON with Comments/RunBuild.sublime-macro
+  sha256: 14865f5c8ac7dd41f643fa4bbecc82b3436c66b10fc215dd27a4b6b77d423bf4
+verification_profile: inspection

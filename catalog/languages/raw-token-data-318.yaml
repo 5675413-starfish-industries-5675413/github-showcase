@@ -6,12 +6,22 @@ aliases:
   - raw
 extensions:
   - .raw
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/raw-token-data-318
+source: hello.raw
+demonstration: native
+requirements:
+  - Text editor
+  - Pinned Ruby Linguist bundle for detection
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - raw-token-data-318
+expected: "Linguist classification: Raw token data"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Token-type and quoted-value records in the Pygments raw token notation. This
+    is textual token data, not a camera image.
+  - Classification does not establish runtime behavior.
+license: MIT
+verification_profile: inspection

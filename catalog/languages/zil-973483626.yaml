@@ -6,12 +6,29 @@ aliases: []
 extensions:
   - .zil
   - .mud
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/zil-973483626
+source: misc.zil
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - zil-973483626
+expected: "Linguist classification: ZIL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ZIL/misc.zil
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ZIL/misc.zil
+  sha256: eecd6c763daa76a8633fd761fc69ebbd71d18c0abecbf3908853d8fd27dc6431
+verification_profile: inspection

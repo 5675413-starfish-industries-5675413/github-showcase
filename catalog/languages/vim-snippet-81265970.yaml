@@ -11,12 +11,29 @@ extensions:
   - .snip
   - .snippet
   - .snippets
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/vim-snippet-81265970
+source: vim.snippets
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - vim-snippet-81265970
+expected: "Linguist classification: Vim Snippet"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Vim%20Snippet/vim.snippets
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Vim Snippet/vim.snippets
+  sha256: b163359d144bc3677d42dcd6862b5874d4b47a7962adf2e4d5fb3d1a86e4b5bd
+verification_profile: inspection

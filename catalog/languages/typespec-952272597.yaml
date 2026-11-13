@@ -6,12 +6,29 @@ aliases:
   - tsp
 extensions:
   - .tsp
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/typespec-952272597
+source: json-schema.tsp
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - typespec-952272597
+expected: "Linguist classification: TypeSpec"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/TypeSpec/json-schema.tsp
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/TypeSpec/json-schema.tsp
+  sha256: 2927e608bd08bd2ad7690854e17d31433c4f4cdf5e61f874849ce106795beae8
+verification_profile: inspection

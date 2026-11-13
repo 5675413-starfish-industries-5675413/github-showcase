@@ -1,0 +1,28 @@
+{
+  "id": "format-png",
+  "name": "PNG greeting",
+  "family": "images",
+  "extensions": [
+    ".png"
+  ],
+  "media_type": "image/png",
+  "recipe": "recipes/generate-rich-formats.py",
+  "related": [],
+  "example_path": "examples/formats/images",
+  "source": "hello.png",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3.11+ for bounded structural/content checks",
+    "A compatible viewer or decoder for interactive viewing"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-png"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Checks cover this sample\u2019s structure and expected content, not the entire format specification. Decoder checks are in the extended profile."
+  ],
+  "license": "MIT"
+}

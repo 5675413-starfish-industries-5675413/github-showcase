@@ -1,7 +1,7 @@
-# Archives
+# archives
 
-Small, generated native format demonstrations. Source recipe: `python3 recipes/generate-formats.py` from the repository root. Validate using `npm run examples:core`.
+Small authored format examples. Run `npm run examples:core` from the repository root for structural/content checks. Run `npm run examples:extended` in the documented Linux environment for PDF and video decoder checks.
 
-JSON/CSV store a greeting; SVG renders it; ZIP/gzip recover it; SQLite queries it; WebVTT displays it. WAV contains a half-second 440 Hz tone, a native audio demonstration rather than synthesized speech.
+Generation recipes are in `recipes/`. PDF/image/video generation needs reportlab, Pillow and FFmpeg; workbook generation needs `@oai/artifact-tool`. Each catalog record links its exact recipe.
 
-Use the appropriate browser, decoder, database client, or archive utility. Python 3 standard-library checks validate structure and expected content; visual/audio rendering is not manually verified. All original samples are MIT licensed.
+These samples are MIT licensed. No external assets are used.

@@ -1,20 +1,20 @@
 {
   "id": "actions",
   "name": "GitHub Actions",
-  "purpose": "Validate the collection on pull requests.",
+  "purpose": "Validate the catalog and website.",
   "status": "demonstrated",
   "configuration": [
     ".github/workflows/ci.yml",
     ".github/workflows/reusable-validation.yml"
   ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
   "evidence": [
-    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/42771539417"
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105820"
   ],
   "limitations": [
-    "Successful CI run recorded for branch commit 48e58eb51852eb85097b7832bdd50e5dd4a5cc41. This does not imply human review, merge, Pages deployment, or release."
+    "Passing checks do not establish human review."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

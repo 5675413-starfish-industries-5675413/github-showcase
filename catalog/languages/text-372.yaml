@@ -14,12 +14,29 @@ extensions:
   - .nb
   - .ncl
   - .no
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/prose/text-372
+source: keep.me
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - text-372
+expected: "Linguist classification: Text"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Text/filenames/keep.me
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Text/filenames/keep.me
+  sha256: ac9568e95910b79021912cb77ec45f838066ab6842c1b2307fd1a0988ad36fe7
+verification_profile: inspection

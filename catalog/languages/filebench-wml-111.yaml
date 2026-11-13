@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .f
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/filebench-wml-111
+source: copyfiles.f
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - filebench-wml-111
+expected: "Linguist classification: Filebench WML"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Filebench%20WML/copyfiles.f
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Filebench WML/copyfiles.f
+  sha256: 4564e671ffdc350b35d20e080b698a21ddc43af13775378cc6705db8850ae9b6
+verification_profile: inspection

@@ -7,12 +7,29 @@ aliases:
   - vimhelp
 extensions:
   - .txt
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/prose/vim-help-file-508563686
+source: modeline.txt
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - vim-help-file-508563686
+expected: "Linguist classification: Vim Help File"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Vim%20Help%20File/modeline.txt
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Vim Help File/modeline.txt
+  sha256: 32a9359d327f7237ba175216c196e9c3c3f1e0d5ed1e15ea2cfa715245cc13fc
+verification_profile: inspection

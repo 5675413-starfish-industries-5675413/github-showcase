@@ -1,0 +1,28 @@
+{
+  "id": "format-tar",
+  "name": "TAR archive",
+  "family": "archives",
+  "extensions": [
+    ".tar"
+  ],
+  "media_type": "application/x-tar",
+  "recipe": "recipes/generate-extra-formats.py",
+  "related": [],
+  "example_path": "examples/formats/archives",
+  "source": "hello.tar",
+  "demonstration": "store",
+  "requirements": [
+    "Python 3.11+ for bounded structural/content checks",
+    "A compatible viewer or decoder for interactive viewing"
+  ],
+  "run": [
+    "python3",
+    "tools/validate-formats.py",
+    "format-tar"
+  ],
+  "expected": "Valid sample\n",
+  "limitations": [
+    "Checks cover this sample\u2019s structure and expected content, not the entire format specification. Decoder checks are in the extended profile."
+  ],
+  "license": "MIT"
+}

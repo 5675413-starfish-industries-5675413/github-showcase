@@ -40,12 +40,29 @@ extensions:
   - .nr
   - .rno
   - .tmac
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/roff-141
+source: foo.3p
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - roff-141
+expected: "Linguist classification: Roff"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Roff/foo.3p
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Roff/foo.3p
+  sha256: d56ac30fb2144bed3c0becc1eb7e4797315aba5f2516cbea08a98531299673f6
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .cy
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/cycript-78
+source: utils.cy
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cycript-78
+expected: "Linguist classification: Cycript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Cycript/utils.cy
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Cycript/utils.cy
+  sha256: 0ba1b52d93684ef6dea8edd61904e7714068f6dd03d8327f620b67765c977fe1
+verification_profile: inspection

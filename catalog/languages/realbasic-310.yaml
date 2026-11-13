@@ -10,12 +10,24 @@ extensions:
   - .rbres
   - .rbtbar
   - .rbuistate
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/realbasic-310
+source: Hello.rbbas
+demonstration: native
+requirements:
+  - Text editor
+  - A REALbasic-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - realbasic-310
+expected: "Linguist classification: REALbasic"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

@@ -1,0 +1,5 @@
+# Updating the pinned inventory
+
+`npm run upstream:propose` resolves the latest upstream commit and downloads its language inventory at that immutable SHA. An optional full SHA selects a specific candidate. The command produces candidate files and added/removed/changed lists in `.cache/upstream-proposal/`; it never changes the accepted baseline. The scheduled workflow publishes the same proposal artifact with read-only permissions.
+
+Review the diff and upstream license on a `codex/` branch. Copy the reviewed inventory and lockfile into `catalog/upstream/`, update the Gemfile ref and Bundler lock, then reconcile records by numeric language ID (not by display name). Retire removed entries explicitly; create examples for added entries. Regenerate the sample import manifest only after reviewing new source/licenses. Run all three profiles and review the PR before merging. A changed pin invalidates old evidence automatically. No scheduled job silently changes the denominator or grants passing status to new languages.

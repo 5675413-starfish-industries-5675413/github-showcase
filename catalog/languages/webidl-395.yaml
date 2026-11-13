@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .webidl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/webidl-395
+source: AnimationEvent.webidl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - webidl-395
+expected: "Linguist classification: WebIDL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/WebIDL/AnimationEvent.webidl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/WebIDL/AnimationEvent.webidl
+  sha256: 867a5d7439dbcdf6fe7e20a90f4f343bf7940a0cddc12997c4ed153e45400729
+verification_profile: inspection

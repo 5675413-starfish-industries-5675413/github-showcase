@@ -6,12 +6,29 @@ aliases:
   - inputrc
   - readline
 extensions: []
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/readline-config-538732839
+source: .inputrc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - readline-config-538732839
+expected: "Linguist classification: Readline Config"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Readline%20Config/filenames/.inputrc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Readline Config/filenames/.inputrc
+  sha256: eb62312782393a9dfdc68b3db20873e7aa979a0b5c08749635c42cee1608cac5
+verification_profile: inspection

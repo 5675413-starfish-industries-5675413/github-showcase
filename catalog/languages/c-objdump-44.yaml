@@ -5,12 +5,22 @@ type: data
 aliases: []
 extensions:
   - .c-objdump
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/c-objdump-44
+source: hello.c-objdump
+demonstration: native
+requirements:
+  - Text editor
+  - Pinned Ruby Linguist bundle for detection
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - c-objdump-44
+expected: "Linguist classification: C-ObjDump"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Hand-authored illustrative x86-64 disassembly of a function returning 42. It
+    is not captured compiler output or execution evidence.
+  - Classification does not establish runtime behavior.
+license: MIT
+verification_profile: inspection

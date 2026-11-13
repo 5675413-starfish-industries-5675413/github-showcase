@@ -1,0 +1,10 @@
+name: Authored application code
+paths:
+  - tools
+  - website/src
+  - examples/integrations
+  - tests
+paths-ignore:
+  - examples/languages
+  - node_modules
+  - catalog/generated

@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .mc
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/monkey-c-231751931
+source: VesselModel.mc
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - monkey-c-231751931
+expected: "Linguist classification: Monkey C"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Monkey%20C/VesselModel.mc
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Monkey C/VesselModel.mc
+  sha256: 867bbda82ec4ab40d7b80b789ad3741a21d96a8f2be786df45620556c2e1fdf4
+verification_profile: inspection

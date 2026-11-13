@@ -8,12 +8,29 @@ aliases:
 extensions:
   - .apacheconf
   - .vhost
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/apacheconf-16
+source: apache.vhost
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - apacheconf-16
+expected: "Linguist classification: ApacheConf"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/ApacheConf/apache.vhost
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/ApacheConf/apache.vhost
+  sha256: 6f8f85119de39910aa26165eaaa4ae4d7fe474ba234c357759966dda0a5905d4
+verification_profile: inspection

@@ -8,12 +8,29 @@ extensions:
   - .kicad_pcb
   - .kicad_mod
   - .kicad_wks
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/kicad-layout-187
+source: Fiducial_1mm.kicad_mod
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - kicad-layout-187
+expected: "Linguist classification: KiCad Layout"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/KiCad%20Layout/Fiducial_1mm.kicad_mod
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/KiCad Layout/Fiducial_1mm.kicad_mod
+  sha256: 500337b88dc96524b5c7cb91cb7957de57f0e9d91a745b71f7c4aa5625c5976f
+verification_profile: inspection

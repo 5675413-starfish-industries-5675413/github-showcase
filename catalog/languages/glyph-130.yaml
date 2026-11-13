@@ -5,12 +5,22 @@ type: programming
 aliases: []
 extensions:
   - .glf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/glyph-130
+source: hello.glf
+demonstration: native
+requirements:
+  - Text editor
+  - Pinned Ruby Linguist bundle for detection
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - glyph-130
+expected: "Linguist classification: Glyph"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - An original greeting in the native language syntax. Optional runtime
+    execution requires the original language toolchain.
+  - Classification does not establish runtime behavior.
+license: MIT
+verification_profile: inspection

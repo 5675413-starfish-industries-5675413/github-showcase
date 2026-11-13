@@ -6,12 +6,29 @@ aliases:
   - markojs
 extensions:
   - .marko
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/marko-932782397
+source: hello.marko
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - marko-932782397
+expected: "Linguist classification: Marko"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Marko/hello.marko
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Marko/hello.marko
+  sha256: 8d70d54d8b94697ab58ccb7faf790716f727fac3696c12cbff84510c0295e4f1
+verification_profile: inspection

@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .dsp
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/microsoft-developer-studio-project-800983837
+source: freeglut.dsp
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - microsoft-developer-studio-project-800983837
+expected: "Linguist classification: Microsoft Developer Studio Project"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Microsoft%20Developer%20Studio%20Project/freeglut.dsp
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Microsoft Developer Studio Project/freeglut.dsp
+  sha256: 22bf5c0710382642bbeaa1d23fa52a42f78cc782ee78491b9b3cbfe78dcb4d8c
+verification_profile: inspection

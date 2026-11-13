@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .t
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/terra-371
+source: arrayt.t
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - terra-371
+expected: "Linguist classification: Terra"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Terra/arrayt.t
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Terra/arrayt.t
+  sha256: 7db58106857859fcca6e20ff050a19f581f1317cd9a5a30ae9631853c913887d
+verification_profile: inspection

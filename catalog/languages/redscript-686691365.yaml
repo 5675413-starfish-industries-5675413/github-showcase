@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .reds
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/redscript-686691365
+source: hideHeadGear.reds
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - redscript-686691365
+expected: "Linguist classification: Redscript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Redscript/hideHeadGear.reds
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Redscript/hideHeadGear.reds
+  sha256: e6080e46ba283e3f0d5a252181d900cda14394fd7ebd9824d380e5c40e97669b
+verification_profile: inspection

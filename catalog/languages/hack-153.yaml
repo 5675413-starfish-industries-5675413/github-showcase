@@ -8,12 +8,29 @@ extensions:
   - .hh
   - .hhi
   - .php
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/hack-153
+source: startup.hh
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - hack-153
+expected: "Linguist classification: Hack"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Hack/startup.hh
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Hack/startup.hh
+  sha256: 78c4995b0b04948b4b09ea5abb3c3d217e0f31eb8ae8ab60d6da836e18cdb467
+verification_profile: inspection

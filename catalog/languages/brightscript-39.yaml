@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .brs
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/brightscript-39
+source: SimpleGrid.brs
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - brightscript-39
+expected: "Linguist classification: Brightscript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Brightscript/SimpleGrid.brs
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Brightscript/SimpleGrid.brs
+  sha256: 88a05a1374c0cf6ad8d2e8d19bf4bbff76a513bf4e13a6221d9fb91645d27e02
+verification_profile: inspection

@@ -10,12 +10,29 @@ extensions:
   - .html.tmpl
   - .tmpl
   - .tpl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/markup/go-template-247918769
+source: _helpers.tpl
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - go-template-247918769
+expected: "Linguist classification: Go Template"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Go%20Template/_helpers.tpl
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Go Template/_helpers.tpl
+  sha256: 0e3048452c13ba7b68d85072220c7c71927971ab65cb891be36ff1c8e159383d
+verification_profile: inspection

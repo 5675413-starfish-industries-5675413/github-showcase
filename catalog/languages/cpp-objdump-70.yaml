@@ -10,12 +10,22 @@ extensions:
   - .c++objdump
   - .cpp-objdump
   - .cxx-objdump
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/cpp-objdump-70
+source: hello.cpp-objdump
+demonstration: native
+requirements:
+  - Text editor
+  - Pinned Ruby Linguist bundle for detection
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cpp-objdump-70
+expected: "Linguist classification: Cpp-ObjDump"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Hand-authored illustrative x86-64 disassembly of a function returning 42. It
+    is not captured compiler output or execution evidence.
+  - Classification does not establish runtime behavior.
+license: MIT
+verification_profile: inspection

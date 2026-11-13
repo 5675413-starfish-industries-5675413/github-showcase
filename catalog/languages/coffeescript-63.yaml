@@ -12,12 +12,29 @@ extensions:
   - .cjsx
   - .coffee.erb
   - .iced
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/coffeescript-63
+source: hello.coffee
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - coffeescript-63
+expected: "Linguist classification: CoffeeScript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/CoffeeScript/hello.coffee
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/CoffeeScript/hello.coffee
+  sha256: 88f3edde83d49c7e1e3c49a41948d6e87205f4d29613b7c46eda7eaa0898b3b2
+verification_profile: inspection

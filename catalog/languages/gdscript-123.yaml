@@ -5,12 +5,29 @@ type: programming
 aliases: []
 extensions:
   - .gd
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/gdscript-123
+source: example.gd
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - gdscript-123
+expected: "Linguist classification: GDScript"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/GDScript/example.gd
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/GDScript/example.gd
+  sha256: 6609589e3dd151c9dacf1c066e955a3291ae5ce2d522295b2d19ae31b68937f5
+verification_profile: inspection

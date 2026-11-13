@@ -5,12 +5,24 @@ type: programming
 aliases: []
 extensions:
   - .cw
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/redcode-321
+source: hello.cw
+demonstration: native
+requirements:
+  - Text editor
+  - A Redcode-compatible toolchain for optional rendering or execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - redcode-321
+expected: "Linguist classification: Redcode"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal greeting or native declaration. Some languages require a
+    containing application or target-specific runtime.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

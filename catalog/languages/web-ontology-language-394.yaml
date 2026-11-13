@@ -5,12 +5,25 @@ type: data
 aliases: []
 extensions:
   - .owl
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/web-ontology-language-394
+source: hello.owl
+demonstration: native
+requirements:
+  - Text editor
+  - A Web Ontology Language-compatible toolchain for optional rendering or
+    execution
+  - Pinned Ruby Linguist bundle for classification
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - web-ontology-language-394
+expected: "Linguist classification: Web Ontology Language"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - A minimal native document demonstrating the format. A text editor can
+    inspect its structure.
+  - "Inspection profile: runtime behavior and full standards conformance have
+    not been verified."
+license: MIT
+verification_profile: inspection

@@ -7,12 +7,23 @@ aliases:
 extensions:
   - .rs
   - .rs.in
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/rust-327
+source: hello.rs
+demonstration: print
+requirements:
+  - Rust compiler
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
+run:
+  - npm
+  - run
+  - examples:extended
+  - --
+  - rust-327
+expected: |
+  Hello, world!
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

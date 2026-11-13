@@ -9,12 +9,29 @@ extensions:
   - .nimble
   - .nimrod
   - .nims
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/nim-249
+source: nimfix.nim.cfg
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - nim-249
+expected: "Linguist classification: Nim"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Nim/nimfix.nim.cfg
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Nim/nimfix.nim.cfg
+  sha256: 13f5b2c9bd23a7febdf2233b46024f6b31cf078b7d624ca863c6dbe90628368c
+verification_profile: inspection

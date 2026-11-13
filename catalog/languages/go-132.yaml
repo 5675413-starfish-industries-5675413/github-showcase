@@ -6,12 +6,23 @@ aliases:
   - golang
 extensions:
   - .go
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/go-132
+source: hello.go
+demonstration: print
+requirements:
+  - Go 1.22+
+  - Linux extended CI profile; other operating systems can run the same source
+    with their toolchain
+run:
+  - npm
+  - run
+  - examples:extended
+  - --
+  - go-132
+expected: |
+  Hello, world!
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - The extended profile verifies the authored greeting only. It is not a
+    comprehensive language conformance suite.
+license: MIT
+verification_profile: extended

@@ -14,12 +14,29 @@ extensions:
   - .ctl
   - .Dsr
   - .frm
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/visual-basic-6-0-679594952
+source: modFrm.bas
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - visual-basic-6-0-679594952
+expected: "Linguist classification: Visual Basic 6.0"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Visual%20Basic%206.0/modFrm.bas
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Visual Basic 6.0/modFrm.bas
+  sha256: c85edb9774e328d378a0a1633cce1431d918aa9631dfb0434a714e57012551a9
+verification_profile: inspection

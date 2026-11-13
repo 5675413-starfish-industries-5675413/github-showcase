@@ -1,15 +1,19 @@
 {
   "id": "discussions",
   "name": "Community discussions",
-  "purpose": "Discuss project ideas and examples.",
-  "status": "pending",
-  "configuration": [],
+  "purpose": "Provide topic and Q&A categories.",
+  "status": "configured",
+  "configuration": [
+    "docs/repository-settings.md"
+  ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/discussions"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Enabled and categories inspected; no fabricated community conversation."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

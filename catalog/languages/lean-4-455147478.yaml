@@ -6,12 +6,29 @@ aliases:
   - lean4
 extensions:
   - .lean
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/lean-4-455147478
+source: BirthdayProblem.lean
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - lean-4-455147478
+expected: "Linguist classification: Lean 4"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Lean%204/BirthdayProblem.lean
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Lean 4/BirthdayProblem.lean
+  sha256: 7fe453ec8a2fa0e1af0ffec1d584ce8c162efae62ead656a92df3559aa65d00d
+verification_profile: inspection

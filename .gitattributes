@@ -9,3 +9,7 @@
 *.wav binary
 catalog/upstream/* linguist-vendored
 catalog/generated/* linguist-generated
+
+# Preserve checksummed sample bytes across platforms.
+examples/languages/** -text
+examples/formats/** -text

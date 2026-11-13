@@ -1,18 +1,22 @@
 {
   "id": "issues",
-  "name": "Issue forms",
-  "purpose": "Collect reproducible bugs and example proposals.",
-  "status": "configured",
+  "name": "Issue planning",
+  "purpose": "Track real maintenance with labels and milestone.",
+  "status": "demonstrated",
   "configuration": [
     ".github/ISSUE_TEMPLATE/example.yml",
-    ".github/ISSUE_TEMPLATE/bug.yml"
+    ".github/ISSUE_TEMPLATE/bug.yml",
+    "docs/completion-plan.md"
   ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/issues/9",
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/milestone/1"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "Issue #9 was created during implementation; it is not backdated to precede all work."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

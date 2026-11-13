@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .dzn
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/minizinc-data-938193433
+source: pantry.dzn
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - minizinc-data-938193433
+expected: "Linguist classification: MiniZinc Data"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/MiniZinc%20Data/pantry.dzn
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/MiniZinc Data/pantry.dzn
+  sha256: 0c7a04b6441c5766669f7cd937a518010ba09f41b98f280d4cd565234239816a
+verification_profile: inspection

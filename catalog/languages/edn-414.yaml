@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .edn
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/edn-414
+source: bigger-than-pluto.edn
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - edn-414
+expected: "Linguist classification: edn"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/edn/bigger-than-pluto.edn
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/edn/bigger-than-pluto.edn
+  sha256: 6749e56bcf6b8892bda1f50a4acf13f9ced1e5aabafe0a8570be85cae4a2307e
+verification_profile: inspection

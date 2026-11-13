@@ -7,12 +7,29 @@ aliases:
   - igorpro
 extensions:
   - .ipf
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/igor-pro-162
+source: generic.ipf
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - igor-pro-162
+expected: "Linguist classification: IGOR Pro"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/IGOR%20Pro/generic.ipf
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/IGOR Pro/generic.ipf
+  sha256: 1fcd2e4413985be03eee70e05f0f84550eceb337991c1b2a60046c68199f9576
+verification_profile: inspection

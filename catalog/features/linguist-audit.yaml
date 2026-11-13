@@ -1,15 +1,22 @@
 {
   "id": "linguist-audit",
   "name": "Linguist detection audit",
-  "purpose": "Compare per-file detection with the pinned baseline.",
-  "status": "pending",
-  "configuration": [],
+  "purpose": "Recognize examples with the pinned classifier.",
+  "status": "demonstrated",
+  "configuration": [
+    "Gemfile",
+    "Gemfile.lock",
+    "tools/detect.rb",
+    ".github/workflows/detection.yml"
+  ],
   "prerequisites": [
-    "Repository access and relevant GitHub feature permissions."
+    "Repository access and the relevant toolchain or GitHub permissions."
   ],
-  "evidence": [],
+  "evidence": [
+    "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43106105729"
+  ],
   "limitations": [
-    "A real hosted demonstration has not yet been recorded."
+    "842 automatic recognitions; three transcript entries require explicit selection. Detection is not execution."
   ],
-  "reviewed": "2026-11-09"
+  "reviewed": "2026-11-11"
 }

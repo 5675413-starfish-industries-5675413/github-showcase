@@ -8,12 +8,29 @@ aliases:
   - Protocol Buffers
 extensions:
   - .proto
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/protocol-buffer-297
+source: addressbook.proto
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - protocol-buffer-297
+expected: "Linguist classification: Protocol Buffer"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Protocol%20Buffer/addressbook.proto
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Protocol Buffer/addressbook.proto
+  sha256: fe7a027a3b05425a80055fed7ea06b08b9da2295d7f84ebc1b88701a9d5ef29b
+verification_profile: inspection

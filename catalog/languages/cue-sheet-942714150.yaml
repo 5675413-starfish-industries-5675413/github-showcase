@@ -5,12 +5,29 @@ type: data
 aliases: []
 extensions:
   - .cue
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/data/cue-sheet-942714150
+source: sample2.cue
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - cue-sheet-942714150
+expected: "Linguist classification: Cue Sheet"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Cue%20Sheet/sample2.cue
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Cue Sheet/sample2.cue
+  sha256: 563af426c1372281811db15cb48f2df84642a94100e4cf25268e637b673dda07
+verification_profile: inspection

@@ -10,12 +10,29 @@ extensions:
   - .p
   - .cls
   - .w
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/openedge-abl-264
+source: run.p
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - openedge-abl-264
+expected: "Linguist classification: OpenEdge ABL"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/OpenEdge%20ABL/run.p
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/OpenEdge ABL/run.p
+  sha256: 6de26e4ae61672e1eba7cd7afafdd49ea696ac9da8dd0baa9919c0b202944ff2
+verification_profile: inspection

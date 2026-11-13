@@ -8,12 +8,29 @@ extensions:
   - .cnc
   - .gco
   - .gcode
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/g-code-117
+source: square.g
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - g-code-117
+expected: "Linguist classification: G-code"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/G-code/square.g
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/G-code/square.g
+  sha256: d36a58385580ce209e261dfef7b901526b559216a6abc3aa7aaf08d053b8fe0d
+verification_profile: inspection

@@ -9,12 +9,29 @@ extensions:
   - .ps1
   - .psd1
   - .psm1
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/powershell-293
+source: pwsh-shebang.ps1
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - powershell-293
+expected: "Linguist classification: PowerShell"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/PowerShell/pwsh-shebang.ps1
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/PowerShell/pwsh-shebang.ps1
+  sha256: ad0dc8f9802314c370bf624cbbe9cacd1ffe238f8d01d98bf25343bb08807dbf
+verification_profile: inspection

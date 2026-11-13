@@ -19,12 +19,29 @@ extensions:
   - .wl
   - .wls
   - .wlt
-example_path: null
-source: null
-demonstration: pending
-requirements: []
-run: null
-expected: null
+example_path: examples/languages/programming/wolfram-language-224
+source: TestArithmetic.mt
+demonstration: native
+requirements:
+  - Text editor for source inspection
+  - Ruby 3.3 and Bundler with the pinned Linguist bundle for detection
+  - Original project dependencies may be required to compile or execute this
+    fixture
+run:
+  - npm
+  - run
+  - linguist:audit
+  - --
+  - wolfram-language-224
+expected: "Linguist classification: Wolfram Language"
 limitations:
-  - Example not yet contributed. Toolchain requirements not yet assessed.
-license: MIT (catalog metadata; see NOTICE.md)
+  - Verbatim syntax fixture. Compilation and execution are outside the reviewed
+    profiles; detection is independent.
+license: MIT (GitHub Linguist distribution); embedded notices preserved
+origin:
+  kind: linguist-fixture
+  url: https://github.com/github-linguist/linguist/blob/d456527fe93355baa28c3c29d542c97282b61bc7/samples/Wolfram%20Language/TestArithmetic.mt
+  revision: d456527fe93355baa28c3c29d542c97282b61bc7
+  path: samples/Wolfram Language/TestArithmetic.mt
+  sha256: 3aa9f605027224ddd20c28320c973dc42006048a8cfffc3d49f48554a3ecbcd8
+verification_profile: inspection
