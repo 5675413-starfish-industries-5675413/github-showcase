@@ -52,7 +52,12 @@ for (const r of records('languages')) {
   const chosen = options[0];
   if (!chosen) continue;
   const source = path.basename(chosen.p);
-  const example = `examples/languages/${r.type}/${r.id}`;
+  // Keep imported Python manifests out of GitHub's automatic dependency graph.
+  // Their declarations are syntax data, never dependencies of this repository.
+  const vendor = ['toml-365', 'pip-requirements-684385621'].includes(r.id)
+    ? 'vendor/'
+    : '';
+  const example = `examples/languages/${r.type}/${vendor}${r.id}`;
   const upstreamPath = path
     .relative(checkout, chosen.p)
     .split(path.sep)

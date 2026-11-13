@@ -6,7 +6,7 @@ aliases: []
 extensions:
   - .toml
   - .toml.example
-example_path: examples/languages/data/toml-365
+example_path: examples/languages/data/vendor/toml-365
 source: Pipfile
 demonstration: native
 requirements:
@@ -24,6 +24,8 @@ expected: "Linguist classification: TOML"
 limitations:
   - Verbatim syntax fixture. Compilation and execution are outside the reviewed
     profiles; detection is independent.
+  - "Vendored syntax data: dependency declarations belong to the upstream
+    fixture, not this project."
 license: MIT (GitHub Linguist distribution); embedded notices preserved
 origin:
   kind: linguist-fixture
