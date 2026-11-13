@@ -786,8 +786,24 @@
       grid-column: 2;
       grid-row: 3;
     }
-    .filters label[for='runtime'],
-    #runtime,
+    .filters label[for='platform'] {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .filters label[for='runtime'] {
+      grid-column: 2;
+      grid-row: 4;
+    }
+    #platform {
+      grid-column: 1;
+      grid-row: 5;
+      min-width: 0;
+    }
+    #runtime {
+      grid-column: 2;
+      grid-row: 5;
+      min-width: 0;
+    }
     .filter-note {
       display: none;
     }

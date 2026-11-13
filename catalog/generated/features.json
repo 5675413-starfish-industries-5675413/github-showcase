@@ -378,7 +378,7 @@
     "id": "security",
     "name": "Security scanning",
     "purpose": "Scan authored application code and maintain dependencies.",
-    "status": "configured",
+    "status": "demonstrated",
     "configuration": [
       ".github/workflows/security.yml",
       ".github/codeql.yml"
@@ -386,9 +386,11 @@
     "prerequisites": [
       "Repository access and the relevant toolchain or GitHub permissions."
     ],
-    "evidence": [],
+    "evidence": [
+      "https://github.com/5675413-starfish-industries-5675413/github-showcase/actions/runs/43107425233"
+    ],
     "limitations": [
-      "Secret scanning/push protection and automated dependency fixes enabled. CodeQL run evidence will be recorded after completion."
+      "CodeQL scans authored tools, website code, integrations and tests. Upstream syntax fixtures are excluded from this application scan."
     ],
     "reviewed": "2026-11-11",
     "verification": {

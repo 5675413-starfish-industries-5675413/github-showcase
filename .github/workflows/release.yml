@@ -14,6 +14,8 @@ jobs:
           persist-credentials: false
       - uses: ./.github/actions/setup-full
       - run: npm run verify:full
+        env:
+          PUBLIC_SOURCE_REF: ${{ github.sha }}
       - run: |
           tar -czf showcase-reports.tar.gz catalog/generated verification/latest.json verification/detection.json verification/extended.json website/public/reports
           sha256sum showcase-reports.tar.gz > SHA256SUMS
